@@ -50,4 +50,4 @@ Export-Package: metadata.managment.i18n,
  org.talend.metadata.managment.ui.convert,
  org.talend.metadata.managment.utils
 Bundle-ClassPath: .
-Bundle-Vendor: .Talend SA.
+Bundle-Vendor: .Talaxie SA.

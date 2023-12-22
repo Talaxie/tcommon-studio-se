@@ -15,7 +15,7 @@ public class AllTestsForJUnit3Suite {
     public static Test suite() {
         BundleTestCollector testCollector = new BundleTestCollector();
 
-        TestSuite suite = new TestSuite("All Talend Tests"); //$NON-NLS-1$
+        TestSuite suite = new TestSuite("All Talaxie Tests"); //$NON-NLS-1$
 
         /*
          * assemble as many collections as you like based on bundle, package and classname filters

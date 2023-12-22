@@ -1368,7 +1368,7 @@ public interface PropertiesPackage extends EPackage {
     int EXECUTION_TASK_JOB_PRM = 54;
 
     /**
-     * The meta object id for the '{@link org.talend.core.model.properties.impl.TalendTriggerImpl <em>Talend Trigger</em>}' class.
+     * The meta object id for the '{@link org.talend.core.model.properties.impl.TalendTriggerImpl <em>Talaxie Trigger</em>}' class.
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @see org.talend.core.model.properties.impl.TalendTriggerImpl
      * @see org.talend.core.model.properties.impl.PropertiesPackageImpl#getTalendTrigger()
@@ -1377,7 +1377,7 @@ public interface PropertiesPackage extends EPackage {
     int TALEND_TRIGGER = 57;
 
     /**
-     * The meta object id for the '{@link org.talend.core.model.properties.impl.CronTalendTriggerImpl <em>Cron Talend Trigger</em>}' class.
+     * The meta object id for the '{@link org.talend.core.model.properties.impl.CronTalendTriggerImpl <em>Cron Talaxie Trigger</em>}' class.
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @see org.talend.core.model.properties.impl.CronTalendTriggerImpl
      * @see org.talend.core.model.properties.impl.PropertiesPackageImpl#getCronTalendTrigger()
@@ -1386,7 +1386,7 @@ public interface PropertiesPackage extends EPackage {
     int CRON_TALEND_TRIGGER = 58;
 
     /**
-     * The meta object id for the '{@link org.talend.core.model.properties.impl.CronUITalendTriggerImpl <em>Cron UI Talend Trigger</em>}' class.
+     * The meta object id for the '{@link org.talend.core.model.properties.impl.CronUITalendTriggerImpl <em>Cron UI Talaxie Trigger</em>}' class.
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @see org.talend.core.model.properties.impl.CronUITalendTriggerImpl
      * @see org.talend.core.model.properties.impl.PropertiesPackageImpl#getCronUITalendTrigger()
@@ -1395,7 +1395,7 @@ public interface PropertiesPackage extends EPackage {
     int CRON_UI_TALEND_TRIGGER = 59;
 
     /**
-     * The meta object id for the '{@link org.talend.core.model.properties.impl.SimpleTalendTriggerImpl <em>Simple Talend Trigger</em>}' class.
+     * The meta object id for the '{@link org.talend.core.model.properties.impl.SimpleTalendTriggerImpl <em>Simple Talaxie Trigger</em>}' class.
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @see org.talend.core.model.properties.impl.SimpleTalendTriggerImpl
      * @see org.talend.core.model.properties.impl.PropertiesPackageImpl#getSimpleTalendTrigger()
@@ -5617,7 +5617,7 @@ public interface PropertiesPackage extends EPackage {
     int TASK_EXECUTION_HISTORY__PROJECT_NAME = 5;
 
     /**
-     * The feature id for the '<em><b>Talend Job Name</b></em>' attribute.
+     * The feature id for the '<em><b>Talaxie Job Name</b></em>' attribute.
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      * @ordered
@@ -5625,7 +5625,7 @@ public interface PropertiesPackage extends EPackage {
     int TASK_EXECUTION_HISTORY__TALEND_JOB_NAME = 6;
 
     /**
-     * The feature id for the '<em><b>Talend Job Id</b></em>' attribute.
+     * The feature id for the '<em><b>Talaxie Job Id</b></em>' attribute.
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      * @ordered
@@ -5633,7 +5633,7 @@ public interface PropertiesPackage extends EPackage {
     int TASK_EXECUTION_HISTORY__TALEND_JOB_ID = 7;
 
     /**
-     * The feature id for the '<em><b>Talend Job Version</b></em>' attribute. <!-- begin-user-doc --> <!-- end-user-doc
+     * The feature id for the '<em><b>Talaxie Job Version</b></em>' attribute. <!-- begin-user-doc --> <!-- end-user-doc
      * -->
      * 
      * @generated
@@ -6000,7 +6000,7 @@ public interface PropertiesPackage extends EPackage {
     int PLAN_EXECUTION_HISTORY__PROJECT_NAME = TASK_EXECUTION_HISTORY__PROJECT_NAME;
 
     /**
-     * The feature id for the '<em><b>Talend Job Name</b></em>' attribute.
+     * The feature id for the '<em><b>Talaxie Job Name</b></em>' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
@@ -6009,7 +6009,7 @@ public interface PropertiesPackage extends EPackage {
     int PLAN_EXECUTION_HISTORY__TALEND_JOB_NAME = TASK_EXECUTION_HISTORY__TALEND_JOB_NAME;
 
     /**
-     * The feature id for the '<em><b>Talend Job Id</b></em>' attribute.
+     * The feature id for the '<em><b>Talaxie Job Id</b></em>' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
@@ -6018,7 +6018,7 @@ public interface PropertiesPackage extends EPackage {
     int PLAN_EXECUTION_HISTORY__TALEND_JOB_ID = TASK_EXECUTION_HISTORY__TALEND_JOB_ID;
 
     /**
-     * The feature id for the '<em><b>Talend Job Version</b></em>' attribute.
+     * The feature id for the '<em><b>Talaxie Job Version</b></em>' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
@@ -6469,7 +6469,7 @@ public interface PropertiesPackage extends EPackage {
     int TALEND_TRIGGER__PREVIOUSLY_PAUSED = 12;
 
     /**
-     * The number of structural features of the '<em>Talend Trigger</em>' class.
+     * The number of structural features of the '<em>Talaxie Trigger</em>' class.
      * <!-- begin-user-doc --> <!--
      * end-user-doc -->
      * @generated
@@ -6595,7 +6595,7 @@ public interface PropertiesPackage extends EPackage {
     int CRON_TALEND_TRIGGER__CRON_EXPRESSION = TALEND_TRIGGER_FEATURE_COUNT + 0;
 
     /**
-     * The number of structural features of the '<em>Cron Talend Trigger</em>' class.
+     * The number of structural features of the '<em>Cron Talaxie Trigger</em>' class.
      * <!-- begin-user-doc --> <!--
      * end-user-doc -->
      * @generated
@@ -6763,7 +6763,7 @@ public interface PropertiesPackage extends EPackage {
     int CRON_UI_TALEND_TRIGGER__LIST_MINUTES = TALEND_TRIGGER_FEATURE_COUNT + 5;
 
     /**
-     * The number of structural features of the '<em>Cron UI Talend Trigger</em>' class.
+     * The number of structural features of the '<em>Cron UI Talaxie Trigger</em>' class.
      * <!-- begin-user-doc --> <!--
      * end-user-doc -->
      * @generated
@@ -6905,7 +6905,7 @@ public interface PropertiesPackage extends EPackage {
     int SIMPLE_TALEND_TRIGGER__TIMES_TRIGGERED = TALEND_TRIGGER_FEATURE_COUNT + 2;
 
     /**
-     * The number of structural features of the '<em>Simple Talend Trigger</em>' class.
+     * The number of structural features of the '<em>Simple Talaxie Trigger</em>' class.
      * <!-- begin-user-doc --> <!--
      * end-user-doc -->
      * @generated
@@ -7282,7 +7282,7 @@ public interface PropertiesPackage extends EPackage {
     int EXECUTION_SERVER__WEB_CONSOLE_URL = 12;
 
     /**
-     * The feature id for the '<em><b>Talend Runtime</b></em>' attribute.
+     * The feature id for the '<em><b>Talaxie Runtime</b></em>' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
@@ -12476,10 +12476,10 @@ public interface PropertiesPackage extends EPackage {
     EAttribute getExecutionServer_WebConsoleUrl();
 
     /**
-     * Returns the meta object for the attribute '{@link org.talend.core.model.properties.ExecutionServer#isTalendRuntime <em>Talend Runtime</em>}'.
+     * Returns the meta object for the attribute '{@link org.talend.core.model.properties.ExecutionServer#isTalendRuntime <em>Talaxie Runtime</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @return the meta object for the attribute '<em>Talend Runtime</em>'.
+     * @return the meta object for the attribute '<em>Talaxie Runtime</em>'.
      * @see org.talend.core.model.properties.ExecutionServer#isTalendRuntime()
      * @see #getExecutionServer()
      * @generated
@@ -13217,9 +13217,9 @@ public interface PropertiesPackage extends EPackage {
     EAttribute getExecutionTaskJobPrm_ItemType();
 
     /**
-     * Returns the meta object for class '{@link org.talend.core.model.properties.TalendTrigger <em>Talend Trigger</em>}'.
+     * Returns the meta object for class '{@link org.talend.core.model.properties.TalendTrigger <em>Talaxie Trigger</em>}'.
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @return the meta object for class '<em>Talend Trigger</em>'.
+     * @return the meta object for class '<em>Talaxie Trigger</em>'.
      * @see org.talend.core.model.properties.TalendTrigger
      * @generated
      */
@@ -13367,9 +13367,9 @@ public interface PropertiesPackage extends EPackage {
     EAttribute getTalendTrigger_PreviouslyPaused();
 
     /**
-     * Returns the meta object for class '{@link org.talend.core.model.properties.CronTalendTrigger <em>Cron Talend Trigger</em>}'.
+     * Returns the meta object for class '{@link org.talend.core.model.properties.CronTalendTrigger <em>Cron Talaxie Trigger</em>}'.
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @return the meta object for class '<em>Cron Talend Trigger</em>'.
+     * @return the meta object for class '<em>Cron Talaxie Trigger</em>'.
      * @see org.talend.core.model.properties.CronTalendTrigger
      * @generated
      */
@@ -13388,9 +13388,9 @@ public interface PropertiesPackage extends EPackage {
     EAttribute getCronTalendTrigger_CronExpression();
 
     /**
-     * Returns the meta object for class '{@link org.talend.core.model.properties.CronUITalendTrigger <em>Cron UI Talend Trigger</em>}'.
+     * Returns the meta object for class '{@link org.talend.core.model.properties.CronUITalendTrigger <em>Cron UI Talaxie Trigger</em>}'.
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @return the meta object for class '<em>Cron UI Talend Trigger</em>'.
+     * @return the meta object for class '<em>Cron UI Talaxie Trigger</em>'.
      * @see org.talend.core.model.properties.CronUITalendTrigger
      * @generated
      */
@@ -13467,9 +13467,9 @@ public interface PropertiesPackage extends EPackage {
     EAttribute getCronUITalendTrigger_ListMinutes();
 
     /**
-     * Returns the meta object for class '{@link org.talend.core.model.properties.SimpleTalendTrigger <em>Simple Talend Trigger</em>}'.
+     * Returns the meta object for class '{@link org.talend.core.model.properties.SimpleTalendTrigger <em>Simple Talaxie Trigger</em>}'.
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @return the meta object for class '<em>Simple Talend Trigger</em>'.
+     * @return the meta object for class '<em>Simple Talaxie Trigger</em>'.
      * @see org.talend.core.model.properties.SimpleTalendTrigger
      * @generated
      */
@@ -15666,10 +15666,10 @@ public interface PropertiesPackage extends EPackage {
 
     /**
      * Returns the meta object for the attribute '
-     * {@link org.talend.core.model.properties.TaskExecutionHistory#getTalendJobName <em>Talend Job Name</em>}'. <!--
+     * {@link org.talend.core.model.properties.TaskExecutionHistory#getTalendJobName <em>Talaxie Job Name</em>}'. <!--
      * begin-user-doc --> <!-- end-user-doc -->
      * 
-     * @return the meta object for the attribute '<em>Talend Job Name</em>'.
+     * @return the meta object for the attribute '<em>Talaxie Job Name</em>'.
      * @see org.talend.core.model.properties.TaskExecutionHistory#getTalendJobName()
      * @see #getTaskExecutionHistory()
      * @generated
@@ -15678,10 +15678,10 @@ public interface PropertiesPackage extends EPackage {
 
     /**
      * Returns the meta object for the attribute '
-     * {@link org.talend.core.model.properties.TaskExecutionHistory#getTalendJobId <em>Talend Job Id</em>}'. <!--
+     * {@link org.talend.core.model.properties.TaskExecutionHistory#getTalendJobId <em>Talaxie Job Id</em>}'. <!--
      * begin-user-doc --> <!-- end-user-doc -->
      * 
-     * @return the meta object for the attribute '<em>Talend Job Id</em>'.
+     * @return the meta object for the attribute '<em>Talaxie Job Id</em>'.
      * @see org.talend.core.model.properties.TaskExecutionHistory#getTalendJobId()
      * @see #getTaskExecutionHistory()
      * @generated
@@ -15689,9 +15689,9 @@ public interface PropertiesPackage extends EPackage {
     EAttribute getTaskExecutionHistory_TalendJobId();
 
     /**
-     * Returns the meta object for the attribute '{@link org.talend.core.model.properties.TaskExecutionHistory#getTalendJobVersion <em>Talend Job Version</em>}'.
+     * Returns the meta object for the attribute '{@link org.talend.core.model.properties.TaskExecutionHistory#getTalendJobVersion <em>Talaxie Job Version</em>}'.
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @return the meta object for the attribute '<em>Talend Job Version</em>'.
+     * @return the meta object for the attribute '<em>Talaxie Job Version</em>'.
      * @see org.talend.core.model.properties.TaskExecutionHistory#getTalendJobVersion()
      * @see #getTaskExecutionHistory()
      * @generated
@@ -18142,7 +18142,7 @@ public interface PropertiesPackage extends EPackage {
         EAttribute EXECUTION_SERVER__WEB_CONSOLE_URL = eINSTANCE.getExecutionServer_WebConsoleUrl();
 
         /**
-         * The meta object literal for the '<em><b>Talend Runtime</b></em>' attribute feature.
+         * The meta object literal for the '<em><b>Talaxie Runtime</b></em>' attribute feature.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
          * @generated
@@ -18699,7 +18699,7 @@ public interface PropertiesPackage extends EPackage {
         EAttribute EXECUTION_TASK_JOB_PRM__ITEM_TYPE = eINSTANCE.getExecutionTaskJobPrm_ItemType();
 
         /**
-         * The meta object literal for the '{@link org.talend.core.model.properties.impl.TalendTriggerImpl <em>Talend Trigger</em>}' class.
+         * The meta object literal for the '{@link org.talend.core.model.properties.impl.TalendTriggerImpl <em>Talaxie Trigger</em>}' class.
          * <!-- begin-user-doc --> <!-- end-user-doc -->
          * @see org.talend.core.model.properties.impl.TalendTriggerImpl
          * @see org.talend.core.model.properties.impl.PropertiesPackageImpl#getTalendTrigger()
@@ -18812,7 +18812,7 @@ public interface PropertiesPackage extends EPackage {
         EAttribute TALEND_TRIGGER__PREVIOUSLY_PAUSED = eINSTANCE.getTalendTrigger_PreviouslyPaused();
 
         /**
-         * The meta object literal for the '{@link org.talend.core.model.properties.impl.CronTalendTriggerImpl <em>Cron Talend Trigger</em>}' class.
+         * The meta object literal for the '{@link org.talend.core.model.properties.impl.CronTalendTriggerImpl <em>Cron Talaxie Trigger</em>}' class.
          * <!-- begin-user-doc --> <!-- end-user-doc -->
          * @see org.talend.core.model.properties.impl.CronTalendTriggerImpl
          * @see org.talend.core.model.properties.impl.PropertiesPackageImpl#getCronTalendTrigger()
@@ -18829,7 +18829,7 @@ public interface PropertiesPackage extends EPackage {
         EAttribute CRON_TALEND_TRIGGER__CRON_EXPRESSION = eINSTANCE.getCronTalendTrigger_CronExpression();
 
         /**
-         * The meta object literal for the '{@link org.talend.core.model.properties.impl.CronUITalendTriggerImpl <em>Cron UI Talend Trigger</em>}' class.
+         * The meta object literal for the '{@link org.talend.core.model.properties.impl.CronUITalendTriggerImpl <em>Cron UI Talaxie Trigger</em>}' class.
          * <!-- begin-user-doc --> <!-- end-user-doc -->
          * @see org.talend.core.model.properties.impl.CronUITalendTriggerImpl
          * @see org.talend.core.model.properties.impl.PropertiesPackageImpl#getCronUITalendTrigger()
@@ -18886,7 +18886,7 @@ public interface PropertiesPackage extends EPackage {
         EAttribute CRON_UI_TALEND_TRIGGER__LIST_MINUTES = eINSTANCE.getCronUITalendTrigger_ListMinutes();
 
         /**
-         * The meta object literal for the '{@link org.talend.core.model.properties.impl.SimpleTalendTriggerImpl <em>Simple Talend Trigger</em>}' class.
+         * The meta object literal for the '{@link org.talend.core.model.properties.impl.SimpleTalendTriggerImpl <em>Simple Talaxie Trigger</em>}' class.
          * <!-- begin-user-doc --> <!-- end-user-doc -->
          * @see org.talend.core.model.properties.impl.SimpleTalendTriggerImpl
          * @see org.talend.core.model.properties.impl.PropertiesPackageImpl#getSimpleTalendTrigger()
@@ -20649,7 +20649,7 @@ public interface PropertiesPackage extends EPackage {
         EAttribute TASK_EXECUTION_HISTORY__PROJECT_NAME = eINSTANCE.getTaskExecutionHistory_ProjectName();
 
         /**
-         * The meta object literal for the '<em><b>Talend Job Name</b></em>' attribute feature.
+         * The meta object literal for the '<em><b>Talaxie Job Name</b></em>' attribute feature.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
          * @generated
@@ -20657,7 +20657,7 @@ public interface PropertiesPackage extends EPackage {
         EAttribute TASK_EXECUTION_HISTORY__TALEND_JOB_NAME = eINSTANCE.getTaskExecutionHistory_TalendJobName();
 
         /**
-         * The meta object literal for the '<em><b>Talend Job Id</b></em>' attribute feature.
+         * The meta object literal for the '<em><b>Talaxie Job Id</b></em>' attribute feature.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
          * @generated
@@ -20665,7 +20665,7 @@ public interface PropertiesPackage extends EPackage {
         EAttribute TASK_EXECUTION_HISTORY__TALEND_JOB_ID = eINSTANCE.getTaskExecutionHistory_TalendJobId();
 
         /**
-         * The meta object literal for the '<em><b>Talend Job Version</b></em>' attribute feature.
+         * The meta object literal for the '<em><b>Talaxie Job Version</b></em>' attribute feature.
          * <!-- begin-user-doc
          * --> <!-- end-user-doc -->
          * @generated

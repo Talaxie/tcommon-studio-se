@@ -87,7 +87,7 @@ public interface BusinessPackage extends EPackage {
     int REPOSITORY_FEATURE_COUNT = 1;
 
     /**
-     * The meta object id for the '{@link org.talend.designer.business.model.business.impl.TalendItemImpl <em>Talend Item</em>}' class.
+     * The meta object id for the '{@link org.talend.designer.business.model.business.impl.TalendItemImpl <em>Talaxie Item</em>}' class.
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @see org.talend.designer.business.model.business.impl.TalendItemImpl
      * @see org.talend.designer.business.model.business.impl.BusinessPackageImpl#getTalendItem()
@@ -154,7 +154,7 @@ public interface BusinessPackage extends EPackage {
     int TALEND_ITEM__REPOSITORY = 6;
 
     /**
-     * The number of structural features of the '<em>Talend Item</em>' class.
+     * The number of structural features of the '<em>Talaxie Item</em>' class.
      * <!-- begin-user-doc --> <!--
      * end-user-doc -->
      * @generated
@@ -1555,7 +1555,7 @@ public interface BusinessPackage extends EPackage {
     int BUSINESS_ASSIGNMENT__BUSINESS_ITEM = 0;
 
     /**
-     * The feature id for the '<em><b>Talend Item</b></em>' reference. <!-- begin-user-doc --> <!-- end-user-doc
+     * The feature id for the '<em><b>Talaxie Item</b></em>' reference. <!-- begin-user-doc --> <!-- end-user-doc
      * -->
      * 
      * @generated
@@ -3612,9 +3612,9 @@ public interface BusinessPackage extends EPackage {
     EReference getRepository_Talenditems();
 
     /**
-     * Returns the meta object for class '{@link org.talend.designer.business.model.business.TalendItem <em>Talend Item</em>}'.
+     * Returns the meta object for class '{@link org.talend.designer.business.model.business.TalendItem <em>Talaxie Item</em>}'.
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @return the meta object for class '<em>Talend Item</em>'.
+     * @return the meta object for class '<em>Talaxie Item</em>'.
      * @see org.talend.designer.business.model.business.TalendItem
      * @generated
      */
@@ -3814,9 +3814,9 @@ public interface BusinessPackage extends EPackage {
     EReference getBusinessAssignment_BusinessItem();
 
     /**
-     * Returns the meta object for the reference '{@link org.talend.designer.business.model.business.BusinessAssignment#getTalendItem <em>Talend Item</em>}'.
+     * Returns the meta object for the reference '{@link org.talend.designer.business.model.business.BusinessAssignment#getTalendItem <em>Talaxie Item</em>}'.
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @return the meta object for the reference '<em>Talend Item</em>'.
+     * @return the meta object for the reference '<em>Talaxie Item</em>'.
      * @see org.talend.designer.business.model.business.BusinessAssignment#getTalendItem()
      * @see #getBusinessAssignment()
      * @generated
@@ -4285,7 +4285,7 @@ public interface BusinessPackage extends EPackage {
         EReference REPOSITORY__TALENDITEMS = eINSTANCE.getRepository_Talenditems();
 
         /**
-         * The meta object literal for the '{@link org.talend.designer.business.model.business.impl.TalendItemImpl <em>Talend Item</em>}' class.
+         * The meta object literal for the '{@link org.talend.designer.business.model.business.impl.TalendItemImpl <em>Talaxie Item</em>}' class.
          * <!-- begin-user-doc --> <!-- end-user-doc -->
          * @see org.talend.designer.business.model.business.impl.TalendItemImpl
          * @see org.talend.designer.business.model.business.impl.BusinessPackageImpl#getTalendItem()
@@ -4465,7 +4465,7 @@ public interface BusinessPackage extends EPackage {
         EReference BUSINESS_ASSIGNMENT__BUSINESS_ITEM = eINSTANCE.getBusinessAssignment_BusinessItem();
 
         /**
-         * The meta object literal for the '<em><b>Talend Item</b></em>' reference feature.
+         * The meta object literal for the '<em><b>Talaxie Item</b></em>' reference feature.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
          * @generated

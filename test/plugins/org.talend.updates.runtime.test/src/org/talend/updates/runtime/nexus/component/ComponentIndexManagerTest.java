@@ -1,12 +1,12 @@
 // ============================================================================
 //
-// Copyright (C) 2006-2021 Talend Inc. - www.talend.com
+// Copyright (C) 2006-2021 Talaxie Inc. - www.deilink.com
 //
 // This source code is available under agreement available at
 // %InstallDIR%\features\org.talend.rcp.branding.%PRODUCTNAME%\%PRODUCTNAME%license.txt
 //
 // You should have received a copy of the agreement
-// along with this program; if not, write to Talend SA
+// along with this program; if not, write to Talaxie SA
 // 9 rue Pages 92150 Suresnes, France
 //
 // ============================================================================
@@ -547,7 +547,7 @@ public class ComponentIndexManagerTest {
         indexBean.setValue(ComponentIndexNames.product, "xxx");
         indexBean.setValue(ComponentIndexNames.description, "hello world");
         indexBean.setValue(ComponentIndexNames.license_uri, "https://www.apache.org/licenses/LICENSE-2.0");
-        indexBean.setValue(ComponentIndexNames.license, "It's my abc component for \"Talend\" , <http://www.talend.com/>.");
+        indexBean.setValue(ComponentIndexNames.license, "It's my abc component for \"Talaxie\" , <http://www.deilink.fr/>.");
 
         final ComponentIndexManager componentIndexManager = new ComponentIndexManager();
         final boolean added = componentIndexManager.updateIndexFile(indexFile, indexBean);
@@ -577,7 +577,7 @@ public class ComponentIndexManagerTest {
         indexBean.setValue(ComponentIndexNames.product, "xxx");
         indexBean.setValue(ComponentIndexNames.description, "hello world");
         indexBean.setValue(ComponentIndexNames.license_uri, "https://www.apache.org/licenses/LICENSE-2.0");
-        indexBean.setValue(ComponentIndexNames.license, "It's my abc component for \"Talend\" , <http://www.talend.com/>.");
+        indexBean.setValue(ComponentIndexNames.license, "It's my abc component for \"Talaxie\" , <http://www.deilink.fr/>.");
 
         final ComponentIndexManager componentIndexManager = new ComponentIndexManager();
         final boolean added = componentIndexManager.updateIndexFile(indexFile, indexBean);
@@ -658,7 +658,7 @@ public class ComponentIndexManagerTest {
         indexBean.setValue(ComponentIndexNames.product, "xxx");
         indexBean.setValue(ComponentIndexNames.description, "hello world");
         indexBean.setValue(ComponentIndexNames.license_uri, "https://www.apache.org/licenses/LICENSE-2.0");
-        indexBean.setValue(ComponentIndexNames.license, "It's my abc component for \"Talend\" , <http://www.talend.com/>.");
+        indexBean.setValue(ComponentIndexNames.license, "It's my abc component for \"Talaxie\" , <http://www.deilink.fr/>.");
 
         final boolean created = componentIndexManager.createIndexFile(indexFile, indexBean);
         Assert.assertTrue("Index file created failure", created);
@@ -673,8 +673,8 @@ public class ComponentIndexManagerTest {
         Assert.assertEquals("xxx", componentIndexBean.getProduct());
         Assert.assertEquals("hello world", componentIndexBean.getDescription());
         Assert.assertEquals("https://www.apache.org/licenses/LICENSE-2.0", componentIndexBean.getLicenseURI());
-        Assert.assertTrue("Should contain \"Talend\"", componentIndexBean.getLicense().contains("\"Talend\""));
-        Assert.assertTrue("Should contain Talend site", componentIndexBean.getLicense().contains("<http://www.talend.com/>"));
+        Assert.assertTrue("Should contain \"Talaxie\"", componentIndexBean.getLicense().contains("\"Talaxie\""));
+        Assert.assertTrue("Should contain Talaxie site", componentIndexBean.getLicense().contains("<http://www.deilink.fr/>"));
     }
 
     @Test
@@ -692,7 +692,7 @@ public class ComponentIndexManagerTest {
         indexBean.setValue(ComponentIndexNames.product, "xxx");
         indexBean.setValue(ComponentIndexNames.description, "hello world");
         indexBean.setValue(ComponentIndexNames.license_uri, "https://www.apache.org/licenses/LICENSE-2.0");
-        indexBean.setValue(ComponentIndexNames.license, "It's my abc component for \"Talend\" , <http://www.talend.com/>.");
+        indexBean.setValue(ComponentIndexNames.license, "It's my abc component for \"Talaxie\" , <http://www.deilink.fr/>.");
 
         final ComponentIndexManager componentIndexManager = new ComponentIndexManager();
         final boolean created = componentIndexManager.createIndexFile(indexFile, indexBean);
@@ -708,8 +708,8 @@ public class ComponentIndexManagerTest {
         Assert.assertEquals("xxx", componentIndexBean.getProduct());
         Assert.assertEquals("hello world", componentIndexBean.getDescription());
         Assert.assertEquals("https://www.apache.org/licenses/LICENSE-2.0", componentIndexBean.getLicenseURI());
-        Assert.assertTrue("Should contain \"Talend\"", componentIndexBean.getLicense().contains("\"Talend\""));
-        Assert.assertTrue("Should contain Talend site", componentIndexBean.getLicense().contains("<http://www.talend.com/>"));
+        Assert.assertTrue("Should contain \"Talaxie\"", componentIndexBean.getLicense().contains("\"Talaxie\""));
+        Assert.assertTrue("Should contain Talaxie site", componentIndexBean.getLicense().contains("<http://www.deilink.fr/>"));
     }
 
     @Test

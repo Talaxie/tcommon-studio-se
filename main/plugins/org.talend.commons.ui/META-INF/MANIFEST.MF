@@ -26,7 +26,7 @@ Require-Bundle: org.eclipse.core.runtime,
  org.apache.commons.lang3,
  org.eclipse.jface.notifications
 Eclipse-LazyStart: true
-Bundle-Vendor: .Talend SA.
+Bundle-Vendor: .Talaxie SA.
 Export-Package: org.talend.commons.ui.command,
  org.talend.commons.ui.gmf.draw2d,
  org.talend.commons.ui.gmf.util,

@@ -9,7 +9,7 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 
 /**
- * <!-- begin-user-doc --> A representation of the model object '<em><b>Talend Item</b></em>'. <!-- end-user-doc
+ * <!-- begin-user-doc --> A representation of the model object '<em><b>Talaxie Item</b></em>'. <!-- end-user-doc
  * -->
  * 
  * <p>
@@ -163,7 +163,7 @@ public interface TalendItem extends EObject {
     /**
      * Returns the value of the '<em><b>Assignments</b></em>' reference list.
      * The list contents are of type {@link org.talend.designer.business.model.business.BusinessAssignment}.
-     * It is bidirectional and its opposite is '{@link org.talend.designer.business.model.business.BusinessAssignment#getTalendItem <em>Talend Item</em>}'.
+     * It is bidirectional and its opposite is '{@link org.talend.designer.business.model.business.BusinessAssignment#getTalendItem <em>Talaxie Item</em>}'.
      * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Assignments</em>' reference list isn't clear, there really should be more of a

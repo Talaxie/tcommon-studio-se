@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!-- mappingMetadataTypes.xml : Mapping between DBMS, ERP or others externs system metadata types and Talend metadata types -->
+<!-- mappingMetadataTypes.xml : Mapping between DBMS, ERP or others externs system metadata types and Talaxie metadata types -->
 <mapping>
 
 <dbms family="TALENDDEFAULT">

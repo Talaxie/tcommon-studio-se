@@ -13,7 +13,7 @@ Require-Bundle: org.eclipse.core.runtime,
  org.talend.commons.runtime
 Eclipse-LazyStart: true
 Bundle-ClassPath: .
-Bundle-Vendor: .Talend SA.
+Bundle-Vendor: .Talaxie SA.
 Export-Package: org.talend.resources,
  org.talend.resources.util
 Eclipse-BundleShape: dir

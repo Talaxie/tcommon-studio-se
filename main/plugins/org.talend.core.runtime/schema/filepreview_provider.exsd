@@ -100,7 +100,7 @@
          <meta.section type="implementation"/>
       </appInfo>
       <documentation>
-         Talend application needs exaxtly one plug-in using this extension point.
+         Talaxie application needs exaxtly one plug-in using this extension point.
       </documentation>
    </annotation>
 
@@ -109,8 +109,8 @@
          <meta.section type="copyright"/>
       </appInfo>
       <documentation>
-         Talend Community Edition&lt;br&gt;
-Copyright (C) 2006-2021 Talend - www.talend.com
+         Talaxie Community Edition&lt;br&gt;
+Copyright (C) 2006-2021 Talaxie - www.deilink.com
       </documentation>
    </annotation>
 

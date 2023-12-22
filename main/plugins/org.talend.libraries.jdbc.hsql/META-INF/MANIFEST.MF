@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Hsql Plug-in
 Bundle-SymbolicName: org.talend.libraries.jdbc.hsql
 Bundle-Version: 8.8.8.qualifier
-Bundle-Vendor: .Talend SA.
+Bundle-Vendor: .Talaxie SA.
 Bundle-ClassPath: lib/hsqldb.jar,
  .
 Export-Package: 

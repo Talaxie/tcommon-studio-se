@@ -1,5 +1,5 @@
 /*******************************************************************************
- *  Copyright (c) 2011 Talend Inc. - www.talend.com
+ *  Copyright (c) 2011 Talaxie Inc. - www.deilink.com
  *  All rights reserved.
  *
  *  This program and the accompanying materials are made available

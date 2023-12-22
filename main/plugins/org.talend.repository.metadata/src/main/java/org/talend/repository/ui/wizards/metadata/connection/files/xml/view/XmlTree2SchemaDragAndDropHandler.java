@@ -1,12 +1,12 @@
 // ============================================================================
 //
-// Copyright (C) 2006-2021 Talend Inc. - www.talend.com
+// Copyright (C) 2006-2021 Talaxie Inc. - www.deilink.com
 //
 // This source code is available under agreement available at
 // %InstallDIR%\features\org.talend.rcp.branding.%PRODUCTNAME%\%PRODUCTNAME%license.txt
 //
 // You should have received a copy of the agreement
-// along with this program; if not, write to Talend SA
+// along with this program; if not, write to Talaxie SA
 // 9 rue Pages 92150 Suresnes, France
 //
 // ============================================================================
@@ -193,7 +193,7 @@ public class XmlTree2SchemaDragAndDropHandler {
                         .openWarning(
                                 treeViewer.getTree().getShell(),
                                 "Columns Overflow",
-                                "The amount of schema columns has reached the max value. Please increase the max value on Preference Page(/Talend/Metadata) if you want to add new columns.");
+                                "The amount of schema columns has reached the max value. Please increase the max value on Preference Page(/Talaxie/Metadata) if you want to add new columns.");
                 return;
             }
 

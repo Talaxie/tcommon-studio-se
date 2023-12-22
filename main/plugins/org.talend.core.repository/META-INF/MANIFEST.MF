@@ -63,4 +63,4 @@ Export-Package: org.talend.core.repository,
 Bundle-Activator: org.talend.core.repository.CoreRepositoryPlugin
 Bundle-ActivationPolicy: lazy
 Bundle-ClassPath: .
-Bundle-Vendor: .Talend SA.
+Bundle-Vendor: .Talaxie SA.

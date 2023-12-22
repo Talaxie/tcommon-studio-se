@@ -6,7 +6,7 @@ Bundle-Version: 8.8.8.qualifier
 Bundle-Activator: org.talend.libraries.ui.LibrariesUIPlugin
 Require-Bundle: org.eclipse.core.runtime
 Eclipse-LazyStart: true
-Bundle-Vendor: .Talend SA.
+Bundle-Vendor: .Talaxie SA.
 Export-Package: org.talend.libraries.ui,
  org.vafada.swtcalendar
 Import-Package: org.eclipse.swt,

@@ -21,7 +21,7 @@ import org.talend.core.model.properties.TalendTrigger;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Talend Trigger</b></em>'.
+ * An implementation of the model object '<em><b>Talaxie Trigger</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:

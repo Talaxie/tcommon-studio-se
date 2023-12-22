@@ -25,7 +25,7 @@ import org.talend.core.model.expression.ExpressionPackage;
  * <ul>
  *   <li>{@link org.talend.core.model.expression.impl.EMFVariableImpl#getName <em>Name</em>}</li>
  *   <li>{@link org.talend.core.model.expression.impl.EMFVariableImpl#getValue <em>Value</em>}</li>
- *   <li>{@link org.talend.core.model.expression.impl.EMFVariableImpl#getTalendType <em>Talend Type</em>}</li>
+ *   <li>{@link org.talend.core.model.expression.impl.EMFVariableImpl#getTalendType <em>Talaxie Type</em>}</li>
  *   <li>{@link org.talend.core.model.expression.impl.EMFVariableImpl#isNullable <em>Nullable</em>}</li>
  * </ul>
  * </p>
@@ -74,7 +74,7 @@ public class EMFVariableImpl extends EObjectImpl implements EMFVariable {
     protected String value = VALUE_EDEFAULT;
 
     /**
-     * The default value of the '{@link #getTalendType() <em>Talend Type</em>}' attribute.
+     * The default value of the '{@link #getTalendType() <em>Talaxie Type</em>}' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @see #getTalendType()
@@ -84,7 +84,7 @@ public class EMFVariableImpl extends EObjectImpl implements EMFVariable {
     protected static final String TALEND_TYPE_EDEFAULT = null;
 
     /**
-     * The cached value of the '{@link #getTalendType() <em>Talend Type</em>}' attribute.
+     * The cached value of the '{@link #getTalendType() <em>Talaxie Type</em>}' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @see #getTalendType()

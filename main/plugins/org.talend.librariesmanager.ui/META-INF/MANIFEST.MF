@@ -35,5 +35,5 @@ Export-Package: org.talend.librariesmanager.ui,
  org.talend.librariesmanager.ui.dialogs,
  org.talend.librariesmanager.ui.views,
  org.talend.librariesmanager.utils
-Bundle-Vendor: .Talend SA.
+Bundle-Vendor: .Talaxie SA.
 Automatic-Module-Name: org.talend.librariesmanager.ui

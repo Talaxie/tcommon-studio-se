@@ -4,6 +4,6 @@ Bundle-Name: Designer Maven Test
 Bundle-SymbolicName: org.talend.designer.maven.test
 Bundle-Version: 8.8.8.qualifier
 Fragment-Host: org.talend.designer.maven
-Bundle-Vendor: .Talend SA.
+Bundle-Vendor: .Talaxie SA.
 Require-Bundle: org.talend.testutils,
  org.junit

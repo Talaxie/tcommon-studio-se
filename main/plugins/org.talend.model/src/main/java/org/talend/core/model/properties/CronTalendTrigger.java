@@ -9,7 +9,7 @@ package org.talend.core.model.properties;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Cron Talend Trigger</b></em>'.
+ * A representation of the model object '<em><b>Cron Talaxie Trigger</b></em>'.
  * <!-- end-user-doc -->
  *
  * <p>

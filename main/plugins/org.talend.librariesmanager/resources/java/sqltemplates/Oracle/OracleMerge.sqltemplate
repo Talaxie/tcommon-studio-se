@@ -1,5 +1,5 @@
 -- This pattern generated a merge statement for Oracle database or equivalent of a merge in other dbs
---(c) 2008 Talend Inc.
+--(c) 2008 Talaxie Inc.
 <% 
 	EXTRACT(__MERGE_ON__);
 	EXTRACT(__UPDATE_MAPPING__);

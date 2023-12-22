@@ -1,5 +1,5 @@
 -- This pattern generates a merge statement for Snowflake
---(c) 2019 Talend Inc.
+--(c) 2019 Talaxie Inc.
 <%
 	EXTRACT(__MERGE_ON__);
 	EXTRACT(__UPDATE_MAPPING__);

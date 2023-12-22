@@ -83,7 +83,7 @@ public class BusinessAssignmentItemProvider extends ItemProviderAdapter implemen
     }
 
     /**
-     * This adds a property descriptor for the Talend Item feature. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * This adds a property descriptor for the Talaxie Item feature. <!-- begin-user-doc --> <!-- end-user-doc -->
      * 
      * @generated NOT
      */

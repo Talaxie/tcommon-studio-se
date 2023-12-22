@@ -26,9 +26,9 @@ import org.talend.core.model.properties.TaskExecutionHistory;
  *   <li>{@link org.talend.core.model.properties.impl.TaskExecutionHistoryImpl#getTaskLabel <em>Task Label</em>}</li>
  *   <li>{@link org.talend.core.model.properties.impl.TaskExecutionHistoryImpl#getTaskDescription <em>Task Description</em>}</li>
  *   <li>{@link org.talend.core.model.properties.impl.TaskExecutionHistoryImpl#getProjectName <em>Project Name</em>}</li>
- *   <li>{@link org.talend.core.model.properties.impl.TaskExecutionHistoryImpl#getTalendJobName <em>Talend Job Name</em>}</li>
- *   <li>{@link org.talend.core.model.properties.impl.TaskExecutionHistoryImpl#getTalendJobId <em>Talend Job Id</em>}</li>
- *   <li>{@link org.talend.core.model.properties.impl.TaskExecutionHistoryImpl#getTalendJobVersion <em>Talend Job Version</em>}</li>
+ *   <li>{@link org.talend.core.model.properties.impl.TaskExecutionHistoryImpl#getTalendJobName <em>Talaxie Job Name</em>}</li>
+ *   <li>{@link org.talend.core.model.properties.impl.TaskExecutionHistoryImpl#getTalendJobId <em>Talaxie Job Id</em>}</li>
+ *   <li>{@link org.talend.core.model.properties.impl.TaskExecutionHistoryImpl#getTalendJobVersion <em>Talaxie Job Version</em>}</li>
  *   <li>{@link org.talend.core.model.properties.impl.TaskExecutionHistoryImpl#getContextName <em>Context Name</em>}</li>
  *   <li>{@link org.talend.core.model.properties.impl.TaskExecutionHistoryImpl#getVirtualServerName <em>Virtual Server Name</em>}</li>
  *   <li>{@link org.talend.core.model.properties.impl.TaskExecutionHistoryImpl#getExecutionServerName <em>Execution Server Name</em>}</li>
@@ -189,7 +189,7 @@ public class TaskExecutionHistoryImpl extends EObjectImpl implements TaskExecuti
     protected String projectName = PROJECT_NAME_EDEFAULT;
 
     /**
-     * The default value of the '{@link #getTalendJobName() <em>Talend Job Name</em>}' attribute.
+     * The default value of the '{@link #getTalendJobName() <em>Talaxie Job Name</em>}' attribute.
      * <!-- begin-user-doc
      * --> <!-- end-user-doc -->
      * @see #getTalendJobName()
@@ -199,7 +199,7 @@ public class TaskExecutionHistoryImpl extends EObjectImpl implements TaskExecuti
     protected static final String TALEND_JOB_NAME_EDEFAULT = null;
 
     /**
-     * The cached value of the '{@link #getTalendJobName() <em>Talend Job Name</em>}' attribute.
+     * The cached value of the '{@link #getTalendJobName() <em>Talaxie Job Name</em>}' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @see #getTalendJobName()
@@ -209,7 +209,7 @@ public class TaskExecutionHistoryImpl extends EObjectImpl implements TaskExecuti
     protected String talendJobName = TALEND_JOB_NAME_EDEFAULT;
 
     /**
-     * The default value of the '{@link #getTalendJobId() <em>Talend Job Id</em>}' attribute.
+     * The default value of the '{@link #getTalendJobId() <em>Talaxie Job Id</em>}' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @see #getTalendJobId()
@@ -219,7 +219,7 @@ public class TaskExecutionHistoryImpl extends EObjectImpl implements TaskExecuti
     protected static final String TALEND_JOB_ID_EDEFAULT = null;
 
     /**
-     * The cached value of the '{@link #getTalendJobId() <em>Talend Job Id</em>}' attribute.
+     * The cached value of the '{@link #getTalendJobId() <em>Talaxie Job Id</em>}' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @see #getTalendJobId()
@@ -229,7 +229,7 @@ public class TaskExecutionHistoryImpl extends EObjectImpl implements TaskExecuti
     protected String talendJobId = TALEND_JOB_ID_EDEFAULT;
 
     /**
-     * The default value of the '{@link #getTalendJobVersion() <em>Talend Job Version</em>}' attribute. <!--
+     * The default value of the '{@link #getTalendJobVersion() <em>Talaxie Job Version</em>}' attribute. <!--
      * begin-user-doc --> <!-- end-user-doc -->
      * 
      * @see #getTalendJobVersion()
@@ -239,7 +239,7 @@ public class TaskExecutionHistoryImpl extends EObjectImpl implements TaskExecuti
     protected static final String TALEND_JOB_VERSION_EDEFAULT = null;
 
     /**
-     * The cached value of the '{@link #getTalendJobVersion() <em>Talend Job Version</em>}' attribute. <!--
+     * The cached value of the '{@link #getTalendJobVersion() <em>Talaxie Job Version</em>}' attribute. <!--
      * begin-user-doc --> <!-- end-user-doc -->
      * 
      * @see #getTalendJobVersion()

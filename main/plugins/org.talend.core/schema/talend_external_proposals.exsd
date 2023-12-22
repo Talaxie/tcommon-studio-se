@@ -3,7 +3,7 @@
 <schema targetNamespace="org.talend.core">
 <annotation>
       <appInfo>
-         <meta.schema plugin="org.talend.core" id="talend_external_proposals" name="Talend External Proposals"/>
+         <meta.schema plugin="org.talend.core" id="talend_external_proposals" name="Talaxie External Proposals"/>
       </appInfo>
       <documentation>
          [Enter description of this extension point.]

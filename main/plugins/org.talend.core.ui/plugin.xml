@@ -68,6 +68,12 @@
            name="%TalendDataCollector">
      </page>
      <page
+           category="org.talend.core.prefs"
+           class="org.talend.core.ui.preference.collector.WebhookPreferencePage"
+           id="org.talend.core.prefs.datacollector"
+           name="%Webhook">
+     </page>
+     <page
            category="org.talend.core.prefs.datacollector"
            class="org.talend.core.ui.preference.collector.TalendDataCollectorPreviewPreferencePage"
            id="org.talend.core.prefs.collector.TalendDataCollectorPreviewPreferencePage"

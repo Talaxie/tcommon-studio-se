@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: -Talend Open Studio -
+Bundle-Name: -Talaxie Open Studio -
 Bundle-SymbolicName: org.talend.rcp;singleton:=true
 Bundle-Version: 8.8.8.qualifier
 Bundle-Activator: org.talend.rcp.Activator
@@ -48,6 +48,6 @@ Export-Package: org.talend.rcp,
  org.talend.rcp.intro.linksbar,
  org.talend.rcp.intro.starting,
  org.talend.rcp.perspective
-Bundle-Vendor: .Talend SA.
+Bundle-Vendor: .Talaxie SA.
 Eclipse-BundleShape: dir
 Automatic-Module-Name: org.talend.rcp

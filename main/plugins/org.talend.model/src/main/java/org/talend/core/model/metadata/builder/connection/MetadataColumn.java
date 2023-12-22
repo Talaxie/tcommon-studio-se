@@ -13,7 +13,7 @@ import orgomg.cwm.resource.record.Field;
  * <!-- end-user-doc -->
  *
  * <!-- begin-model-doc -->
- * represents a metada column which contains source (such as DB) definitions as weel as Talend mappings
+ * represents a metada column which contains source (such as DB) definitions as weel as Talaxie mappings
  * <!-- end-model-doc -->
  *
  * <p>
@@ -22,7 +22,7 @@ import orgomg.cwm.resource.record.Field;
  * <ul>
  *   <li>{@link org.talend.core.model.metadata.builder.connection.MetadataColumn#getSourceType <em>Source Type</em>}</li>
  *   <li>{@link org.talend.core.model.metadata.builder.connection.MetadataColumn#getDefaultValue <em>Default Value</em>}</li>
- *   <li>{@link org.talend.core.model.metadata.builder.connection.MetadataColumn#getTalendType <em>Talend Type</em>}</li>
+ *   <li>{@link org.talend.core.model.metadata.builder.connection.MetadataColumn#getTalendType <em>Talaxie Type</em>}</li>
  *   <li>{@link org.talend.core.model.metadata.builder.connection.MetadataColumn#isKey <em>Key</em>}</li>
  *   <li>{@link org.talend.core.model.metadata.builder.connection.MetadataColumn#isNullable <em>Nullable</em>}</li>
  *   <li>{@link org.talend.core.model.metadata.builder.connection.MetadataColumn#getTable <em>Table</em>}</li>
@@ -104,16 +104,16 @@ public interface MetadataColumn extends AbstractMetadataObject, Field {
     void setDefaultValue(String value);
 
     /**
-     * Returns the value of the '<em><b>Talend Type</b></em>' attribute. <!-- begin-user-doc -->
+     * Returns the value of the '<em><b>Talaxie Type</b></em>' attribute. <!-- begin-user-doc -->
      * <p>
-     * If the meaning of the '<em>Talend Type</em>' attribute isn't clear, there really should be more of a description
+     * If the meaning of the '<em>Talaxie Type</em>' attribute isn't clear, there really should be more of a description
      * here...
      * </p>
-     * <!-- end-user-doc --> <!-- begin-model-doc --> java type used by Talend for handling this column elements; This
+     * <!-- end-user-doc --> <!-- begin-model-doc --> java type used by Talaxie for handling this column elements; This
      * seems to be synched with the sourceType. This must be the case for schema used for Table creation. <!--
      * end-model-doc -->
      * 
-     * @return the value of the '<em>Talend Type</em>' attribute.
+     * @return the value of the '<em>Talaxie Type</em>' attribute.
      * @see #setTalendType(String)
      * @see org.talend.core.model.metadata.builder.connection.ConnectionPackage#getMetadataColumn_TalendType()
      * @model
@@ -122,9 +122,9 @@ public interface MetadataColumn extends AbstractMetadataObject, Field {
     String getTalendType();
 
     /**
-     * Sets the value of the '{@link org.talend.core.model.metadata.builder.connection.MetadataColumn#getTalendType <em>Talend Type</em>}' attribute.
+     * Sets the value of the '{@link org.talend.core.model.metadata.builder.connection.MetadataColumn#getTalendType <em>Talaxie Type</em>}' attribute.
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @param value the new value of the '<em>Talend Type</em>' attribute.
+     * @param value the new value of the '<em>Talaxie Type</em>' attribute.
      * @see #getTalendType()
      * @generated
      */

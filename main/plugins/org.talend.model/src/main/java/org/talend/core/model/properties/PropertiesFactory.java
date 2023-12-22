@@ -411,33 +411,33 @@ public interface PropertiesFactory extends EFactory {
     ExecutionTaskJobPrm createExecutionTaskJobPrm();
 
     /**
-     * Returns a new object of class '<em>Talend Trigger</em>'.
+     * Returns a new object of class '<em>Talaxie Trigger</em>'.
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @return a new object of class '<em>Talend Trigger</em>'.
+     * @return a new object of class '<em>Talaxie Trigger</em>'.
      * @generated
      */
     TalendTrigger createTalendTrigger();
 
     /**
-     * Returns a new object of class '<em>Cron Talend Trigger</em>'.
+     * Returns a new object of class '<em>Cron Talaxie Trigger</em>'.
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @return a new object of class '<em>Cron Talend Trigger</em>'.
+     * @return a new object of class '<em>Cron Talaxie Trigger</em>'.
      * @generated
      */
     CronTalendTrigger createCronTalendTrigger();
 
     /**
-     * Returns a new object of class '<em>Cron UI Talend Trigger</em>'.
+     * Returns a new object of class '<em>Cron UI Talaxie Trigger</em>'.
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @return a new object of class '<em>Cron UI Talend Trigger</em>'.
+     * @return a new object of class '<em>Cron UI Talaxie Trigger</em>'.
      * @generated
      */
     CronUITalendTrigger createCronUITalendTrigger();
 
     /**
-     * Returns a new object of class '<em>Simple Talend Trigger</em>'.
+     * Returns a new object of class '<em>Simple Talaxie Trigger</em>'.
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @return a new object of class '<em>Simple Talend Trigger</em>'.
+     * @return a new object of class '<em>Simple Talaxie Trigger</em>'.
      * @generated
      */
     SimpleTalendTrigger createSimpleTalendTrigger();

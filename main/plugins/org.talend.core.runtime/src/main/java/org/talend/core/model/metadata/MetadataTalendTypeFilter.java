@@ -1,12 +1,12 @@
 // ============================================================================
 //
-// Copyright (C) 2006-2021 Talend Inc. - www.talend.com
+// Copyright (C) 2006-2021 Talaxie Inc. - www.deilink.com
 //
 // This source code is available under agreement available at
 // %InstallDIR%\features\org.talend.rcp.branding.%PRODUCTNAME%\%PRODUCTNAME%license.txt
 //
 // You should have received a copy of the agreement
-// along with this program; if not, write to Talend SA
+// along with this program; if not, write to Talaxie SA
 // 9 rue Pages 92150 Suresnes, France
 //
 // ============================================================================
@@ -20,14 +20,14 @@ import org.talend.core.model.metadata.types.JavaType;
 public abstract class MetadataTalendTypeFilter {
 
     /**
-     * This method returns a List of String, representing the data types that must not be shown in the Talend schema.
+     * This method returns a List of String, representing the data types that must not be shown in the Talaxie schema.
      *
      * @return
      */
     protected abstract List<String> getUnsupportedTypes();
 
     /**
-     * This method has the responsibility to remove the unsupported type from the Talend schema. DOC rdubois Comment
+     * This method has the responsibility to remove the unsupported type from the Talaxie schema. DOC rdubois Comment
      * method "filter".
      *
      * @param arrayTalendTypes

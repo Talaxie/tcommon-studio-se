@@ -1,5 +1,5 @@
 -- This pattern generated a merge statement for Vertica database or equivalent of a merge in other dbs
---(c) 2015 Talend Inc.
+--(c) 2015 Talaxie Inc.
 <% 
 	EXTRACT(__MERGE_ON__);
 	EXTRACT(__UPDATE_MAPPING__);

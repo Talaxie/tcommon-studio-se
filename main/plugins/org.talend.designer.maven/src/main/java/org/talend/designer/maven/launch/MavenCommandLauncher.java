@@ -1,12 +1,12 @@
 // ============================================================================
 //
-// Copyright (C) 2006-2021 Talend Inc. - www.talend.com
+// Copyright (C) 2006-2021 Talaxie Inc. - www.deilink.com
 //
 // This source code is available under agreement available at
 // %InstallDIR%\features\org.talend.rcp.branding.%PRODUCTNAME%\%PRODUCTNAME%license.txt
 //
 // You should have received a copy of the agreement
-// along with this program; if not, write to Talend SA
+// along with this program; if not, write to Talaxie SA
 // 9 rue Pages 92150 Suresnes, France
 //
 // ============================================================================
@@ -194,7 +194,7 @@ public abstract class MavenCommandLauncher {
             // workingCopy.setAttribute(IJavaLaunchConfigurationConstants.ATTR_PROJECT_NAME,
             // basedir.getProject().getName());
 
-            // --------------Special settings for Talend----------
+            // --------------Special settings for Talaxie----------
             boolean captureLogs = isCaptureOutputInConsoleView() || TalendMavenConstants.GOAL_INSTALL.equals(goal);
             if (captureLogs) {
                 // by default will catch the output in console. so set null
@@ -369,9 +369,9 @@ public abstract class MavenCommandLauncher {
 
             if (!isCaptureOutputInConsoleView()) {
                 // specially for commandline. if studio, when debug model, will log it in console view, so no need this.
-                TalendDebugHandler.debug("\n------------------ Talend Maven Launcher log START -----------------------\n");
+                TalendDebugHandler.debug("\n------------------ Talaxie Maven Launcher log START -----------------------\n");
                 TalendDebugHandler.debug(log);
-                TalendDebugHandler.debug("\n------------------ Talend Maven Launcher log END -----------------------\n");
+                TalendDebugHandler.debug("\n------------------ Talaxie Maven Launcher log END -----------------------\n");
             }
             for (String line : log.split("\n")) { //$NON-NLS-1$
                 if (line.startsWith("[ERROR]")) { //$NON-NLS-1$

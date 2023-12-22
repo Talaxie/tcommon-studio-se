@@ -1,8 +1,8 @@
 /*
  * #%L
- * Talend :: ESB :: Job :: API
+ * Talaxie :: ESB :: Job :: API
  * %%
- * Copyright (C) 2011 Talend Inc.
+ * Copyright (C) 2011 Talaxie Inc.
  * %%
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,7 +20,7 @@
 package routines.system.api;
 
 /**
- * A special interface for Talend ESB Route dedicated to allow
+ * A special interface for Talaxie ESB Route dedicated to allow
  * runtime to stop and shutdown running route
  * 
  * @see org.apache.camel.ShutdownableService

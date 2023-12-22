@@ -6,7 +6,7 @@
          <meta.schema plugin="org.talend.core.repository" id="login.task" name="Login Task"/>
       </appinfo>
       <documentation>
-         This extension point defines the tasks that will be executed during project login in the Talend Studio.
+         This extension point defines the tasks that will be executed during project login in the Talaxie Studio.
 The class used is a &lt;b&gt;IRunnableWithProgress&lt;/b&gt; and they will be instanciated and executed at the end of the login phase after some compulsory initilisation.&lt;p&gt;
 This is mainly used for initialisation and should report any progress and response to the cancel event regularly.
       </documentation>

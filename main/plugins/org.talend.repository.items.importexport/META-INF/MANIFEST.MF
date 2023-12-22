@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Import&Export Items
 Bundle-SymbolicName: org.talend.repository.items.importexport;singleton:=true
 Bundle-Version: 8.8.8.qualifier
-Bundle-Vendor: .Talend SA.
+Bundle-Vendor: .Talaxie SA.
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.core.resources,
  org.apache.commons.lang,

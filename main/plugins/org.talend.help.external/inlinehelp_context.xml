@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><contexts>
 <context id="access_amc">
-<description>You are allowed to access Talend Activity Monitoring Console from your Talend Studio and from the Talend Administration Center Web application.</description>
+<description>You are allowed to access Talaxie Activity Monitoring Console from your Talaxie Studio and from the Talaxie Administration Center Web application.</description>
 <topic href="https://help.talendforge.org/?keywords=access_amc" label="Accessing the monitoring console"/>
 </context>
 <context id="action_types">
@@ -8,23 +8,23 @@
 <topic href="https://help.talendforge.org/?keywords=action_types" label="Functional types"/>
 </context>
 <context id="cloud_demo">
-<description>Talend provides you with a sample project which includes the following out-of-the-box items you can import in the Studio: Integration Actions, context parameters and a subjob which creates log messages and collects logs and exceptions in Integration Actions.</description>
+<description>Talaxie provides you with a sample project which includes the following out-of-the-box items you can import in the Studio: Integration Actions, context parameters and a subjob which creates log messages and collects logs and exceptions in Integration Actions.</description>
 <topic href="https://help.talendforge.org/?keywords=cloud_demo" label="Importing the sample project"/>
 </context>
 <context id="build_action">
-<description>You learn how to split the royalties Job into Integration Actions, which are functional Jobs packaged for the Talend Integration Cloud web application. Integration Actions are Jobs which include tAction components. You publish these Integration Actions to the Cloud to allow web users to build Flows using one, some or all of your published Actions.</description>
+<description>You learn how to split the royalties Job into Integration Actions, which are functional Jobs packaged for the Talaxie Integration Cloud web application. Integration Actions are Jobs which include tAction components. You publish these Integration Actions to the Cloud to allow web users to build Flows using one, some or all of your published Actions.</description>
 <topic href="https://help.talendforge.org/?keywords=build_action" label="Building Integration Actions from the royalties Job"/>
 </context>
 <context id="tic_definition">
-<description>Talend Integration Cloud consists of:The Talend Integration Cloud web application which enables data and file transfer, data integration and access to shared data sources for web users.Talend Studio which is plugged into the Talend Integration Cloud web application for developers to publish Jobs and Integration Actions to the Cloud.</description>
+<description>Talaxie Integration Cloud consists of:The Talaxie Integration Cloud web application which enables data and file transfer, data integration and access to shared data sources for web users.Talaxie Studio which is plugged into the Talaxie Integration Cloud web application for developers to publish Jobs and Integration Actions to the Cloud.</description>
 <topic href="https://help.talendforge.org/?keywords=tic_definition" label="Interaction between the and the web application"/>
 </context>
 <context id="jobs_in_cloud">
-<description>You can use any integration Job created in the Studio in the Talend Integration Cloud web application to automate data transformation and data exchange in the Cloud.</description>
-<topic href="https://help.talendforge.org/?keywords=jobs_in_cloud" label="Using Talend Jobs in the Cloud"/>
+<description>You can use any integration Job created in the Studio in the Talaxie Integration Cloud web application to automate data transformation and data exchange in the Cloud.</description>
+<topic href="https://help.talendforge.org/?keywords=jobs_in_cloud" label="Using Talaxie Jobs in the Cloud"/>
 </context>
 <context id="connect_studio">
-<description>To allow web users in your organization to work with the Actions you design in Talend Studio, you must publish the Job or Actions you create to the Talend Integration Cloud web application.</description>
+<description>To allow web users in your organization to work with the Actions you design in Talaxie Studio, you must publish the Job or Actions you create to the Talaxie Integration Cloud web application.</description>
 <topic href="https://help.talendforge.org/?keywords=connect_studio" label="Connecting the Studio to the Cloud"/>
 </context>
 <context id="cloud_execute_flows">
@@ -36,11 +36,11 @@
 <topic href="https://help.talendforge.org/?keywords=cloud_test_flows" label="Testing the royalties Flow"/>
 </context>
 <context id="cloud_sample_flows">
-<description>In Talend Integration Cloud, you can import preconfigured Sample Flows with corresponding Integration Actions from the Home page. Sample Flows are available to help you get started with the Talend Integration Cloud web application and see what types of operations you can perform. For more information on the available Samples, see the Talend Integration Cloud Cookbooks.</description>
+<description>In Talaxie Integration Cloud, you can import preconfigured Sample Flows with corresponding Integration Actions from the Home page. Sample Flows are available to help you get started with the Talaxie Integration Cloud web application and see what types of operations you can perform. For more information on the available Samples, see the Talaxie Integration Cloud Cookbooks.</description>
 <topic href="https://help.talendforge.org/?keywords=cloud_sample_flows" label="Using Sample Flows"/>
 </context>
 <context id="cloud_definition">
-<description>Talend Integration Cloud is an integration solution delivered as a cloud service which enables data and file transfer, data integration and access to shared data sources. It consists of Talend Studio and the Talend Integration Cloud web application.</description>
+<description>Talaxie Integration Cloud is an integration solution delivered as a cloud service which enables data and file transfer, data integration and access to shared data sources. It consists of Talaxie Studio and the Talaxie Integration Cloud web application.</description>
 <topic href="https://help.talendforge.org/?keywords=cloud_definition" label="Overview"/>
 </context>
 <context id="action_context_param">
@@ -48,15 +48,15 @@
 <topic href="https://help.talendforge.org/?keywords=action_context_param" label="What are context parameters"/>
 </context>
 <context id="test_job">
-<description>You can create Jobs to test Integration Actions during development to make sure they function as expected before you published them to Talend Integration Cloud web application or to the Talend Exchange.</description>
+<description>You can create Jobs to test Integration Actions during development to make sure they function as expected before you published them to Talaxie Integration Cloud web application or to the Talaxie Exchange.</description>
 <topic href="https://help.talendforge.org/?keywords=test_job" label="Defining test Jobs"/>
 </context>
 <context id="cloud_custom_resource">
-<description>In the Studio, you can design your Integration Action to allow the users of the Talend Integration Cloud web application to add external files and directories necessary to the execution of the Action or Flow.</description>
+<description>In the Studio, you can design your Integration Action to allow the users of the Talaxie Integration Cloud web application to add external files and directories necessary to the execution of the Action or Flow.</description>
 <topic href="https://help.talendforge.org/?keywords=cloud_custom_resource" label="How to define parameters for external resources"/>
 </context>
 <context id="cloud_temp_folder">
-<description>You can design your Integration Action in the Studio to allow the use of a temporary folder during Flow execution in Talend Integration Cloud web application. The temporary folder is available to all Integration Actions used in a Flow in the web application.</description>
+<description>You can design your Integration Action in the Studio to allow the use of a temporary folder during Flow execution in Talaxie Integration Cloud web application. The temporary folder is available to all Integration Actions used in a Flow in the web application.</description>
 <topic href="https://help.talendforge.org/?keywords=cloud_temp_folder" label="How to define a temporary folder parameter"/>
 </context>
 <context id="cloud_webhook">
@@ -76,11 +76,11 @@
 <topic href="https://help.talendforge.org/?keywords=cloud_activity" label="How do I track the activity of my Flows?"/>
 </context>
 <context id="cloud_bd_actions">
-<description>Talend Integration Cloud offers you the possibility to perform advanced Big Data operations that allows you to access, load, read large and complex data sets using advanced databases and technologies such as HDFS, HBase, Hive or MongoDB.</description>
+<description>Talaxie Integration Cloud offers you the possibility to perform advanced Big Data operations that allows you to access, load, read large and complex data sets using advanced databases and technologies such as HDFS, HBase, Hive or MongoDB.</description>
 <topic href="https://help.talendforge.org/?keywords=cloud_bd_actions" label="Big Data use cases"/>
 </context>
 <context id="cloud_connection">
-<description>To be able to use a connection to an application such as Box, Dropbox, Google Drive, etc. in your Flows, you need to create the connection either from the Flow Builder or the Manage pages of the Talend Integration Cloud web application and/or from the Studio. For more information on how to create a connection from the Studio, see the Talend Studio Developer Guide.</description>
+<description>To be able to use a connection to an application such as Box, Dropbox, Google Drive, etc. in your Flows, you need to create the connection either from the Flow Builder or the Manage pages of the Talaxie Integration Cloud web application and/or from the Studio. For more information on how to create a connection from the Studio, see the Talaxie Studio Developer Guide.</description>
 <topic href="https://help.talendforge.org/?keywords=cloud_connection" label="How do I create and/or edit a connection?"/>
 </context>
 <context id="flow_template">
@@ -88,31 +88,31 @@
 <topic href="https://help.talendforge.org/?keywords=flow_template" label="How do I create a Flow template?"/>
 </context>
 <context id="cloud_database_actions">
-<description>Talend Integration Cloud offers you the possibility to perform advanced operations that allows you to manage (create, update, delete, search, etc.) data schemas on several databases such as Amazon MySQL, MongoDB, Redshift or other database systems.</description>
+<description>Talaxie Integration Cloud offers you the possibility to perform advanced operations that allows you to manage (create, update, delete, search, etc.) data schemas on several databases such as Amazon MySQL, MongoDB, Redshift or other database systems.</description>
 <topic href="https://help.talendforge.org/?keywords=cloud_database_actions" label="Database use cases"/>
 </context>
 <context id="cloud_dq_actions">
-<description>Talend Integration Cloud offers you the possibility to perform advanced Data Quality operations that allows you to profile, cleanse and transform your data according to your needs.</description>
+<description>Talaxie Integration Cloud offers you the possibility to perform advanced Data Quality operations that allows you to profile, cleanse and transform your data according to your needs.</description>
 <topic href="https://help.talendforge.org/?keywords=cloud_dq_actions" label="Data Quality use cases"/>
 </context>
 <context id="dynamic_schema">
-<description>Some Actions in Talend Integration Cloud offer you the possibility to set user-defined schema, that is to say to edit the schema along the Flow. In these Actions, options are provided in the Talend Integration Cloud interface that allow you to add and map input and output columns according to your needs.</description>
+<description>Some Actions in Talaxie Integration Cloud offer you the possibility to set user-defined schema, that is to say to edit the schema along the Flow. In these Actions, options are provided in the Talaxie Integration Cloud interface that allow you to add and map input and output columns according to your needs.</description>
 <topic href="https://help.talendforge.org/?keywords=dynamic_schema" label="How do I create user-defined schema in my Actions?"/>
 </context>
 <context id="cloud_execution_plan">
-<description>From the Operations page of the Talend Integration Cloud web application, you have the possibility to create Execution plans that allow you to outline the dependencies among different Flows. From this page, you can define a Flow execution plan and then add different Flows to this plan in a specific order.</description>
+<description>From the Operations page of the Talaxie Integration Cloud web application, you have the possibility to create Execution plans that allow you to outline the dependencies among different Flows. From this page, you can define a Flow execution plan and then add different Flows to this plan in a specific order.</description>
 <topic href="https://help.talendforge.org/?keywords=cloud_execution_plan" label="How do I plan the executions of my Flows?"/>
 </context>
 <context id="cloud_execution">
-<description>To be able to test or execute your Flow, you need to select the runtime in which it will be executed from the Flow Builder page of the Talend Integration Cloud web application.</description>
+<description>To be able to test or execute your Flow, you need to select the runtime in which it will be executed from the Flow Builder page of the Talaxie Integration Cloud web application.</description>
 <topic href="https://help.talendforge.org/?keywords=cloud_execution" label="How do I choose my execution runtime?"/>
 </context>
 <context id="cloud_execution_plan_failure">
-<description>From the Operations page of the Talend Integration Cloud web application, you can create Execution plans that are dedicated to the way you want to handle failed executions. This type of Execution Plan is to be nested within another Execution Plan as a failure handler.</description>
+<description>From the Operations page of the Talaxie Integration Cloud web application, you can create Execution plans that are dedicated to the way you want to handle failed executions. This type of Execution Plan is to be nested within another Execution Plan as a failure handler.</description>
 <topic href="https://help.talendforge.org/?keywords=cloud_execution_plan_failure" label="How do I handle the errors in my Execution Plans?"/>
 </context>
 <context id="cloud_file_actions">
-<description>Talend Integration Cloud offers you the possibility to perform advanced operations that allows you to upload, download, list and manage files located on several types of file systems such as FTP, HDFS or cloud applications.</description>
+<description>Talaxie Integration Cloud offers you the possibility to perform advanced operations that allows you to upload, download, list and manage files located on several types of file systems such as FTP, HDFS or cloud applications.</description>
 <topic href="https://help.talendforge.org/?keywords=cloud_file_actions" label="File-oriented use cases"/>
 </context>
 <context id="cloud_logs">
@@ -120,23 +120,23 @@
 <topic href="https://help.talendforge.org/?keywords=cloud_logs" label="How do I display the log events of my Flows?"/>
 </context>
 <context id="cloud_mapping">
-<description>Talend Integration Cloud offers an advanced mapping module, the Mapper, that allows you to map the input and output schemas of your Actions and to use advanced functions to process data at the same time.</description>
+<description>Talaxie Integration Cloud offers an advanced mapping module, the Mapper, that allows you to map the input and output schemas of your Actions and to use advanced functions to process data at the same time.</description>
 <topic href="https://help.talendforge.org/?keywords=cloud_mapping" label="How do I map and process the schemas of my Flow?"/>
 </context>
 <context id="remote_engine_pairing">
-<description>To be able to run Flows on a Remote Engine, an Admin user must have previously added it and paired it with Talend Integration Cloud using a pre-authorized key.</description>
+<description>To be able to run Flows on a Remote Engine, an Admin user must have previously added it and paired it with Talaxie Integration Cloud using a pre-authorized key.</description>
 <topic href="https://help.talendforge.org/?keywords=remote_engine_pairing" label="How do I add my Remote Engine (Admin users only)?"/>
 </context>
 <context id="remote_engine">
-<description>The Remote Engine allows you to access data in on-premises applications and databases, and ensures secure outbound communications between the cloud and the Remote Engine as data is not staged in Talend Integration Cloud.</description>
+<description>The Remote Engine allows you to access data in on-premises applications and databases, and ensures secure outbound communications between the cloud and the Remote Engine as data is not staged in Talaxie Integration Cloud.</description>
 <topic href="https://help.talendforge.org/?keywords=remote_engine" label="Why using a Remote Engine?"/>
 </context>
 <context id="cloud_tdm_actions">
-<description>Talend Integration Cloud offers you the possibility to perform advanced mapping and transformations using Actions with a tHMap component and related Talend Data Mapper map definitions. These advanced tools help you simplify the integration of complex data by mapping across any data formats including transformations between Java and complex XML data, JSON, flat files or EDI applications.</description>
+<description>Talaxie Integration Cloud offers you the possibility to perform advanced mapping and transformations using Actions with a tHMap component and related Talaxie Data Mapper map definitions. These advanced tools help you simplify the integration of complex data by mapping across any data formats including transformations between Java and complex XML data, JSON, flat files or EDI applications.</description>
 <topic href="https://help.talendforge.org/?keywords=cloud_tdm_actions" label="Complex transformation use cases"/>
 </context>
 <context id="cloud_upgrade">
-<description>If you migrate to a newer version of Talend Integration Cloud, you might need to upgrade the Actions of your Flow to be able to test or execute it again. To do so, you need to replace the outdated Action with a new one that has been published from the current Talend Studio or that you can directly retrieve from Talend Exchange on the Flow Builder page.</description>
+<description>If you migrate to a newer version of Talaxie Integration Cloud, you might need to upgrade the Actions of your Flow to be able to test or execute it again. To do so, you need to replace the outdated Action with a new one that has been published from the current Talaxie Studio or that you can directly retrieve from Talaxie Exchange on the Flow Builder page.</description>
 <topic href="https://help.talendforge.org/?keywords=cloud_upgrade" label="How do I upgrade the Actions of my Flows?"/>
 </context>
 <context id="remote_engine_cluster">
@@ -144,19 +144,19 @@
 <topic href="https://help.talendforge.org/?keywords=remote_engine_cluster" label="What is a Remote Engine Cluster?"/>
 </context>
 <context id="splitting_task">
-<description>Talend Data Stewardship Console enables you to create one or multiple separate new tasks after choosing the source record(s) you want to include in the new task(s).</description>
+<description>Talaxie Data Stewardship Console enables you to create one or multiple separate new tasks after choosing the source record(s) you want to include in the new task(s).</description>
 <topic href="https://help.talendforge.org/?keywords=splitting_task" label="Creating one or more new tasks from source records"/>
 </context>
 <context id="webui_dsc_login">
-<description>If you have chosen to install Talend Data Stewardship Console when installing the MDM server, the data stewardship console will be integrated in Talend MDM Web User Interface. This allows you to access the console through the Data Stewardship menu in the Govern area of the Menu panel.</description>
+<description>If you have chosen to install Talaxie Data Stewardship Console when installing the MDM server, the data stewardship console will be integrated in Talaxie MDM Web User Interface. This allows you to access the console through the Data Stewardship menu in the Govern area of the Menu panel.</description>
 <topic href="https://help.talendforge.org/?keywords=webui_dsc_login" label="Logging in to the stewardship console embedded in"/>
 </context>
 <context id="bd_demoproject">
-<description>Talend provides a Big Data demo project that includes a number of easy-to-use sample Jobs. You can import this demo project into your Talend studio to help familiarize yourself with Talend studio and understand the various features and functions of Talend components.</description>
+<description>Talaxie provides a Big Data demo project that includes a number of easy-to-use sample Jobs. You can import this demo project into your Talaxie studio to help familiarize yourself with Talaxie studio and understand the various features and functions of Talaxie components.</description>
 <topic href="https://help.talendforge.org/?keywords=bd_demoproject" label="Introduction to the Big Data demo project"/>
 </context>
 <context id="talend_storm_job">
-<description>A Storm Job is designed the same way as any other Talend Job but using the dedicated Storm interface and Storm components. Likewise, you need to follow a simple template to use the components.</description>
+<description>A Storm Job is designed the same way as any other Talaxie Job but using the dedicated Storm interface and Storm components. Likewise, you need to follow a simple template to use the components.</description>
 <topic href="https://help.talendforge.org/?keywords=talend_storm_job" label="Getting started with a Storm Job"/>
 </context>
 <context id="installing_mdm_server">
@@ -164,7 +164,7 @@
 <topic href="https://help.talendforge.org/?keywords=installing_mdm_server" label="Installing the MDM serverTalend Data Stewardship Console manually"/>
 </context>
 <context id="authentication_using_tac_or_ldap">
-<description>By default, you create and manage users in MDM from within the Talend MDM Web User Interface. However, it is also possible to configure MDM to authenticate MDM users via Talend Administration Center or to integrate an existing directory of users using the LDAP protocol, which avoids the need to create a new set of users from scratch and minimises maintenance tasks relating to user management by centralizing them in a single place.</description>
+<description>By default, you create and manage users in MDM from within the Talaxie MDM Web User Interface. However, it is also possible to configure MDM to authenticate MDM users via Talaxie Administration Center or to integrate an existing directory of users using the LDAP protocol, which avoids the need to create a new set of users from scratch and minimises maintenance tasks relating to user management by centralizing them in a single place.</description>
 <topic href="https://help.talendforge.org/?keywords=authentication_using_tac_or_ldap" label="Enabling authentication using or LDAP"/>
 </context>
 <context id="migrating_mdm_projects">
@@ -172,27 +172,27 @@
 <topic href="https://help.talendforge.org/?keywords=migrating_mdm_projects" label="Migrating MDM instances"/>
 </context>
 <context id="accessing_models_containers">
-<description>Talend MDM Web User Interface allows you to access the specified data container and data model, so that you can query, extract and edit master data.</description>
+<description>Talaxie MDM Web User Interface allows you to access the specified data container and data model, so that you can query, extract and edit master data.</description>
 <topic href="https://help.talendforge.org/?keywords=accessing_models_containers" label="Accessing data containers and data models"/>
 </context>
 <context id="browse_single_entity_simple_view">
-<description>In Talend MDM Web User Interface, the Master Data Browser and Staging Data Browser menus allow you to search and browse master data records and staging data records pertaining to a specific entity in the data container selected. You can also save and reuse your search criteria.</description>
+<description>In Talaxie MDM Web User Interface, the Master Data Browser and Staging Data Browser menus allow you to search and browse master data records and staging data records pertaining to a specific entity in the data container selected. You can also save and reuse your search criteria.</description>
 <topic href="https://help.talendforge.org/?keywords=browse_single_entity_simple_view" label="Browsing a single entity in a data container"/>
 </context>
 <context id="managing_records">
-<description>In Talend MDM Web User Interface, the Master Data Browser menu and the Staging Data Browser menu allow you to manage the master data records and staging data records pertaining to a specific entity in the selected data container.</description>
+<description>In Talaxie MDM Web User Interface, the Master Data Browser menu and the Staging Data Browser menu allow you to manage the master data records and staging data records pertaining to a specific entity in the selected data container.</description>
 <topic href="https://help.talendforge.org/?keywords=managing_records" label="Managing records in an entity"/>
 </context>
 <context id="view_log_file_all_records">
-<description>In Talend MDM Web User Interface, the [Journal] page provides a list of log files with descriptions of every event associated with each data record in the MDM hub. This page is useful if you want to search for changes based on the data model, source, operation type or operation time, rather than by a specific data record, for example.</description>
+<description>In Talaxie MDM Web User Interface, the [Journal] page provides a list of log files with descriptions of every event associated with each data record in the MDM hub. This page is useful if you want to search for changes based on the data model, source, operation type or operation time, rather than by a specific data record, for example.</description>
 <topic href="https://help.talendforge.org/?keywords=view_log_file_all_records" label="Viewing log files for all data records"/>
 </context>
 <context id="staging_area">
-<description>Talend MDM implementations where master data records are stored in a SQL database include a Staging Area in which data is stored pending validation. This Staging Area is a mirror of the SQL storage area containing the master data records, but with fewer constraints in its schema.</description>
+<description>Talaxie MDM implementations where master data records are stored in a SQL database include a Staging Area in which data is stored pending validation. This Staging Area is a mirror of the SQL storage area containing the master data records, but with fewer constraints in its schema.</description>
 <topic href="https://help.talendforge.org/?keywords=staging_area" label="Working with records in the Staging Area"/>
 </context>
 <context id="scm">
-<description>In the Talend products, project sources management is mainly handled by Subversion (SVN) and or GIT, which are complex version control systems that enable users to have different copies of the same project in different branches and tags.</description>
+<description>In the Talaxie products, project sources management is mainly handled by Subversion (SVN) and or GIT, which are complex version control systems that enable users to have different copies of the same project in different branches and tags.</description>
 <topic href="https://help.talendforge.org/?keywords=scm" label="Versioning, branching and tagging"/>
 </context>
 <context id="hadoop_compressed_data">
@@ -208,15 +208,15 @@
 <topic href="https://help.talendforge.org/?keywords=nosql_metadata" label="Managing NoSQL metadata"/>
 </context>
 <context id="talend_mapreduce_job">
-<description>Using components created or adjusted for MapReduce, a Talend MapReduce Job generates native MapReduce code and is able to perform data transformation directly on a Hadoop cluster.</description>
+<description>Using components created or adjusted for MapReduce, a Talaxie MapReduce Job generates native MapReduce code and is able to perform data transformation directly on a Hadoop cluster.</description>
 <topic href="https://help.talendforge.org/?keywords=talend_mapreduce_job" label="How a MapReduce Job works"/>
 </context>
 <context id="talend_oozie">
-<description>Talend Oozie allows you to schedule executions of Jobs you have designed with the Studio.</description>
+<description>Talaxie Oozie allows you to schedule executions of Jobs you have designed with the Studio.</description>
 <topic href="https://help.talendforge.org/?keywords=talend_oozie" label="How to set HDFS connection details"/>
 </context>
 <context id="talend_spark_job">
-<description>Using the Spark-specific components, a Talend Spark Job makes use of the Spark framework to process RDDs (Resilient Distributed Datasets) on top of a given Spark cluster.</description>
+<description>Using the Spark-specific components, a Talaxie Spark Job makes use of the Spark framework to process RDDs (Resilient Distributed Datasets) on top of a given Spark cluster.</description>
 <topic href="https://help.talendforge.org/?keywords=talend_spark_job" label="How a Spark Job works"/>
 </context>
 <context id="oracle_xstream">
@@ -232,7 +232,7 @@
 <topic href="https://help.talendforge.org/?keywords=as400_redo_archive" label="How to set up CDC in Redo/Archive log mode (journal) for AS/400"/>
 </context>
 <context id="job_connections">
-<description>In Talend ESB Studio, a Job or a subjob is composed of a group of components logically linked to one another via connections. You need to use the connections to define how the components in use are coordinated. This section will describe the types of connections and their related settings.</description>
+<description>In Talaxie ESB Studio, a Job or a subjob is composed of a group of components logically linked to one another via connections. You need to use the connections to define how the components in use are coordinated. This section will describe the types of connections and their related settings.</description>
 <topic href="https://help.talendforge.org/?keywords=job_connections" label="Using connections"/>
 </context>
 <context id="parallelization_tab">
@@ -256,11 +256,11 @@
 <topic href="https://help.talendforge.org/?keywords=flow_parallelization" label="How to write data in parallel"/>
 </context>
 <context id="data_flow_parallelization">
-<description>In Talend Studio, parallelization of data flows means to partition an input data flow of a Subjob into parallel processes and to simultaneously execute them, so as to gain better performance. These processes are executed always in a same machine.</description>
+<description>In Talaxie Studio, parallelization of data flows means to partition an input data flow of a Subjob into parallel processes and to simultaneously execute them, so as to gain better performance. These processes are executed always in a same machine.</description>
 <topic href="https://help.talendforge.org/?keywords=data_flow_parallelization" label="How to enable parallelization of data flows"/>
 </context>
 <context id="esb_runtime">
-<description>In the Integration perspective of Talend Studio, you can configure the Runtime settings of a Service, which will be applied when the service is deployed in the Runtime container.</description>
+<description>In the Integration perspective of Talaxie Studio, you can configure the Runtime settings of a Service, which will be applied when the service is deployed in the Runtime container.</description>
 <topic href="https://help.talendforge.org/?keywords=esb_runtime" label="How to set the Runtime options"/>
 </context>
 <context id="match_analysis">
@@ -288,11 +288,11 @@
 <topic href="https://help.talendforge.org/?keywords=connection_context_variables" label="Using context variables to connect to data sources"/>
 </context>
 <context id="data_container">
-<description>Talend Studio allows you to persist master data in one or several containers within a single MDM Hub. Data containers are then "partitioned" to help you organize the master data, typically by domains.</description>
+<description>Talaxie Studio allows you to persist master data in one or several containers within a single MDM Hub. Data containers are then "partitioned" to help you organize the master data, typically by domains.</description>
 <topic href="https://help.talendforge.org/?keywords=data_container" label="Data Containers"/>
 </context>
 <context id="data_model">
-<description>Data models are the central component of Talend MDM. They only define the master entities you want to manage while master data records themselves are stored in data containers.</description>
+<description>Data models are the central component of Talaxie MDM. They only define the master entities you want to manage while master data records themselves are stored in data containers.</description>
 <topic href="https://help.talendforge.org/?keywords=data_model" label="Data Models"/>
 </context>
 <context id="mdm_match_rule">
@@ -312,23 +312,23 @@
 <topic href="https://help.talendforge.org/?keywords=cluster" label="Clustering: Concepts and Principles"/>
 </context>
 <context id="esb_execution_task">
-<description>In the ESB Conductor page of Talend Administration Center, an execution task gathers the deployment and execution phases of Services, Routes, data service Jobs and other generic OSGi features. You can launch this task, from this single web-based application.</description>
+<description>In the ESB Conductor page of Talaxie Administration Center, an execution task gathers the deployment and execution phases of Services, Routes, data service Jobs and other generic OSGi features. You can launch this task, from this single web-based application.</description>
 <topic href="https://help.talendforge.org/?keywords=esb_execution_task" label="Working with ESB execution tasks"/>
 </context>
 <context id="esb_execution_profile">
-<description>In the ESB Conductor page of Talend Administration Center, a profile gathers resources and/or configurations that you can apply throughout all your Talend Runtimes.</description>
+<description>In the ESB Conductor page of Talaxie Administration Center, a profile gathers resources and/or configurations that you can apply throughout all your Talaxie Runtimes.</description>
 <topic href="https://help.talendforge.org/?keywords=esb_execution_profile" label="Applying a profile from the ESB Conductor"/>
 </context>
 <context id="amazon_servers">
-<description>Talend Administration Center allows you to add servers hosted on an Amazon EC2 instance, to schedule Job executions on this instance and to manage the instance start-up and shutdown.</description>
+<description>Talaxie Administration Center allows you to add servers hosted on an Amazon EC2 instance, to schedule Job executions on this instance and to manage the instance start-up and shutdown.</description>
 <topic href="https://help.talendforge.org/?keywords=amazon_servers" label="Executing data integration Jobs on a server based on Amazon EC2"/>
 </context>
 <context id="storm_execution_task">
-<description>In the Big Data Streaming page of Talend Administration Center, an execution task gathers the script generation, deployment and execution phases of Big Data Streaming Jobs, that is to say, the Spark Streaming Jobs and the Storm Jobs. You can launch this task, from this single web-based application.</description>
+<description>In the Big Data Streaming page of Talaxie Administration Center, an execution task gathers the script generation, deployment and execution phases of Big Data Streaming Jobs, that is to say, the Spark Streaming Jobs and the Storm Jobs. You can launch this task, from this single web-based application.</description>
 <topic href="https://help.talendforge.org/?keywords=storm_execution_task" label="Executing Big Data Streaming Jobs from Big Data Streaming Conductor"/>
 </context>
 <context id="di_execution_task">
-<description>In the Job Conductor page of Talend Administration Center, an execution task gathers the script generation, deployment and execution phases of data integration Jobs. You can launch this task, from this single web-based application, using a simple or a CRON trigger.</description>
+<description>In the Job Conductor page of Talaxie Administration Center, an execution task gathers the script generation, deployment and execution phases of data integration Jobs. You can launch this task, from this single web-based application, using a simple or a CRON trigger.</description>
 <topic href="https://help.talendforge.org/?keywords=di_execution_task" label="Executing data integration Jobs from Job Conductor"/>
 </context>
 <context id="timeline">
@@ -336,19 +336,19 @@
 <topic href="https://help.talendforge.org/?keywords=timeline" label="Accessing the Timeline and examining illustrated data"/>
 </context>
 <context id="logging">
-<description>From Talend Administration Center, you can access an extended event logging module. This Logging page allows you to collect and classify time-stamped logs related to Data Integration, ESB or MDM events and make them easy to explore.</description>
+<description>From Talaxie Administration Center, you can access an extended event logging module. This Logging page allows you to collect and classify time-stamped logs related to Data Integration, ESB or MDM events and make them easy to explore.</description>
 <topic href="https://help.talendforge.org/?keywords=logging" label="Displaying log events"/>
 </context>
 <context id="backup">
-<description>On the Backup page, you can schedule the backup of your databases (administration center database, Audit database, Talend Activity Monitoring Console database, etc.) and SVN repositories.</description>
+<description>On the Backup page, you can schedule the backup of your databases (administration center database, Audit database, Talaxie Activity Monitoring Console database, etc.) and SVN repositories.</description>
 <topic href="https://help.talendforge.org/?keywords=backup" label="Scheduling a backup"/>
 </context>
 <context id="user_groups">
-<description>From the User Groups page of Talend Administration Center, you can organize existing users in groups based on their type (Data Integration/ESB, Data Quality, Master Data Management, Data Preparation, Data Stewradship). Once created, these groups can be assigned to projects of the same type.</description>
+<description>From the User Groups page of Talaxie Administration Center, you can organize existing users in groups based on their type (Data Integration/ESB, Data Quality, Master Data Management, Data Preparation, Data Stewradship). Once created, these groups can be assigned to projects of the same type.</description>
 <topic href="https://help.talendforge.org/?keywords=user_groups" label="Grouping users by user type"/>
 </context>
 <context id="real_time_statistics">
-<description>Talend Administration Center provides the Real time statistics module which allows you to view the task execution statistics directly in the Administration Center.</description>
+<description>Talaxie Administration Center provides the Real time statistics module which allows you to view the task execution statistics directly in the Administration Center.</description>
 <topic href="https://help.talendforge.org/?keywords=real_time_statistics" label="What are real time statistics"/>
 </context>
 </contexts>

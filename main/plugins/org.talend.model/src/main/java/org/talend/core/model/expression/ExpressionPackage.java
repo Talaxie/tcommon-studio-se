@@ -134,7 +134,7 @@ public interface ExpressionPackage extends EPackage {
     int EMF_VARIABLE__VALUE = 1;
 
     /**
-     * The feature id for the '<em><b>Talend Type</b></em>' attribute.
+     * The feature id for the '<em><b>Talaxie Type</b></em>' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
@@ -237,10 +237,10 @@ public interface ExpressionPackage extends EPackage {
     EAttribute getEMFVariable_Value();
 
     /**
-     * Returns the meta object for the attribute '{@link org.talend.core.model.expression.EMFVariable#getTalendType <em>Talend Type</em>}'.
+     * Returns the meta object for the attribute '{@link org.talend.core.model.expression.EMFVariable#getTalendType <em>Talaxie Type</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @return the meta object for the attribute '<em>Talend Type</em>'.
+     * @return the meta object for the attribute '<em>Talaxie Type</em>'.
      * @see org.talend.core.model.expression.EMFVariable#getTalendType()
      * @see #getEMFVariable()
      * @generated
@@ -341,7 +341,7 @@ public interface ExpressionPackage extends EPackage {
         EAttribute EMF_VARIABLE__VALUE = eINSTANCE.getEMFVariable_Value();
 
         /**
-         * The meta object literal for the '<em><b>Talend Type</b></em>' attribute feature.
+         * The meta object literal for the '<em><b>Talaxie Type</b></em>' attribute feature.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
          * @generated

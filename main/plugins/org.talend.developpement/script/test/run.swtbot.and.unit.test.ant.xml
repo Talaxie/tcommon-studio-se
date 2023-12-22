@@ -2,7 +2,7 @@
 	<taskdef resource="net/sf/antcontrib/antlib.xml" classpath="ant-contrib-1.0b3.jar"/>
 	<dirname property="this.test.build.file.dir" file="${ant.file.talend.unit.and.swtbot.tests.ant.project}"  />
 <!--    <property name="rcp-app-home" value="${this.test.build.file.dir}\..\.." />-->
-<!--     <property name="rcp-app-home" value="E:\java\Talend\TOSTestDistrib\TDQ_EE_MPX-All-r51548-V4.2.0NB\TDQ_EE_MPX-All-r51548-V4.2.0NB" />
+<!--     <property name="rcp-app-home" value="E:\java\Talaxie\TOSTestDistrib\TDQ_EE_MPX-All-r51548-V4.2.0NB\TDQ_EE_MPX-All-r51548-V4.2.0NB" />
 -->
 	<!-- common properties for test one application-->
     <!--property name="test-application" value="org.talend.rcp.branding.tos.application"/-->
@@ -45,7 +45,7 @@
 	<!-- ================================= 
           target: swtbot.test.for.talend.rcp.app               
          ================================= -->
-    <target name="swtbot.test.for.talend.rcp.app" description="launch swt bot test for Talend product defined in ${test-application}, output junit is localted a TOS root and named junit-results.xml, the console output is also located at the root" depends="init">
+    <target name="swtbot.test.for.talend.rcp.app" description="launch swt bot test for Talaxie product defined in ${test-application}, output junit is localted a TOS root and named junit-results.xml, the console output is also located at the root" depends="init">
         <property file="${this.test.build.file.dir}/swtbot.test.properties"/>
         <property name="swtbot.junit.results.path" value="${rcp-app-home}/swtbot-junit-results-for-${test-application}.xml" />
         <property name="swtbot.log.path" value="${rcp-app-home}/swtbot-log-for-${test-application}.log" />
@@ -80,7 +80,7 @@
         </java>        
     </target>	
 	
-    <target name="launch.swtbot.test.for.one.license" description="launch swt bot test for Talend product defined in the licence file  ${talend.licence.path}, output junit is localted a TOS root and named junit-results.xml, the console output is also located at the root" depends="init.swtbot">
+    <target name="launch.swtbot.test.for.one.license" description="launch swt bot test for Talaxie product defined in the licence file  ${talend.licence.path}, output junit is localted a TOS root and named junit-results.xml, the console output is also located at the root" depends="init.swtbot">
         <fail unless="swtbot.propeties.file" message="You must set the swtbot.propeties.file property to specify the path the swt test properties"/>
         <echo>loading properties from file =${swtbot.propeties.file}</echo>
         <property file="${swtbot.propeties.file}"/>
@@ -133,7 +133,7 @@
 	<!-- ================================= 
           target: to launch all unit tests               
          ================================= -->
-    <target name="unit.test.for.talend.rcp.app" description="launch unit test for Talend product defined in ${test-application}, output the unit test result and the application log"  depends="init,clean.application.config.and.workspace">
+    <target name="unit.test.for.talend.rcp.app" description="launch unit test for Talaxie product defined in ${test-application}, output the unit test result and the application log"  depends="init,clean.application.config.and.workspace">
     	
         <echo>Unit test for Product ${test-application} :
    log file : ${unit.log.path}
@@ -193,7 +193,7 @@
         </java>
     </target>  
 
-    <target name="run.all.test.for.talend.rcp.app" depends="init,unit.test.for.talend.rcp.app, swtbot.test.for.talend.rcp.app" description="launch unit test and swtbot for Talend product defined in ${test-application}">
+    <target name="run.all.test.for.talend.rcp.app" depends="init,unit.test.for.talend.rcp.app, swtbot.test.for.talend.rcp.app" description="launch unit test and swtbot for Talaxie product defined in ${test-application}">
     </target>
 	<!-- ================================= 
           target: swtbot.multi-license.launch              

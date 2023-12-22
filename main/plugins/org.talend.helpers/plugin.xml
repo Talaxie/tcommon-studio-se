@@ -47,7 +47,7 @@
             >
          <menu
                id="talend"
-               label="Talend">
+               label="Talaxie">
             <separator name="helpers"/>
          </menu>
          <action

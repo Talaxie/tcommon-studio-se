@@ -112,7 +112,7 @@ public interface RecycleBinPackage extends EPackage {
     int RECYCLE_BIN_OPERATION_COUNT = 0;
 
     /**
-     * The meta object id for the '{@link org.talend.model.recyclebin.impl.TalendItemImpl <em>Talend Item</em>}' class.
+     * The meta object id for the '{@link org.talend.model.recyclebin.impl.TalendItemImpl <em>Talaxie Item</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @see org.talend.model.recyclebin.impl.TalendItemImpl
@@ -149,7 +149,7 @@ public interface RecycleBinPackage extends EPackage {
     int TALEND_ITEM__TYPE = 2;
 
     /**
-     * The number of structural features of the '<em>Talend Item</em>' class.
+     * The number of structural features of the '<em>Talaxie Item</em>' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
@@ -158,7 +158,7 @@ public interface RecycleBinPackage extends EPackage {
     int TALEND_ITEM_FEATURE_COUNT = 3;
 
     /**
-     * The number of operations of the '<em>Talend Item</em>' class.
+     * The number of operations of the '<em>Talaxie Item</em>' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
@@ -211,10 +211,10 @@ public interface RecycleBinPackage extends EPackage {
     EAttribute getRecycleBin_LastUpdate();
 
     /**
-     * Returns the meta object for class '{@link org.talend.model.recyclebin.TalendItem <em>Talend Item</em>}'.
+     * Returns the meta object for class '{@link org.talend.model.recyclebin.TalendItem <em>Talaxie Item</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @return the meta object for class '<em>Talend Item</em>'.
+     * @return the meta object for class '<em>Talaxie Item</em>'.
      * @see org.talend.model.recyclebin.TalendItem
      * @generated
      */
@@ -311,7 +311,7 @@ public interface RecycleBinPackage extends EPackage {
         EAttribute RECYCLE_BIN__LAST_UPDATE = eINSTANCE.getRecycleBin_LastUpdate();
 
         /**
-         * The meta object literal for the '{@link org.talend.model.recyclebin.impl.TalendItemImpl <em>Talend Item</em>}' class.
+         * The meta object literal for the '{@link org.talend.model.recyclebin.impl.TalendItemImpl <em>Talaxie Item</em>}' class.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
          * @see org.talend.model.recyclebin.impl.TalendItemImpl

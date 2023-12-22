@@ -1,12 +1,12 @@
 // ============================================================================
 //
-// Copyright (C) 2006-2021 Talend Inc. - www.talend.com
+// Copyright (C) 2006-2021 Talaxie Inc. - www.deilink.com
 //
 // This source code is available under agreement available at
 // %InstallDIR%\features\org.talend.rcp.branding.%PRODUCTNAME%\%PRODUCTNAME%license.txt
 //
 // You should have received a copy of the agreement
-// along with this program; if not, write to Talend SA
+// along with this program; if not, write to Talaxie SA
 // 9 rue Pages 92150 Suresnes, France
 //
 // ============================================================================
@@ -935,7 +935,7 @@ public class ExtractManager {
 
     protected void setLengthAndPrecision(TdColumn column, ResultSet columns, String typeName) {
         /**
-         * NOTE: The concepts of precision and scale in oracle are different with them in Talend Studio<br>
+         * NOTE: The concepts of precision and scale in oracle are different with them in Talaxie Studio<br>
          * Please see: http://docs.oracle.com/cd/B28359_01/server.111/b28318/datatype.htm#i16209
          */
         int column_size = 0;

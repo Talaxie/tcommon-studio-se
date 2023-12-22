@@ -100,7 +100,7 @@ Export-Package: org.talend.core.ui,
  org.talend.core.ui.utils,
  org.talend.core.ui.webService,
  org.talend.core.ui.workspace
-Bundle-Vendor: .Talend SA.
+Bundle-Vendor: .Talaxie SA.
 Bundle-ActivationPolicy: lazy
 Bundle-Activator: org.talend.core.ui.CoreUIPlugin
 Bundle-Localization: plugin

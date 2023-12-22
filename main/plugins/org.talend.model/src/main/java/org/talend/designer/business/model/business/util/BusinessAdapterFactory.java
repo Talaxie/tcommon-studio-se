@@ -277,7 +277,7 @@ public class BusinessAdapterFactory extends AdapterFactoryImpl {
     }
 
     /**
-     * Creates a new adapter for an object of class '{@link org.talend.designer.business.model.business.TalendItem <em>Talend Item</em>}'.
+     * Creates a new adapter for an object of class '{@link org.talend.designer.business.model.business.TalendItem <em>Talaxie Item</em>}'.
      * <!-- begin-user-doc --> This default implementation returns null so that we can easily ignore cases; it's useful
      * to ignore a case when inheritance will catch all the cases anyway. <!-- end-user-doc -->
      * @return the new adapter.

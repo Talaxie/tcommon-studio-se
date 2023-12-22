@@ -244,7 +244,7 @@ public class TaskExecutionHistoryItemProvider
     }
 
     /**
-     * This adds a property descriptor for the Talend Job Name feature.
+     * This adds a property descriptor for the Talaxie Job Name feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
@@ -266,7 +266,7 @@ public class TaskExecutionHistoryItemProvider
     }
 
     /**
-     * This adds a property descriptor for the Talend Job Id feature.
+     * This adds a property descriptor for the Talaxie Job Id feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
@@ -288,7 +288,7 @@ public class TaskExecutionHistoryItemProvider
     }
 
     /**
-     * This adds a property descriptor for the Talend Job Version feature.
+     * This adds a property descriptor for the Talaxie Job Version feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated

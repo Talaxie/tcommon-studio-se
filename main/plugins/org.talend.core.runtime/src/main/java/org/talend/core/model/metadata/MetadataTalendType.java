@@ -1,12 +1,12 @@
 // ============================================================================
 //
-// Copyright (C) 2006-2021 Talend Inc. - www.talend.com
+// Copyright (C) 2006-2021 Talaxie Inc. - www.deilink.com
 //
 // This source code is available under agreement available at
 // %InstallDIR%\features\org.talend.rcp.branding.%PRODUCTNAME%\%PRODUCTNAME%license.txt
 //
 // You should have received a copy of the agreement
-// along with this program; if not, write to Talend SA
+// along with this program; if not, write to Talaxie SA
 // 9 rue Pages 92150 Suresnes, France
 //
 // ============================================================================
@@ -72,7 +72,7 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 /**
- * Load Metadata Talend Type from mappingMetadataTypes.xml. Talend Types available in the application
+ * Load Metadata Talaxie Type from mappingMetadataTypes.xml. Talaxie Types available in the application
  *
  *
  * $Id: MetadataTalendType.java 38013 2010-03-05 14:21:59Z mhirt $
@@ -138,7 +138,7 @@ public final class MetadataTalendType {
     private static List<File> metadataMappingFiles = null;
 
     /**
-     * Get the Talend Type for a particular type of a particular database.
+     * Get the Talaxie Type for a particular type of a particular database.
      *
      * @param type to map
      * @param dbms
@@ -176,7 +176,7 @@ public final class MetadataTalendType {
     }
 
     /**
-     * Load Talend Types available for a particular Database.
+     * Load Talaxie Types available for a particular Database.
      *
      * @param dbms
      * @param reload
@@ -751,9 +751,9 @@ public final class MetadataTalendType {
 
     /**
      *
-     * Return the default Talend type function of the current language.
+     * Return the default Talaxie type function of the current language.
      *
-     * @return the default Talend type function of the current language
+     * @return the default Talaxie type function of the current language
      */
     public static String getDefaultTalendType() {
         if (getCodeLanguage() == ECodeLanguage.JAVA) {

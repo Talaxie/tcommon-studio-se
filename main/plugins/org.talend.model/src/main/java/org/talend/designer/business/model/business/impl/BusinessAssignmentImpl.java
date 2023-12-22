@@ -24,7 +24,7 @@ import org.talend.designer.business.model.business.TalendItem;
  * The following features are implemented:
  * <ul>
  * <li>{@link org.talend.designer.business.model.business.impl.BusinessAssignmentImpl#getBusinessItem <em>Business Item</em>}</li>
- * <li>{@link org.talend.designer.business.model.business.impl.BusinessAssignmentImpl#getTalendItem <em>Talend Item</em>}</li>
+ * <li>{@link org.talend.designer.business.model.business.impl.BusinessAssignmentImpl#getTalendItem <em>Talaxie Item</em>}</li>
  * <li>{@link org.talend.designer.business.model.business.impl.BusinessAssignmentImpl#getComment <em>Comment</em>}</li>
  * </ul>
  * </p>
@@ -40,7 +40,7 @@ public class BusinessAssignmentImpl extends EObjectImpl implements BusinessAssig
     public static final String copyright = ""; //$NON-NLS-1$
 
     /**
-     * The cached value of the '{@link #getTalendItem() <em>Talend Item</em>}' reference.
+     * The cached value of the '{@link #getTalendItem() <em>Talaxie Item</em>}' reference.
      * <!-- begin-user-doc --> <!--
      * end-user-doc -->
      * @see #getTalendItem()

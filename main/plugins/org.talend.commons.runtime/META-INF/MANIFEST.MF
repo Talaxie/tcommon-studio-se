@@ -65,6 +65,6 @@ Export-Package: org.talend.commons,
  org.talend.fakejdbc
 Bundle-ClassPath: .,
  fakejdbc_driver.jar
-Bundle-Vendor: .Talend SA.
+Bundle-Vendor: .Talaxie SA.
 Bundle-ActivationPolicy: lazy
 Import-Package: org.apache.xerces.jaxp

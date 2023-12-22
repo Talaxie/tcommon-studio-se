@@ -1,12 +1,12 @@
 // ============================================================================
 //
-// Copyright (C) 2006-2021 Talend Inc. - www.talend.com
+// Copyright (C) 2006-2021 Talaxie Inc. - www.deilink.com
 //
 // This source code is available under agreement available at
 // %InstallDIR%\features\org.talend.rcp.branding.%PRODUCTNAME%\%PRODUCTNAME%license.txt
 //
 // You should have received a copy of the agreement
-// along with this program; if not, write to Talend SA
+// along with this program; if not, write to Talaxie SA
 // 9 rue Pages 92150 Suresnes, France
 //
 // ============================================================================
@@ -438,7 +438,7 @@ public final class MetadataToolAvroHelper {
     /**
      * @param in A schema which must be of type {@link Schema.Type#RECORD}.
      * @return A MetadataTable containing all the information from the Schema, including any information included the
-     * schema as JSON property annotations for Talend 6 generated schemas.
+     * schema as JSON property annotations for Talaxie 6 generated schemas.
      */
     public static MetadataTable convertFromAvro(org.apache.avro.Schema in) {
         MetadataTable table = ConnectionFactory.eINSTANCE.createMetadataTable();
@@ -772,7 +772,7 @@ public final class MetadataToolAvroHelper {
     /**
      * @param in A field from an incoming schema
      * @return A MetadataColumn containing all the information from the Schema, including any information included the
-     * schema as JSON property annotations for Talend 6 generated schemas.
+     * schema as JSON property annotations for Talaxie 6 generated schemas.
      */
     public static org.talend.core.model.metadata.builder.connection.MetadataColumn convertFromAvro(Schema.Field field) {
         org.talend.core.model.metadata.builder.connection.MetadataColumn col = ConnectionFactory.eINSTANCE.createMetadataColumn();
@@ -782,7 +782,7 @@ public final class MetadataToolAvroHelper {
     /**
      * @param in A field from an incoming schema
      * @return A MetadataColumn containing all the information from the Schema, including any information included the
-     * schema as JSON property annotations for Talend 6 generated schemas.
+     * schema as JSON property annotations for Talaxie 6 generated schemas.
      */
     public static org.talend.core.model.metadata.builder.connection.MetadataColumn convertFromAvroToTdColumn(Schema.Field field) {
         org.talend.core.model.metadata.builder.connection.MetadataColumn col = RelationalFactory.eINSTANCE.createTdColumn();

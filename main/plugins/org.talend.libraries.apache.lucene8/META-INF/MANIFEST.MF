@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Apache Lucene 8 Library
 Bundle-SymbolicName: org.talend.libraries.apache.lucene8
 Bundle-Version: 8.8.8.qualifier
-Bundle-Vendor: .Talend SA.
+Bundle-Vendor: .Talaxie SA.
 Bundle-ActivationPolicy: lazy
 Bundle-ClassPath: lib/lucene-analyzers-common-8.11.2.jar,
  lib/lucene-backward-codecs-8.11.2.jar,

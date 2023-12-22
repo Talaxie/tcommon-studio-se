@@ -6423,13 +6423,13 @@ public class ConnectionPackageImpl extends EPackageImpl implements ConnectionPac
         addAnnotation(getConnection_ContextId(), source, new String[] { "documentation",
                 "Id of the context this connection is linked to, only used when ContextMode attribute is true" });
         addAnnotation(metadataColumnEClass, source, new String[] { "documentation",
-                "represents a metada column which contains source (such as DB) definitions as weel as Talend mappings" });
+                "represents a metada column which contains source (such as DB) definitions as weel as Talaxie mappings" });
         addAnnotation(getMetadataColumn_SourceType(), source, new String[] { "documentation",
                 "Schema DB type (VARCHAR for example ), can be initialised from DB  column type and modified by the user.)\r\nThis is maintained in synch with the TalendType (at least in the Table schema editor).\r\n" });
         addAnnotation(getMetadataColumn_DefaultValue(), source, new String[] { "documentation",
                 "@deprecated Use initialValue  instead\r\n(This represents the default value for column. This may be changed by the user.)\r\n\r\n" });
         addAnnotation(getMetadataColumn_TalendType(), source, new String[] { "documentation",
-                "java type used by Talend for handling this column elements; This seems to be synched with the sourceType.\r\nThis must be the case for schema used for Table creation." });
+                "java type used by Talaxie for handling this column elements; This seems to be synched with the sourceType.\r\nThis must be the case for schema used for Table creation." });
         addAnnotation(getMetadataColumn_Key(), source, new String[] { "documentation",
                 "Whether this column is a considered a key, in a business meaning (This is not technical).\r\nThis may apply to file, xml or dB columns.\r\nMay be changed by the user.\r\nWhen retrieving Metadata from DB this will be set to true if the column belong to the primary key." });
         addAnnotation(getMetadataColumn_Nullable(), source,

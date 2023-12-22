@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: Talend On-Boarding Presentation
+Bundle-Name: Talaxie On-Boarding Presentation
 Bundle-SymbolicName: org.talend.presentation.onboarding;singleton:=true
 Bundle-Version: 8.8.8.qualifier
 Bundle-Localization: plugin
@@ -28,6 +28,6 @@ Bundle-ActivationPolicy: lazy
 Export-Package: org.talend.presentation.onboarding.interfaces,
  org.talend.presentation.onboarding.ui.managers,
  org.talend.presentation.onboarding.ui.runtimedata
-Bundle-Vendor: .Talend SA.
+Bundle-Vendor: .Talaxie SA.
 Import-Package: org.talend.utils.xml
 Automatic-Module-Name: org.talend.presentation.onboarding

@@ -1,12 +1,12 @@
 // ============================================================================
 //
-// Copyright (C) 2006-2021 Talend Inc. - www.talend.com
+// Copyright (C) 2006-2021 Talaxie Inc. - www.deilink.com
 //
 // This source code is available under agreement available at
 // %InstallDIR%\features\org.talend.rcp.branding.%PRODUCTNAME%\%PRODUCTNAME%license.txt
 //
 // You should have received a copy of the agreement
-// along with this program; if not, write to Talend SA
+// along with this program; if not, write to Talaxie SA
 // 9 rue Pages 92150 Suresnes, France
 //
 // ============================================================================
@@ -543,14 +543,14 @@ public class DatabaseTableForm extends AbstractForm {
     }
 
     /**
-     * Adds double quotes if Talend type is Date or String.
+     * Adds double quotes if Talaxie type is Date or String.
      *
      * @param bean
      * @param value
      * @return
      */
     private void handleDefaultValue(MetadataColumn bean) {
-        // Checks if Talend type is String or Date.
+        // Checks if Talaxie type is String or Date.
         switch (LanguageManager.getCurrentLanguage()) {
         case JAVA:
             String returnValue = bean.getDefaultValue();
