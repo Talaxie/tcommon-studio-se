@@ -51,8 +51,11 @@ public class WebhookPreferencePage extends FieldEditorPreferencePage implements 
         addField(new BooleanFieldEditor(ITalendCorePrefConstants.WEBHOOK_ENABLED,
                 "Active", getFieldEditorParent()));
 
-        addField(new StringFieldEditor(ITalendCorePrefConstants.WEBHOOK_HOST,
-                "Host", getFieldEditorParent()));
+        addField(new StringFieldEditor(ITalendCorePrefConstants.WEBHOOK_FRONT_HOST,
+                "Front host", getFieldEditorParent()));
+
+        addField(new StringFieldEditor(ITalendCorePrefConstants.WEBHOOK_BACK_HOST,
+                "Back host", getFieldEditorParent()));
 
         addField(new StringFieldEditor(ITalendCorePrefConstants.WEBHOOK_BEARER,
                 "Bearer", getFieldEditorParent()));

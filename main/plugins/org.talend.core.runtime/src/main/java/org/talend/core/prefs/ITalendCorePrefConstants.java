@@ -217,7 +217,9 @@ public interface ITalendCorePrefConstants {
 
     public static final String WEBHOOK_ENABLED = "WEBHOOK_ENABLED"; //$NON-NLS-1$
 
-    public static final String WEBHOOK_HOST = "WEBHOOK_HOST"; //$NON-NLS-1$
+    public static final String WEBHOOK_FRONT_HOST = "WEBHOOK_FRONT_HOST"; //$NON-NLS-1$
+
+    public static final String WEBHOOK_BACK_HOST = "WEBHOOK_BACK_HOST"; //$NON-NLS-1$
 
     public static final String WEBHOOK_BEARER = "WEBHOOK_BEARER"; //$NON-NLS-1$
 
