@@ -74,6 +74,7 @@ import org.talend.core.ui.workspace.ChooseWorkspaceData;
 import org.talend.core.ui.workspace.ChooseWorkspaceDialog;
 import org.talend.core.utils.StudioSSLContextProvider;
 import org.talend.rcp.i18n.Messages;
+import org.talend.rcp.util.CommandLine;
 import org.talend.registration.RegistrationPlugin;
 import org.talend.registration.license.LicenseManagement;
 import org.talend.registration.register.proxy.HttpProxyUtil;
@@ -89,11 +90,7 @@ import org.talend.utils.StudioKeysFileCheck;
  */
 public class Application implements IApplication {
 
-    /**
-     *
-     */
-    private static final String TALEND_FORCE_INITIAL_WORKSPACE_PROMPT_SYS_PROP =
-            "talend.force.initial.workspace.prompt"; //$NON-NLS-1$
+    private static final String TALEND_FORCE_INITIAL_WORKSPACE_PROMPT_SYS_PROP = "talend.force.initial.workspace.prompt"; //$NON-NLS-1$
 
     private static final String OPS4J_USEFALLBACKREPOSITORIES_ARG = "org.ops4j.pax.url.mvn.useFallbackRepositories"; //$NON-NLS-1$
 
@@ -107,6 +104,11 @@ public class Application implements IApplication {
     @SuppressWarnings("restriction")
     @Override
     public Object start(IApplicationContext context) throws Exception {
+        // Récupérer les arguments de l'application
+        if (CommandLine.parseArgs((String[]) context.getArguments().get(IApplicationContext.APPLICATION_ARGS))) {
+          return IApplication.EXIT_OK;
+        }
+
         if (System.getProperty(OPS4J_USEFALLBACKREPOSITORIES_ARG) == null) {
             System.setProperty(OPS4J_USEFALLBACKREPOSITORIES_ARG, Boolean.FALSE.toString());
         }
