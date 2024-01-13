@@ -29,16 +29,25 @@ import org.talend.core.service.IRemoteService;
 import org.talend.core.ui.CoreUIPlugin;
 import org.talend.core.ui.i18n.Messages;
 import org.talend.core.ui.token.TokenCollectorFactory;
+import org.talend.core.ui.webService.Webhook;
+
+import org.eclipse.jface.dialogs.IDialogConstants;
+import org.eclipse.jface.dialogs.MessageDialog;
+import org.talend.commons.ui.gmf.util.DisplayUtils;
 
 /**
  * ggu class global comment. Detailled comment
  */
 public class WebhookPreferencePage extends FieldEditorPreferencePage implements IWorkbenchPreferencePage {
 
+    private StringFieldEditor frontHostField;
+    private StringFieldEditor backHostField;
+    private StringFieldEditor bearerField;
+
     public WebhookPreferencePage() {
         super(GRID);
         setPreferenceStore(CoreUIPlugin.getDefault().getPreferenceStore());
-        setDescription("Talaxie, coming soon !"); //$NON-NLS-1$
+        setDescription("Les webhooks sont un moyen de fournir à d’autres applications des informations en temps réel. Ils permettent d’envoyer une notification à une autre application lorsqu’un événement donné se produit."); //$NON-NLS-1$
     }
 
     @Override
@@ -48,17 +57,52 @@ public class WebhookPreferencePage extends FieldEditorPreferencePage implements 
 
     @Override
     protected void createFieldEditors() {
-        addField(new BooleanFieldEditor(ITalendCorePrefConstants.WEBHOOK_ENABLED,
-                "Active", getFieldEditorParent()));
+        Composite fieldEditorParent = getFieldEditorParent();
 
-        addField(new StringFieldEditor(ITalendCorePrefConstants.WEBHOOK_FRONT_HOST,
-                "Front host", getFieldEditorParent()));
+        addField(new BooleanFieldEditor(ITalendCorePrefConstants.WEBHOOK_ENABLED, "Active", fieldEditorParent));
 
-        addField(new StringFieldEditor(ITalendCorePrefConstants.WEBHOOK_BACK_HOST,
-                "Back host", getFieldEditorParent()));
+        frontHostField = new StringFieldEditor(ITalendCorePrefConstants.WEBHOOK_ENABLED, "Front host", fieldEditorParent);
+        addField(frontHostField);
+        backHostField = new StringFieldEditor(ITalendCorePrefConstants.WEBHOOK_BACK_HOST, "Back host", fieldEditorParent);
+        addField(backHostField);
+        bearerField = new StringFieldEditor(ITalendCorePrefConstants.WEBHOOK_BEARER, "Bearer", fieldEditorParent);
+        addField(bearerField);
 
-        addField(new StringFieldEditor(ITalendCorePrefConstants.WEBHOOK_BEARER,
-                "Bearer", getFieldEditorParent()));
+        Button importZip = new Button(getFieldEditorParent(), SWT.FLAT);
+        importZip.setText("Test"); //$NON-NLS-1$
+        importZip.setLayoutData(new GridData());
+        importZip.addSelectionListener(new SelectionListener() {
+
+            @Override
+            public void widgetSelected(SelectionEvent e) {
+                Boolean result = Webhook.backTest(backHostField.getStringValue(), bearerField.getStringValue());
+                String message = "Test ko !\n"; //$NON-NLS-1$
+                if (result) {
+                    message = "Test ok !\n"; //$NON-NLS-1$
+                }
+                MessageDialog messageDialog = new MessageDialog(
+                    DisplayUtils.getDefaultShell(false),
+                    "Talaxie - Webhook test", //$NON-NLS-1$
+                    null,
+                    message, //$NON-NLS-1$
+                    MessageDialog.CONFIRM,
+                    new String[] {
+                        IDialogConstants.OK_LABEL,
+                        IDialogConstants.CANCEL_LABEL
+                    },
+                    0
+                ); //$NON-NLS-1$
+                if (messageDialog.open() == 0) {
+                    // TODO
+                }
+
+            }
+
+            @Override
+            public void widgetDefaultSelected(SelectionEvent e) {
+                // Nothing to do
+            }
+        });                
     }
 
     /*

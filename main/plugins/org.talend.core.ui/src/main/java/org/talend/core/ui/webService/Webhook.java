@@ -30,11 +30,50 @@ import java.util.HashMap;
 import org.apache.http.entity.mime.MultipartEntityBuilder;
 import org.apache.http.entity.mime.content.FileBody;
 import org.apache.http.HttpEntity;
+import org.apache.log4j.Logger;
 import org.talend.core.prefs.ITalendCorePrefConstants;
 import org.talend.core.ui.CoreUIPlugin;
 import org.talend.utils.json.JSONObject;
 
 public class Webhook {
+
+    private static final Logger LOGGER = Logger.getLogger(Webhook.class);
+
+    public static Boolean backTest(String backHostField, String bearerField) {
+        Boolean result = false;
+        try {
+            String serviceUrl = backHostField + "/api/Test/BackTest";
+            String finalToken = bearerField;
+
+            if (LOGGER.isInfoEnabled()) {
+                LOGGER.info("Talaxie serviceUrl:" + serviceUrl);
+                LOGGER.info("Talaxie finalToken:" + finalToken);
+            }
+
+            JSONObject paramJson = new JSONObject();
+            paramJson.put("app", "Talaxie");
+
+            HttpClient client = HttpClient.newHttpClient();
+            HttpRequest request = HttpRequest.newBuilder()
+                .uri(URI.create(serviceUrl))
+                .setHeader("Content-Type","application/json")
+                .setHeader("Authorization", "Bearer " + finalToken)
+                .POST(HttpRequest.BodyPublishers.ofString(paramJson.toString()))
+                .build();
+            HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+            JSONObject responseBodyJson = new JSONObject(response.body());
+            if (
+                responseBodyJson.has("success") &&
+                responseBodyJson.getBoolean("success")
+            ) {
+                result = true;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return result;
+    }
 
     public static String sendFile(String fileLocation) {
         String result = "";

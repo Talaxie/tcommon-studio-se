@@ -437,8 +437,9 @@ public abstract class PropertiesWizardPage extends AbstractNamedWizardPage {
         descriptionLab.setLayoutData(new GridData(GridData.VERTICAL_ALIGN_BEGINNING));
 
         descriptionText = new Text(parent, SWT.BORDER | SWT.MULTI | SWT.WRAP | SWT.V_SCROLL);
-        data = new GridData(GridData.FILL_HORIZONTAL);
-        data.heightHint = 60;
+        data = new GridData(GridData.FILL_BOTH);
+        data.heightHint = 75;
+        data.minimumHeight = 75;
         descriptionText.setLayoutData(data);
         descriptionText.setEditable(!readOnly);
 

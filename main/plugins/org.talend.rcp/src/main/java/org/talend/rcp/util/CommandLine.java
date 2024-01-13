@@ -1,6 +1,6 @@
 // ============================================================================
 //
-// Copyright (C) 2022-2023 Talaxie Inc. - www.deilink.fr
+// Copyright (C) 2022-2024 Talaxie Inc. - www.deilink.fr
 //
 // This source code is available under agreement available at
 // %InstallDIR%\features\org.talend.rcp.branding.%PRODUCTNAME%\%PRODUCTNAME%license.txt
@@ -15,6 +15,7 @@ package org.talend.rcp.util;
 import java.util.Scanner;
 import org.talend.repository.ui.wizards.exportjob.JobScriptsExportWizardPage;
 import org.talend.rcp.util.ServerRest;
+import org.talend.rcp.util.TalaxieUtil;
 
 public class CommandLine {
 
@@ -24,37 +25,46 @@ public class CommandLine {
     }
 
     // Traiter les arguments
-    System.out.println("Start Talaxie...");
-    String argString = "";
-    for (String arg : args) {
-      if (
-          arg.length() > 4 &&
-          arg.contains("--") &&
-          arg.contains("=")
-      ) {
-        String[] splitFromEqual = arg.split("=");
-        String key = splitFromEqual[0].substring(2);
-        String value = splitFromEqual[1];
-        argString += key + "/" + value + " [" + arg + "] || ";
-        if (key.equals("offline")) {
-          System.out.print("Enter a string 2 : ");
-          Scanner scanner2 = new Scanner(System.in);
-          String inputString2 = scanner2.nextLine();
-          System.out.println("Offline input zone : \n" + inputString2);
-          // throw new Exception("Exception talaxie JC 200 : " + argString);
-          return true;
-        } else if (key.equals("api")) {
-          try {
+    try {
+      System.out.println("Start Talaxie...");
+      String argString = "";
+      for (String arg : args) {
+        if (
+            arg.length() > 4 &&
+            arg.contains("--") &&
+            arg.contains("=")
+        ) {
+          String[] splitFromEqual = arg.split("=");
+          String key = splitFromEqual[0].substring(2);
+          String value = splitFromEqual[1];
+          argString += key + "/" + value + " [" + arg + "] || ";
+          if (key.equals("offline")) {
+            System.out.print("Enter a string 2 : ");
+            Scanner scanner2 = new Scanner(System.in);
+            String inputString2 = scanner2.nextLine();
+            System.out.println("Offline input zone : \n" + inputString2);
+            // throw new Exception("Exception talaxie JC 200 : " + argString);
+            return true;
+          } else if (key.equals("api")) {
             ServerRest.startServer(value);
-            System.out.print("End REST API ?");
+            System.out.print("End REST API ? ");
             Scanner scanner = new Scanner(System.in);
             String inputString = scanner.nextLine();
             return true;
-          } catch (Exception e) {
-            e.printStackTrace();
+          } else if (key.equals("apiV2")) {
+            ServerRest.startServer(value);
+            return false;
+          } else if (key.equals("importZipFile")) {
+            TalaxieUtil.importZipFile("C:/Temp/ETL01_000_JobEtl_Master.zip", "ETL01_000_JobEtl_Master");
+            return true;
+          } else if (key.equals("exportZipFile")) {
+            TalaxieUtil.exportZipFile("/chemin/vers/votre/fichier.zip");
+            return true;
           }
         }
       }
+    } catch (Exception e) {
+      e.printStackTrace();
     }
 
     return false;
