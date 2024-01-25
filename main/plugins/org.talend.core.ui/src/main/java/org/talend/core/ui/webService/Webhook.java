@@ -26,14 +26,20 @@ import java.net.http.HttpResponse.BodyHandlers;
 import java.nio.channels.Channels;
 import java.nio.channels.Pipe;
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import org.apache.http.entity.mime.MultipartEntityBuilder;
 import org.apache.http.entity.mime.content.FileBody;
 import org.apache.http.HttpEntity;
 import org.apache.log4j.Logger;
 import org.talend.core.prefs.ITalendCorePrefConstants;
 import org.talend.core.ui.CoreUIPlugin;
+import org.talend.utils.json.JSONArray;
+import org.talend.utils.json.JSONException;
 import org.talend.utils.json.JSONObject;
+
 
 public class Webhook {
 
@@ -186,6 +192,64 @@ public class Webhook {
         jobURL += "&JobNom=" + jobData.get("Sequenceur");
         return jobURL;
     }
+
+	public static List<HashMap<String, String>> codeReviewAnalyseText(String JobType, String JobName, String xmlText) {
+        List<HashMap<String, String>> codereviewItems = new ArrayList<>();
+
+		JSONObject paramJson = new JSONObject();
+		try {
+			paramJson.put("JobType", JobType);
+			paramJson.put("JobName", JobName);
+			paramJson.put("xmlText", xmlText);
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
+
+        String serviceUrl = CoreUIPlugin.getDefault().getPreferenceStore().getString(ITalendCorePrefConstants.WEBHOOK_BACK_HOST) + "/api/Job/CodeReviewAnalyseText";
+        String finalToken = CoreUIPlugin.getDefault().getPreferenceStore().getString(ITalendCorePrefConstants.WEBHOOK_BEARER);
+		HttpClient client = HttpClient.newHttpClient();
+		HttpRequest request = HttpRequest.newBuilder()
+			.uri(URI.create(serviceUrl))
+			.setHeader("Content-Type","application/json")
+			.setHeader("Authorization", "Bearer " + finalToken)
+			.POST(HttpRequest.BodyPublishers.ofString(paramJson.toString()))
+			.build();
+		HttpResponse<String> response;
+		try {
+			response = client.send(request, HttpResponse.BodyHandlers.ofString());
+			JSONObject responseBodyJson = new JSONObject(response.body());
+			if (
+				responseBodyJson.has("success") &&
+				responseBodyJson.getBoolean("success")
+			) {
+				JSONArray errorList = responseBodyJson.getJSONObject("data").getJSONArray("errorList");
+				for (int i = 0; i < errorList.length(); i++) {
+					JSONObject error = errorList.getJSONObject(i);
+					JSONObject codeReviewRule = error.getJSONObject("CodeReviewRule");
+					HashMap<String, String> codereviewItem = new HashMap<String, String>();
+					codereviewItem.put("Type", String.valueOf(codeReviewRule.getInt("Type")));
+					codereviewItem.put("Titre", codeReviewRule.getString("Titre"));
+					codereviewItem.put("Description", codeReviewRule.getString("Description"));
+					codereviewItem.put("Url", codeReviewRule.getString("Url"));
+					if (error.has("UNIQUE_NAME")) {
+						codereviewItem.put("UNIQUE_NAME", error.getString("UNIQUE_NAME"));
+					} else {
+						codereviewItem.put("UNIQUE_NAME", "");
+					}
+					if (error.has("componentName")) {
+						codereviewItem.put("componentName", error.getString("componentName"));
+					} else {
+						codereviewItem.put("componentName", "");
+					}
+					codereviewItems.add(codereviewItem);
+				}
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return codereviewItems;
+	}
 
     public static String postTest() {
         String serviceUrl = CoreUIPlugin.getDefault().getPreferenceStore().getString(ITalendCorePrefConstants.WEBHOOK_BACK_HOST) + "/api/Test/debug";
