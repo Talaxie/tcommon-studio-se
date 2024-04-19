@@ -17,16 +17,20 @@ import java.util.Map;
 
 import org.eclipse.ui.AbstractSourceProvider;
 import org.talend.core.PluginChecker;
+import org.talend.core.prefs.ITalendCorePrefConstants;
+import org.talend.core.ui.CoreUIPlugin;
 import org.talend.core.ui.branding.IBrandingService;
 
 public class HelpMenuProvider extends AbstractSourceProvider {
 
     private static final String IS_TIS = "HelpMenuProvider.isTis";//$NON-NLS-1$
+    private static final String IS_ETLTOOL = "HelpMenuProvider.isEtlTool";//$NON-NLS-1$
 
     @Override
     public Map getCurrentState() {
         Map<String, Boolean> stateMap = new HashMap<String, Boolean>();
         stateMap.put(IS_TIS, testIfShouldBeShown());
+        stateMap.put(IS_ETLTOOL, testIfEtlToolShouldBeShown());
         return stateMap;
     }
 
@@ -34,6 +38,10 @@ public class HelpMenuProvider extends AbstractSourceProvider {
         boolean isTis = PluginChecker.isTIS();
         boolean isPoweredbyTalend = IBrandingService.get().isPoweredbyTalend();
         return isTis && isPoweredbyTalend;
+    }
+
+    private boolean testIfEtlToolShouldBeShown() {
+        return CoreUIPlugin.getDefault().getPreferenceStore().getBoolean(ITalendCorePrefConstants.WEBHOOK_ETLTOOL_ENABLED);
     }
 
     @Override

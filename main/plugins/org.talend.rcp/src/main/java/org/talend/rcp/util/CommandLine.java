@@ -15,7 +15,8 @@ package org.talend.rcp.util;
 import java.util.Scanner;
 import org.talend.repository.ui.wizards.exportjob.JobScriptsExportWizardPage;
 import org.talend.rcp.util.ServerRest;
-import org.talend.rcp.util.TalaxieUtil;
+// import org.talend.rcp.util.TalaxieUtil;
+import org.talend.repository.items.importexport.ui.wizard.server.ServerUtil;
 
 public class CommandLine {
 
@@ -55,10 +56,17 @@ public class CommandLine {
             ServerRest.startServer(value);
             return false;
           } else if (key.equals("importZipFile")) {
-            TalaxieUtil.importZipFile("C:/Temp/ETL01_000_JobEtl_Master.zip", "ETL01_000_JobEtl_Master");
+            ServerUtil.jobImport("C:/Temp/ETL01_000_JobEtl_Master.zip", "ETL01_000_JobEtl_Master");
             return true;
           } else if (key.equals("exportZipFile")) {
-            TalaxieUtil.exportZipFile("/chemin/vers/votre/fichier.zip");
+            ServerUtil.exportZipFile("/chemin/vers/votre/fichier.zip");
+            return true;
+          } else if (key.equals("getProjects")) {
+            // ServerUtil.getProjects();
+            System.out.print("wait : ");
+            Scanner scanner2 = new Scanner(System.in);
+            String inputString2 = scanner2.nextLine();
+            System.out.println("Offline input zone : \n" + inputString2);
             return true;
           }
         }

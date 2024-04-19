@@ -20,16 +20,16 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
+import java.util.zip.ZipFile;
 import org.talend.repository.items.importexport.ui.managers.FileResourcesUnityManager;
 import org.talend.repository.items.importexport.ui.managers.ResourcesManagerFactory;
-import org.talend.repository.items.importexport.manager.ResourcesManager;
+// import org.talend.repository.items.importexport.manager.ResourcesManager;
 import org.talend.repository.items.importexport.handlers.ImportExportHandlersManager;
 import org.talend.repository.items.importexport.handlers.model.ImportItem;
 import org.eclipse.core.runtime.NullProgressMonitor;
-import org.talend.repository.items.importexport.wizard.models.ImportNodesBuilder;
+// import org.talend.repository.items.importexport.wizard.models.ImportNodesBuilder;
 import org.eclipse.core.runtime.IProgressMonitor;
 import org.talend.commons.runtime.model.emf.provider.EmfResourcesFactoryReader;
-import java.util.zip.ZipFile;
 import org.talend.commons.runtime.model.emf.provider.ResourceOption;
 import org.talend.core.model.properties.Item;
 import org.talend.core.model.properties.ProcessItem;
@@ -44,15 +44,60 @@ import java.util.List;
 import java.util.Map;
 import org.talend.repository.ui.wizards.exportjob.scriptsmanager.JobScriptsManager.ExportChoice;
 
+/* Project */
+import org.talend.core.model.general.Project;
+import org.talend.repository.ui.login.LoginHelper;
+import org.talend.core.model.general.ConnectionBean;
+import java.util.logging.ErrorManager;
+import org.talend.core.model.general.ConnectionBean;
+import org.eclipse.jface.viewers.IStructuredSelection;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.core.resources.IProject;
+
 public class TalaxieUtil {
 
-  private static ImportNodesBuilder nodesBuilder = new ImportNodesBuilder();
-  
+  // private static ImportNodesBuilder nodesBuilder = new ImportNodesBuilder();
+
+  /*
+  public static ConnectionBean getConnection() {
+      ConnectionBean result[] = new ConnectionBean[1];
+      Display.getDefault().syncExec(() -> {
+          if (connectionsViewer != null) {
+              IStructuredSelection sel = (IStructuredSelection) connectionsViewer.getSelection();
+              result[0] = (ConnectionBean) sel.getFirstElement();
+          } else {
+              result[0] = (ConnectionBean) connectionLabel.getData();
+          }
+      });
+      return result[0];
+  }
+  */
+
+  public static void getProjects() {
+    try {
+      // ErrorManager errorManager = null;
+      // ConnectionBean connection = getConnection();
+      // Project[] projects = LoginHelper.getInstance().getProjects(connection);
+      // for (Project project : projects) {
+      //     System.out.print("project : " + project.getTechnicalLabel());
+      // }
+      IProject[] projects = org.eclipse.core.resources.ResourcesPlugin.getWorkspace().getRoot().getProjects();
+      for (IProject project : projects) {
+          System.out.print("project : " + project.getName());
+      }
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+
+    return;
+  }
+
   public static void importZipFile(String zipFilePath, String jobName) {
     try {
+      /*
       String zipPath = zipFilePath;
       IProgressMonitor monitor = new NullProgressMonitor();
-      boolean overwrite = false;
+      boolean overwrite = true;
       boolean openThem = true;
       boolean needMigrationTask = false;
       ZipFile srcZipFile = new ZipFile(zipPath);
@@ -84,16 +129,12 @@ public class TalaxieUtil {
                   itemRecord.setMigrationTasksToApply(null);
               }
           }
-          // importManager.importItemRecords(new NullProgressMonitor(), resourcesManager, items, overwrite,
-          // nodesBuilder.getAllImportItemRecords(), null);
           if (items != null && !items.isEmpty()) {
-              importManager.importItemRecords(monitor, resourcesManager, items, overwrite,
-                      nodesBuilder.getAllImportItemRecords(), null);
+              importManager.importItemRecords(monitor, resourcesManager, items, overwrite, nodesBuilder.getAllImportItemRecords(), null);
           }
       } catch (Exception e) {
           CommonExceptionHandler.process(e);
       } finally {
-          // clean
           if (resourcesManager != null) {
               resourcesManager.closeResource();
           }
@@ -101,38 +142,10 @@ public class TalaxieUtil {
 
           EmfResourcesFactoryReader.INSTANCE.removOption(importOption);
       }
-      /*
-      IProgressMonitor monitor = new NullProgressMonitor();
-      File srcFile = new File(zipFilePath);
-      final FileResourcesUnityManager fileUnityManager = ResourcesManagerFactory.getInstance().createFileUnityManager(srcFile);
-      ResourcesManager resManager = fileUnityManager.doUnify(true);
-      ImportExportHandlersManager importManager = new ImportExportHandlersManager();
-      List<ImportItem> items = importManager.populateImportingItems(resManager, true, monitor, true);
-      importManager.getPendoImportManager().cacheItemProperty(items);
-      importManager.getPendoImportManager().setStudioImport(true);
-      ImportNodesBuilder nodesBuilder = new ImportNodesBuilder();
-      nodesBuilder.clear();
-      nodesBuilder.addItems(items);
-      */
-      /*
-      importManager.importItemRecords(
-        monitor,
-        resManager,
-        items,
-        true,
-        nodesBuilder.getAllImportItemRecords(),
-        destinationPath,
-        alwaysRegenId
-      );
       */
     } catch (Exception e) {
       e.printStackTrace();
     }
-
-    /*
-    ImportItemsWizardPage importItemsWizardPage = new ImportItemsWizardPage();
-    importItemsWizardPage.updateItemsList(zipFilePath, false, true);
-    */
 
     return;
   }
@@ -165,7 +178,6 @@ public class TalaxieUtil {
     // String ProcessType = BuildJobManager.getProcessType();
     // System.out.print("ProcessType : " + ProcessType);
     /*
-
     buildJob(
       "C:\Talend\TOS_DI-talaxie\OnBoardingDemoJob_0.1.zip",         // X String destinationPath, 
       item,                                                         // - ProcessItem itemToExport, 
@@ -196,8 +208,8 @@ public class TalaxieUtil {
     return true;
   }
 
-  private static List<ImportItem> populateItems(final ImportExportHandlersManager importManager,
-          final ResourcesManager resourcesManager, IProgressMonitor monitor, final boolean overwrite) {
+  /*
+  private static List<ImportItem> populateItems(final ImportExportHandlersManager importManager, final ResourcesManager resourcesManager, IProgressMonitor monitor, final boolean overwrite) {
       List<ImportItem> selectedItemRecords = new ArrayList<ImportItem>();
       nodesBuilder.clear();
       if (resourcesManager != null) { // if resource is not init successfully.
@@ -221,6 +233,7 @@ public class TalaxieUtil {
       }
       return selectedItemRecords;
   }
+  */
 }
 
 /*

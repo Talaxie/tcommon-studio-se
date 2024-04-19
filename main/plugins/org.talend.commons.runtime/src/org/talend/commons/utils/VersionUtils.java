@@ -413,11 +413,11 @@ public class VersionUtils {
     
     public static String getProductVersionLog() {
             Object version = getDisplayVersion();
-            String mess = "Starting Talaxie's platform log system."; //$NON-NLS-1$
+            String mess = "Starting Talaxie's platform log system. "; //$NON-NLS-1$
             if (version != null) {
                 mess += ("VERSION= " + version); //$NON-NLS-1$
             }
-            PresentableBox box = new PresentableBox("TALEND", mess, 0); //$NON-NLS-1$
+            PresentableBox box = new PresentableBox("TALAXIE", mess, 0); //$NON-NLS-1$
             return box.getFullBox();
     }
 
