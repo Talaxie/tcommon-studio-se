@@ -25,7 +25,7 @@
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
-            <url>https://artifacts-oss.talend.com/nexus/content/repositories/TalendOpenSourceRelease/</url>
+            <url>https://nexus.deilink.fr/repository/talaxie/</url>
         </repository>
         <repository>
             <id>talend_open_snapshots</id>
@@ -35,7 +35,7 @@
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
-            <url>https://artifacts-oss.talend.com/nexus/content/repositories/TalendOpenSourceSnapshot/</url>
+            <url>https://nexus.deilink.fr/repository/talaxie/</url>
         </repository>
         <repository>
             <id>sonatype_releases</id>

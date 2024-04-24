@@ -12,7 +12,7 @@
     <repositories>
         <repository>
             <id>Talend OpenSource Release</id>
-            <url>https://artifacts-oss.talend.com/nexus/content/repositories/TalendOpenSourceRelease/</url>
+            <url>https://nexus.deilink.fr/repository/talaxie/</url>
         </repository>
     </repositories>
     <dependencies>
