@@ -74,12 +74,12 @@ public class Webhook {
 
     private JFrame frame;
 
-    public static HashMap<String, String> export(String fileLocation, String Projet, String Sequenceur, String version) {
+    public static HashMap<String, String> export(String fileLocation, String Projet, String Sequenceur, String version, String NexusRepo) {
         HashMap<String, String> jobData = null;
         try {
             // Nexus
             if (CoreUIPlugin.getDefault().getPreferenceStore().getBoolean(ITalendCorePrefConstants.WEBHOOK_NEXUS_ENABLED)) {
-                nexusPostJob(fileLocation, Projet, Sequenceur, version);
+                nexusPostJob(fileLocation, Projet, Sequenceur, version, NexusRepo);
             }
 
             // EtlTool
@@ -548,10 +548,14 @@ public class Webhook {
         return continuationToken;
     }
 
-    public static void nexusPostJob(String fileLocation, String Projet, String Sequenceur, String version) {
+    public static void nexusPostJob(String fileLocation, String Projet, String Sequenceur, String version, String NexusRepo) {
         try {
             String serviceUrl = CoreUIPlugin.getDefault().getPreferenceStore().getString(ITalendCorePrefConstants.WEBHOOK_NEXUS_HOST) + "/service/rest/v1/components";
-            serviceUrl += "?repository=" + CoreUIPlugin.getDefault().getPreferenceStore().getString(ITalendCorePrefConstants.WEBHOOK_NEXUS_RELEASE_REPO);
+            if (NexusRepo.equals("Snapshot")) {
+                serviceUrl += "?repository=" + CoreUIPlugin.getDefault().getPreferenceStore().getString(ITalendCorePrefConstants.WEBHOOK_NEXUS_SNAPSHOT_REPO);
+            } else {
+                serviceUrl += "?repository=" + CoreUIPlugin.getDefault().getPreferenceStore().getString(ITalendCorePrefConstants.WEBHOOK_NEXUS_RELEASE_REPO);
+            }
             String username = CoreUIPlugin.getDefault().getPreferenceStore().getString(ITalendCorePrefConstants.WEBHOOK_NEXUS_LOGIN);
             String password = CoreUIPlugin.getDefault().getPreferenceStore().getString(ITalendCorePrefConstants.WEBHOOK_NEXUS_PASSWORD);
             String credential = new String(Base64.getEncoder().encode((username + ":" + password).getBytes()));
@@ -701,6 +705,7 @@ public class Webhook {
     }
 
     public void loadingDialogOpen() {
+        /*
 		frame = new JFrame("Loading...");
         frame.setIconImage(new ImageIcon(FileLocator.find(FrameworkUtil.getBundle(Webhook.class), new Path("icons/talend-picto-small.png"), null)).getImage());
         frame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
@@ -717,10 +722,13 @@ public class Webhook {
         frame.add(textLabel, BorderLayout.SOUTH);
         textLabel.setBorder(BorderFactory.createEmptyBorder(0, 0, 20, 0));
         frame.setVisible(true);
+        */
     }
 
     public void loadingDialogClose() {
+        /*
         frame.dispose();
+        */
     }
 
     public static String postTest() {
