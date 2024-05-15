@@ -648,8 +648,18 @@ public class Webhook {
         	args.add(Sequenceur);
         	args.add(version);
         	args.add(fileLocation);
+            scriptStart(scriptLocation, args);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+
+        return true;
+    }
+
+    public static boolean scriptStart(String scriptLocation, List<String> args) {
+        try {
             ProcessBuilder pb = new ProcessBuilder(scriptLocation);
-            pb.command().add(scriptLocation);
             pb.command().addAll(args);
             Process p = pb.start();
             p.waitFor();

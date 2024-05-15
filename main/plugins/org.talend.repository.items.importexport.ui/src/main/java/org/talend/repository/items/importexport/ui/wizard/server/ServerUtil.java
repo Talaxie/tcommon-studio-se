@@ -180,8 +180,25 @@ public class ServerUtil {
 			return selectedItemRecords;
 	}
 
-	public static Boolean exportZipFile(String jobZipPath) {
+	public static Boolean jobExport(String fileLocation, String Projet, String Sequenceur, String version, String NexusRepo) {
 		try {
+			Webhook.export(fileLocation, Projet, Sequenceur, version, NexusRepo);
+		} catch (Exception e) {
+			e.printStackTrace();
+			if (LOGGER.isInfoEnabled()) {
+				LOGGER.info(e);
+			}
+			return false;
+		}
+
+		return true;
+	}
+
+	public static Boolean scriptStart(String scriptLocation, String arg) {
+		try {
+			List<String> args = new ArrayList<>();
+			args.add(arg);
+			Webhook.scriptStart(scriptLocation, args);
 		} catch (Exception e) {
 			e.printStackTrace();
 			if (LOGGER.isInfoEnabled()) {

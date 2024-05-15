@@ -58,7 +58,7 @@ public class ServerRest {
             queryParams.put(key, value);
           }
         }
-        String response = "Talaxie services - ";
+        String response = "Talaxie services #1 - ";
         if (queryParams.get("action") != null) {
           if (queryParams.get("action").equals("test")) {
             response += " test !";
@@ -78,7 +78,12 @@ public class ServerRest {
             response += "import ok!";
           } else if (queryParams.get("action").equals("export")) {
             try {
-              // ServerUtil.importZipFile("C:/Temp/ETL01_000_JobEtl_Master.zip", "ETL01_000_JobEtl_Master");
+              String project = queryParams.get("project");
+              String master = queryParams.get("master");
+              String version = queryParams.get("version");
+              String nexusRepo = queryParams.get("nexusRepo");
+              String fileLocation = queryParams.get("fileLocation");
+              ServerUtil.jobExport(fileLocation, project, master, version, nexusRepo);
             } catch (Exception e) {
               e.printStackTrace();
               if (LOGGER.isInfoEnabled()) {
@@ -88,6 +93,20 @@ public class ServerRest {
               response = "Error export!";
             }
             response += "export ok!";
+          } else if (queryParams.get("action").equals("scriptStart")) {
+            try {
+              String scriptLocation = queryParams.get("scriptLocation");
+              String arg = queryParams.get("arg");
+              ServerUtil.scriptStart(scriptLocation, arg);
+            } catch (Exception e) {
+              e.printStackTrace();
+              if (LOGGER.isInfoEnabled()) {
+                LOGGER.info("Error - ServerRest scriptStart");
+                LOGGER.info(e);
+              }
+              response = "Error scriptStart!";
+            }
+            response += "scriptStart ok!";
           } else {
             response += "unknow action!";
           }

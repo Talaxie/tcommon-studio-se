@@ -59,7 +59,7 @@ public class CommandLine {
             ServerUtil.jobImport("C:/Temp/ETL01_000_JobEtl_Master.zip", "ETL01_000_JobEtl_Master");
             return true;
           } else if (key.equals("exportZipFile")) {
-            ServerUtil.exportZipFile("/chemin/vers/votre/fichier.zip");
+            // ServerUtil.jobExport("/chemin/vers/votre/fichier.zip");
             return true;
           } else if (key.equals("getProjects")) {
             // ServerUtil.getProjects();

@@ -53,7 +53,7 @@ public class ServerRest {
             queryParams.put(key, value);
           }
         }
-        String response = "Hello, Simple RESTful Service!";
+        String response = "Talaxie services #2 - ";
         if (queryParams.get("action") != null) {
           if (queryParams.get("action").equals("test")) {
             response += " test !";
