@@ -1,6 +1,6 @@
 // ============================================================================
 //
-// Copyright (C) 2006-20121 Talaxie Inc. - www.deilink.com
+// Copyright (C) 2006-20121 Talend Inc. - www.talend.com
 //
 // This source code is available under agreement available at
 // %InstallDIR%\features\org.talend.rcp.branding.%PRODUCTNAME%\%PRODUCTNAME%license.txt

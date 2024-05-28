@@ -7,7 +7,7 @@ import org.talend.core.ui.branding.IBrandingService;
 
 //============================================================================
 //
-//Copyright (C) 2006-2021 Talaxie Inc. - www.deilink.com
+//Copyright (C) 2006-2021 Talend Inc. - www.talend.com
 //
 //This source code is available under agreement available at
 //%InstallDIR%\features\org.talend.rcp.branding.%PRODUCTNAME%\%PRODUCTNAME%license.txt
