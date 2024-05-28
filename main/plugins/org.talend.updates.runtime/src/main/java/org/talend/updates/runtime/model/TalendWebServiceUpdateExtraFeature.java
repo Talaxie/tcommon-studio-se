@@ -36,7 +36,7 @@ import org.talend.librariesmanager.utils.RemoteModulesHelper;
 import org.talend.updates.runtime.i18n.Messages;
 
 /**
- * Special extra feature that does not use p2 repository but the Talend update web service.
+ * Special extra feature that does not use p2 repository but the Talaxie update web service.
  *
  */
 public class TalendWebServiceUpdateExtraFeature implements ExtraFeature {

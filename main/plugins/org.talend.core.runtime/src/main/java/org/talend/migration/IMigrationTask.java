@@ -28,7 +28,7 @@ public interface IMigrationTask {
     public void setName(String name);
 
     /**
-     * DOC ycbai Comment method "getVersion". This is the Talend version when this migration task was introduced.
+     * DOC ycbai Comment method "getVersion". This is the Talaxie version when this migration task was introduced.
      *
      * @return
      */

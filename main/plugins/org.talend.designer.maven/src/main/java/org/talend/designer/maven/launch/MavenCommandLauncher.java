@@ -194,7 +194,7 @@ public abstract class MavenCommandLauncher {
             // workingCopy.setAttribute(IJavaLaunchConfigurationConstants.ATTR_PROJECT_NAME,
             // basedir.getProject().getName());
 
-            // --------------Special settings for Talend----------
+            // --------------Special settings for Talaxie----------
             boolean captureLogs = isCaptureOutputInConsoleView() || TalendMavenConstants.GOAL_INSTALL.equals(goal);
             if (captureLogs) {
                 // by default will catch the output in console. so set null
@@ -369,9 +369,9 @@ public abstract class MavenCommandLauncher {
 
             if (!isCaptureOutputInConsoleView()) {
                 // specially for commandline. if studio, when debug model, will log it in console view, so no need this.
-                TalendDebugHandler.debug("\n------------------ Talend Maven Launcher log START -----------------------\n");
+                TalendDebugHandler.debug("\n------------------ Talaxie Maven Launcher log START -----------------------\n");
                 TalendDebugHandler.debug(log);
-                TalendDebugHandler.debug("\n------------------ Talend Maven Launcher log END -----------------------\n");
+                TalendDebugHandler.debug("\n------------------ Talaxie Maven Launcher log END -----------------------\n");
             }
             for (String line : log.split("\n")) { //$NON-NLS-1$
                 if (line.startsWith("[ERROR]")) { //$NON-NLS-1$

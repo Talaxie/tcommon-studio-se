@@ -1070,7 +1070,7 @@ public class PropertiesAdapterFactory extends AdapterFactoryImpl {
 
     /**
      * Creates a new adapter for an object of class '{@link org.talend.core.model.properties.TalendTrigger
-     * <em>Talend Trigger</em>}'. <!-- begin-user-doc --> This default implementation returns null so that we can easily
+     * <em>Talaxie Trigger</em>}'. <!-- begin-user-doc --> This default implementation returns null so that we can easily
      * ignore cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!-- end-user-doc
      * -->
      * 
@@ -1083,7 +1083,7 @@ public class PropertiesAdapterFactory extends AdapterFactoryImpl {
     }
 
     /**
-     * Creates a new adapter for an object of class '{@link org.talend.core.model.properties.CronTalendTrigger <em>Cron Talend Trigger</em>}'.
+     * Creates a new adapter for an object of class '{@link org.talend.core.model.properties.CronTalendTrigger <em>Cron Talaxie Trigger</em>}'.
      * <!-- begin-user-doc --> This default implementation returns null so that we can
      * easily ignore cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
      * end-user-doc -->
@@ -1096,7 +1096,7 @@ public class PropertiesAdapterFactory extends AdapterFactoryImpl {
     }
 
     /**
-     * Creates a new adapter for an object of class '{@link org.talend.core.model.properties.CronUITalendTrigger <em>Cron UI Talend Trigger</em>}'.
+     * Creates a new adapter for an object of class '{@link org.talend.core.model.properties.CronUITalendTrigger <em>Cron UI Talaxie Trigger</em>}'.
      * <!-- begin-user-doc --> This default implementation returns null so that we
      * can easily ignore cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
      * end-user-doc -->
@@ -1109,7 +1109,7 @@ public class PropertiesAdapterFactory extends AdapterFactoryImpl {
     }
 
     /**
-     * Creates a new adapter for an object of class '{@link org.talend.core.model.properties.SimpleTalendTrigger <em>Simple Talend Trigger</em>}'.
+     * Creates a new adapter for an object of class '{@link org.talend.core.model.properties.SimpleTalendTrigger <em>Simple Talaxie Trigger</em>}'.
      * <!-- begin-user-doc --> This default implementation returns null so that we can
      * easily ignore cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
      * end-user-doc -->

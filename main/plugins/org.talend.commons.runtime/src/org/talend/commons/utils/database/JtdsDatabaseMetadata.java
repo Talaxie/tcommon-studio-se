@@ -7,7 +7,7 @@ package org.talend.commons.utils.database;
 //%InstallDIR%\features\org.talend.rcp.branding.%PRODUCTNAME%\%PRODUCTNAME%license.txt
 //
 //You should have received a copy of the agreement
-//along with this program; if not, write to Talend SA
+//along with this program; if not, write to Talaxie SA
 //9 rue Pages 92150 Suresnes, France
 //
 //============================================================================

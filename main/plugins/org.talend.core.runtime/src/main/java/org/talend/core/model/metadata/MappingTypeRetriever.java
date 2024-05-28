@@ -109,7 +109,7 @@ public class MappingTypeRetriever {
     }
 
     /**
-     * Returns adviced mappings for a given Talend type.
+     * Returns adviced mappings for a given Talaxie type.
      *
      * @param talendType
      * @return a list of MappingType or null if not found

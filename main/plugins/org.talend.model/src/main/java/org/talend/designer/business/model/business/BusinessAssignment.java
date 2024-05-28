@@ -14,7 +14,7 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * <ul>
  *   <li>{@link org.talend.designer.business.model.business.BusinessAssignment#getBusinessItem <em>Business Item</em>}</li>
- *   <li>{@link org.talend.designer.business.model.business.BusinessAssignment#getTalendItem <em>Talend Item</em>}</li>
+ *   <li>{@link org.talend.designer.business.model.business.BusinessAssignment#getTalendItem <em>Talaxie Item</em>}</li>
  *   <li>{@link org.talend.designer.business.model.business.BusinessAssignment#getComment <em>Comment</em>}</li>
  * </ul>
  * </p>
@@ -59,15 +59,15 @@ public interface BusinessAssignment extends EObject {
     void setBusinessItem(BusinessItem value);
 
     /**
-     * Returns the value of the '<em><b>Talend Item</b></em>' reference.
+     * Returns the value of the '<em><b>Talaxie Item</b></em>' reference.
      * It is bidirectional and its opposite is '{@link org.talend.designer.business.model.business.TalendItem#getAssignments <em>Assignments</em>}'.
      * <!-- begin-user-doc -->
      * <p>
-     * If the meaning of the '<em>Talend Item</em>' reference isn't clear, there really should be more of a
+     * If the meaning of the '<em>Talaxie Item</em>' reference isn't clear, there really should be more of a
      * description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Talend Item</em>' reference.
+     * @return the value of the '<em>Talaxie Item</em>' reference.
      * @see #setTalendItem(TalendItem)
      * @see org.talend.designer.business.model.business.BusinessPackage#getBusinessAssignment_TalendItem()
      * @see org.talend.designer.business.model.business.TalendItem#getAssignments
@@ -77,9 +77,9 @@ public interface BusinessAssignment extends EObject {
     TalendItem getTalendItem();
 
     /**
-     * Sets the value of the '{@link org.talend.designer.business.model.business.BusinessAssignment#getTalendItem <em>Talend Item</em>}' reference.
+     * Sets the value of the '{@link org.talend.designer.business.model.business.BusinessAssignment#getTalendItem <em>Talaxie Item</em>}' reference.
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @param value the new value of the '<em>Talend Item</em>' reference.
+     * @param value the new value of the '<em>Talaxie Item</em>' reference.
      * @see #getTalendItem()
      * @generated
      */

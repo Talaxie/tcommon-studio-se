@@ -38,7 +38,7 @@ import org.talend.core.model.properties.PropertiesPackage;
  *   <li>{@link org.talend.core.model.properties.impl.ExecutionServerImpl#getPassword <em>Password</em>}</li>
  *   <li>{@link org.talend.core.model.properties.impl.ExecutionServerImpl#getJmxUrl <em>Jmx Url</em>}</li>
  *   <li>{@link org.talend.core.model.properties.impl.ExecutionServerImpl#getWebConsoleUrl <em>Web Console Url</em>}</li>
- *   <li>{@link org.talend.core.model.properties.impl.ExecutionServerImpl#isTalendRuntime <em>Talend Runtime</em>}</li>
+ *   <li>{@link org.talend.core.model.properties.impl.ExecutionServerImpl#isTalendRuntime <em>Talaxie Runtime</em>}</li>
  *   <li>{@link org.talend.core.model.properties.impl.ExecutionServerImpl#getMgmtServerPort <em>Mgmt Server Port</em>}</li>
  *   <li>{@link org.talend.core.model.properties.impl.ExecutionServerImpl#getMgmtRegPort <em>Mgmt Reg Port</em>}</li>
  *   <li>{@link org.talend.core.model.properties.impl.ExecutionServerImpl#getAdminConsolePort <em>Admin Console Port</em>}</li>
@@ -311,7 +311,7 @@ public class ExecutionServerImpl extends EObjectImpl implements ExecutionServer 
     protected String webConsoleUrl = WEB_CONSOLE_URL_EDEFAULT;
 
     /**
-     * The default value of the '{@link #isTalendRuntime() <em>Talend Runtime</em>}' attribute.
+     * The default value of the '{@link #isTalendRuntime() <em>Talaxie Runtime</em>}' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @see #isTalendRuntime()
@@ -321,7 +321,7 @@ public class ExecutionServerImpl extends EObjectImpl implements ExecutionServer 
     protected static final boolean TALEND_RUNTIME_EDEFAULT = false;
 
     /**
-     * The cached value of the '{@link #isTalendRuntime() <em>Talend Runtime</em>}' attribute.
+     * The cached value of the '{@link #isTalendRuntime() <em>Talaxie Runtime</em>}' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @see #isTalendRuntime()

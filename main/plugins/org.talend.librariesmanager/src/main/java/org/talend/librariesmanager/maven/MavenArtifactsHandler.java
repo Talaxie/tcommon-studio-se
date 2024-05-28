@@ -55,7 +55,7 @@ public class MavenArtifactsHandler {
 
     /**
      *
-     * DOC Talend Comment method "deployToLocalMaven".
+     * DOC Talaxie Comment method "deployToLocalMaven".
      *
      * @param uriOrPath can be a filePath or platform uri
      * @param mavenUri maven uri

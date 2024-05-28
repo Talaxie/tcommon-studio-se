@@ -40,7 +40,7 @@ import org.talend.updates.runtime.nexus.component.NexusServerManager;
 import org.talend.updates.runtime.storage.impl.NexusFeatureStorage;
 
 /**
- * DOC Talend class global comment. Detailled comment
+ * DOC Talaxie class global comment. Detailled comment
  */
 public class ComponentsNexusInstallFactory extends AbstractExtraUpdatesFactory implements IComponentUpdatesFactory {
 

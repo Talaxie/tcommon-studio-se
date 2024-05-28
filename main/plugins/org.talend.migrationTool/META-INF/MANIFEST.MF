@@ -4,7 +4,7 @@ Bundle-Name: Migration Tool Plug-in
 Bundle-SymbolicName: org.talend.migrationTool;singleton:=true
 Bundle-Version: 8.8.8.qualifier
 Bundle-Activator: org.talend.migrationtool.MigrationToolPlugin
-Bundle-Vendor: .Talend SA.
+Bundle-Vendor: .Talaxie SA.
 Require-Bundle: org.eclipse.core.runtime,
  org.talend.model,
  org.talend.metadata.managment,

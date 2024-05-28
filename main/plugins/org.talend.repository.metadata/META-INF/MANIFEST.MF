@@ -74,5 +74,5 @@ Export-Package: org.talend.repository.metadata,
  org.talend.repository.ui.wizards.metadata.connection.wsdl,
  org.talend.repository.ui.wizards.metadata.table.database,
  org.talend.repository.ui.wizards.metadata.table.files
-Bundle-Vendor: .Talend SA.
+Bundle-Vendor: .Talaxie SA.
 Import-Package: org.talend.hadoop.distribution

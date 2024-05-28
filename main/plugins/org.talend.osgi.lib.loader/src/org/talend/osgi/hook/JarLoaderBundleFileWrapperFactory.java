@@ -226,7 +226,7 @@ public class JarLoaderBundleFileWrapperFactory implements BundleFileWrapperFacto
     public BundleFileWrapper wrapBundleFile(BundleFile bundleFile, Generation generation, boolean base) {
         if (canHandleBundle(bundleFile.getBaseFile().getName())) {
             // all this is done because NestedDirbundleFile has a private cp that can't be acced
-            if (base) {// base bundle file so create a Talend wrapper in case one jar is missing
+            if (base) {// base bundle file so create a Talaxie wrapper in case one jar is missing
                 return new TalendBundleFileWrapper(bundleFile, generation);
             } else {// inner jar or inner folder or missing jar bundle entry
                 // only handle missing jar entry

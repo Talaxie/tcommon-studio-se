@@ -17,7 +17,7 @@ import org.talend.core.model.metadata.builder.connection.Connection;
 import org.talend.core.model.repository.ERepositoryObjectType;
 
 /**
- * created by Talend on Apr 15, 2015 Detailled comment
+ * created by Talaxie on Apr 15, 2015 Detailled comment
  *
  */
 public interface INOSQLService extends IService {

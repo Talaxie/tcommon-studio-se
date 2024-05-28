@@ -596,7 +596,7 @@ public class ExtractMetaDataUtils {
     }
 
     // PTODO cantoine : Be careful : Integrate in properties or preferences of
-    // Talend Product
+    // Talaxie Product
     // OCA : save connectionString and associated regex in the same place.
     /**
      * DOC cantoine. Method to return MetaDataInfo on Column DataBaseConnection.

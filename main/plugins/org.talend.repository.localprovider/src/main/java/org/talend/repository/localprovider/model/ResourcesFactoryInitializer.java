@@ -18,14 +18,14 @@ import org.talend.model.emf.CwmResourceFactory;
 
 /**
  *
- * class ResourcesFactoryInitializer. Initialize *ResourcesFactory instances required to load Talend items.
+ * class ResourcesFactoryInitializer. Initialize *ResourcesFactory instances required to load Talaxie items.
  */
 public class ResourcesFactoryInitializer {
 
     /**
      *
      * Method "initResourceFactories". <br/>
-     * Initialize *ResourcesFactory instances required to load Talend *.properties files.
+     * Initialize *ResourcesFactory instances required to load Talaxie *.properties files.
      */
     public static void initResourceFactories() {
         // EmfFileResourceUtil use CwmResourceFactory for project and properties ????

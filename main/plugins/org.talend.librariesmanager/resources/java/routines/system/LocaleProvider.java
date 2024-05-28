@@ -6,7 +6,7 @@ import java.util.Map;
 
 // ============================================================================
 //
-// Talend Community Edition
+// Talaxie Community Edition
 //
 // Copyright (C) 2006-2021 Talend Inc. - www.talend.com
 //

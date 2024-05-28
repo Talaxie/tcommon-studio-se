@@ -5,7 +5,7 @@ Bundle-SymbolicName: org.talend.core.runtime;singleton:=true
 Automatic-Module-Name: org.talend.core.runtime
 Bundle-Version: 8.8.8.qualifier
 Bundle-Localization: plugin
-Bundle-Vendor: .Talend SA.
+Bundle-Vendor: .Talaxie SA.
 Export-Package: org.json.simple,
  org.talend.analysistask,
  org.talend.commons.report,

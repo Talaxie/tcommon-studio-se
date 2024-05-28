@@ -31,10 +31,10 @@ public interface RecycleBinFactory extends EFactory {
     RecycleBin createRecycleBin();
 
     /**
-     * Returns a new object of class '<em>Talend Item</em>'.
+     * Returns a new object of class '<em>Talaxie Item</em>'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @return a new object of class '<em>Talend Item</em>'.
+     * @return a new object of class '<em>Talaxie Item</em>'.
      * @generated
      */
     TalendItem createTalendItem();

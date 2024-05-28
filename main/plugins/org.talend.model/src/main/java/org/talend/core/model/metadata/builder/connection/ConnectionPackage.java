@@ -1358,7 +1358,7 @@ public interface ConnectionPackage extends EPackage {
     int METADATA_COLUMN__DEFAULT_VALUE = ABSTRACT_METADATA_OBJECT_FEATURE_COUNT + 22;
 
     /**
-     * The feature id for the '<em><b>Talend Type</b></em>' attribute.
+     * The feature id for the '<em><b>Talaxie Type</b></em>' attribute.
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      * @ordered
@@ -18484,7 +18484,7 @@ public interface ConnectionPackage extends EPackage {
     int EDIFACT_COLUMN__DEFAULT_VALUE = METADATA_COLUMN__DEFAULT_VALUE;
 
     /**
-     * The feature id for the '<em><b>Talend Type</b></em>' attribute.
+     * The feature id for the '<em><b>Talaxie Type</b></em>' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
@@ -19870,7 +19870,7 @@ public interface ConnectionPackage extends EPackage {
     int SAP_TABLE_FIELD__DEFAULT_VALUE = METADATA_COLUMN__DEFAULT_VALUE;
 
     /**
-     * The feature id for the '<em><b>Talend Type</b></em>' attribute.
+     * The feature id for the '<em><b>Talaxie Type</b></em>' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
@@ -21147,7 +21147,7 @@ public interface ConnectionPackage extends EPackage {
     int SAPBW_TABLE_FIELD__DEFAULT_VALUE = SAP_TABLE_FIELD__DEFAULT_VALUE;
 
     /**
-     * The feature id for the '<em><b>Talend Type</b></em>' attribute.
+     * The feature id for the '<em><b>Talaxie Type</b></em>' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
@@ -21963,9 +21963,9 @@ public interface ConnectionPackage extends EPackage {
     EAttribute getMetadataColumn_DefaultValue();
 
     /**
-     * Returns the meta object for the attribute '{@link org.talend.core.model.metadata.builder.connection.MetadataColumn#getTalendType <em>Talend Type</em>}'.
+     * Returns the meta object for the attribute '{@link org.talend.core.model.metadata.builder.connection.MetadataColumn#getTalendType <em>Talaxie Type</em>}'.
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @return the meta object for the attribute '<em>Talend Type</em>'.
+     * @return the meta object for the attribute '<em>Talaxie Type</em>'.
      * @see org.talend.core.model.metadata.builder.connection.MetadataColumn#getTalendType()
      * @see #getMetadataColumn()
      * @generated
@@ -26855,7 +26855,7 @@ public interface ConnectionPackage extends EPackage {
         EAttribute METADATA_COLUMN__DEFAULT_VALUE = eINSTANCE.getMetadataColumn_DefaultValue();
 
         /**
-         * The meta object literal for the '<em><b>Talend Type</b></em>' attribute feature.
+         * The meta object literal for the '<em><b>Talaxie Type</b></em>' attribute feature.
          * <!-- begin-user-doc --> <!--
          * end-user-doc -->
          * @generated

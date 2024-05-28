@@ -41,7 +41,7 @@ import org.talend.updates.runtime.model.IuP2ExtraFeature;
 import org.talend.updates.runtime.model.P2ExtraFeature;
 
 /**
- * DOC Talend class global comment. Detailled comment
+ * DOC Talaxie class global comment. Detailled comment
  */
 public class TOSDynamicExtraFeaturesFactory extends AbstractExtraUpdatesFactory {
 

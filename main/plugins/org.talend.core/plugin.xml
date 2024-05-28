@@ -6,9 +6,9 @@
    <extension-point id="external_component" name="External component" schema="schema/external_component.exsd"/>
    <extension-point id="repositoryContextualsActions" name="Repository actions" schema="schema/repository_actions.exsd"/>
    <extension-point id="migrationTask" name="Migration tool atomic task" schema="schema/migrationTask.exsd"/>
-   <extension-point id="talendperspectives" name="Talend Perspectives" schema="schema/talendperspectives.exsd"/>
+   <extension-point id="talendperspectives" name="Talaxie Perspectives" schema="schema/talendperspectives.exsd"/>
    <extension-point id="component_custom_action" name="Component Custom Action" schema="schema/component_custom_action.exsd"/>
-   <extension-point id="talend_external_proposals" name="Talend External Proposals" schema="schema/talend_external_proposals.exsd"/>
+   <extension-point id="talend_external_proposals" name="Talaxie External Proposals" schema="schema/talend_external_proposals.exsd"/>
    <extension-point id="component_definition" name="Component Definition" schema="schema/component_definition.exsd"/>
    <extension-point id="routines_provider" name="Routines Provider" schema="schema/routines_provider.exsd"/>
    <extension-point id="systemRoutineLibrary" name="system routine library" schema="schema/systemRoutineLibrary.exsd"/>
@@ -26,7 +26,7 @@
    </extension>
    <extension
          id="talendnature"
-         name="Talend"
+         name="Talaxie"
          point="org.eclipse.core.resources.natures">
       <runtime>
          <run class="org.talend.core.model.general.TalendNature"/>

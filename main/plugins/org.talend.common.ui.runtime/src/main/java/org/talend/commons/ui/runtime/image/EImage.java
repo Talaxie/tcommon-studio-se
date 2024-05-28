@@ -49,10 +49,17 @@ public enum EImage implements IImage {
 
     IMPORT_ICON("/icons/import.gif"), //$NON-NLS-1$
     EXPORT_ICON("/icons/export.gif"), //$NON-NLS-1$
+    NEXUS_64("/icons/Nexus_64x64.png"), //$NON-NLS-1$
+    ETLTOOL_ICON("/icons/EtlTool_16x16.png"), //$NON-NLS-1$
+    ETLTOOL_64("/icons/EtlTool_64x64.png"), //$NON-NLS-1$
     EXPORT_WIZ_ICON("/icons/export_wiz.png"), //$NON-NLS-1$
     EXPORT_ZIP_ICON("/icons/exportzip_wiz.png"), //$NON-NLS-1$
     EXPORT_JOB_ICON("/icons/export_job.png"), //$NON-NLS-1$
     EXPORT_HTML_ICON("/icons/export_html.png"), //$NON-NLS-1$
+    SERVERWEB_HEADER("/icons/web_header.png"), //$NON-NLS-1$
+    SERVERWEB_64("/icons/web_64x64.png"), //$NON-NLS-1$
+    PLAY_16("/icons/play_16x16.png"), //$NON-NLS-1$
+    STOP_16("/icons/stop_16x16.png"), //$NON-NLS-1$
 
     TREE_EXPAND("/icons/tree_expand.gif"), //$NON-NLS-1$
     TREE_COLLAPSE("/icons/tree_collapse.gif"), //$NON-NLS-1$

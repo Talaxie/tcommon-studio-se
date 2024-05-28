@@ -4,7 +4,7 @@ Bundle-Name: MigrationTool Test
 Bundle-SymbolicName: org.talend.migrationTool.test
 Bundle-Version: 8.8.8.qualifier
 Fragment-Host: org.talend.migrationTool
-Bundle-Vendor: .Talend SA.
+Bundle-Vendor: .Talaxie SA.
 Require-Bundle: org.talend.testutils,
  org.junit
 Export-Package: org.talend.migrationtool

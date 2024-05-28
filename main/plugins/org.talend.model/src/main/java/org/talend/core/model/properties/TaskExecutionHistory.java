@@ -22,9 +22,9 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link org.talend.core.model.properties.TaskExecutionHistory#getTaskLabel <em>Task Label</em>}</li>
  *   <li>{@link org.talend.core.model.properties.TaskExecutionHistory#getTaskDescription <em>Task Description</em>}</li>
  *   <li>{@link org.talend.core.model.properties.TaskExecutionHistory#getProjectName <em>Project Name</em>}</li>
- *   <li>{@link org.talend.core.model.properties.TaskExecutionHistory#getTalendJobName <em>Talend Job Name</em>}</li>
- *   <li>{@link org.talend.core.model.properties.TaskExecutionHistory#getTalendJobId <em>Talend Job Id</em>}</li>
- *   <li>{@link org.talend.core.model.properties.TaskExecutionHistory#getTalendJobVersion <em>Talend Job Version</em>}</li>
+ *   <li>{@link org.talend.core.model.properties.TaskExecutionHistory#getTalendJobName <em>Talaxie Job Name</em>}</li>
+ *   <li>{@link org.talend.core.model.properties.TaskExecutionHistory#getTalendJobId <em>Talaxie Job Id</em>}</li>
+ *   <li>{@link org.talend.core.model.properties.TaskExecutionHistory#getTalendJobVersion <em>Talaxie Job Version</em>}</li>
  *   <li>{@link org.talend.core.model.properties.TaskExecutionHistory#getContextName <em>Context Name</em>}</li>
  *   <li>{@link org.talend.core.model.properties.TaskExecutionHistory#getVirtualServerName <em>Virtual Server Name</em>}</li>
  *   <li>{@link org.talend.core.model.properties.TaskExecutionHistory#getExecutionServerName <em>Execution Server Name</em>}</li>
@@ -218,14 +218,14 @@ public interface TaskExecutionHistory extends EObject {
     void setProjectName(String value);
 
     /**
-     * Returns the value of the '<em><b>Talend Job Name</b></em>' attribute.
+     * Returns the value of the '<em><b>Talaxie Job Name</b></em>' attribute.
      * <!-- begin-user-doc -->
      * <p>
-     * If the meaning of the '<em>Talend Job Name</em>' attribute isn't clear, there really should be more of a
+     * If the meaning of the '<em>Talaxie Job Name</em>' attribute isn't clear, there really should be more of a
      * description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Talend Job Name</em>' attribute.
+     * @return the value of the '<em>Talaxie Job Name</em>' attribute.
      * @see #setTalendJobName(String)
      * @see org.talend.core.model.properties.PropertiesPackage#getTaskExecutionHistory_TalendJobName()
      * @model
@@ -234,23 +234,23 @@ public interface TaskExecutionHistory extends EObject {
     String getTalendJobName();
 
     /**
-     * Sets the value of the '{@link org.talend.core.model.properties.TaskExecutionHistory#getTalendJobName <em>Talend Job Name</em>}' attribute.
+     * Sets the value of the '{@link org.talend.core.model.properties.TaskExecutionHistory#getTalendJobName <em>Talaxie Job Name</em>}' attribute.
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @param value the new value of the '<em>Talend Job Name</em>' attribute.
+     * @param value the new value of the '<em>Talaxie Job Name</em>' attribute.
      * @see #getTalendJobName()
      * @generated
      */
     void setTalendJobName(String value);
 
     /**
-     * Returns the value of the '<em><b>Talend Job Id</b></em>' attribute.
+     * Returns the value of the '<em><b>Talaxie Job Id</b></em>' attribute.
      * <!-- begin-user-doc -->
      * <p>
-     * If the meaning of the '<em>Talend Job Id</em>' attribute isn't clear, there really should be more of a
+     * If the meaning of the '<em>Talaxie Job Id</em>' attribute isn't clear, there really should be more of a
      * description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Talend Job Id</em>' attribute.
+     * @return the value of the '<em>Talaxie Job Id</em>' attribute.
      * @see #setTalendJobId(String)
      * @see org.talend.core.model.properties.PropertiesPackage#getTaskExecutionHistory_TalendJobId()
      * @model
@@ -259,23 +259,23 @@ public interface TaskExecutionHistory extends EObject {
     String getTalendJobId();
 
     /**
-     * Sets the value of the '{@link org.talend.core.model.properties.TaskExecutionHistory#getTalendJobId <em>Talend Job Id</em>}' attribute.
+     * Sets the value of the '{@link org.talend.core.model.properties.TaskExecutionHistory#getTalendJobId <em>Talaxie Job Id</em>}' attribute.
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @param value the new value of the '<em>Talend Job Id</em>' attribute.
+     * @param value the new value of the '<em>Talaxie Job Id</em>' attribute.
      * @see #getTalendJobId()
      * @generated
      */
     void setTalendJobId(String value);
 
     /**
-     * Returns the value of the '<em><b>Talend Job Version</b></em>' attribute.
+     * Returns the value of the '<em><b>Talaxie Job Version</b></em>' attribute.
      * <!-- begin-user-doc -->
      * <p>
-     * If the meaning of the '<em>Talend Job Version</em>' attribute isn't clear, there really should be more of a
+     * If the meaning of the '<em>Talaxie Job Version</em>' attribute isn't clear, there really should be more of a
      * description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Talend Job Version</em>' attribute.
+     * @return the value of the '<em>Talaxie Job Version</em>' attribute.
      * @see #setTalendJobVersion(String)
      * @see org.talend.core.model.properties.PropertiesPackage#getTaskExecutionHistory_TalendJobVersion()
      * @model
@@ -284,9 +284,9 @@ public interface TaskExecutionHistory extends EObject {
     String getTalendJobVersion();
 
     /**
-     * Sets the value of the '{@link org.talend.core.model.properties.TaskExecutionHistory#getTalendJobVersion <em>Talend Job Version</em>}' attribute.
+     * Sets the value of the '{@link org.talend.core.model.properties.TaskExecutionHistory#getTalendJobVersion <em>Talaxie Job Version</em>}' attribute.
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @param value the new value of the '<em>Talend Job Version</em>' attribute.
+     * @param value the new value of the '<em>Talaxie Job Version</em>' attribute.
      * @see #getTalendJobVersion()
      * @generated
      */

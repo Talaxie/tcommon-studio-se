@@ -13,7 +13,7 @@
 package org.talend.repository.navigator;
 
 /**
- * Default root class for the Talend Repository viewer <br/>
+ * Default root class for the Talaxie Repository viewer <br/>
  *
  *
  */

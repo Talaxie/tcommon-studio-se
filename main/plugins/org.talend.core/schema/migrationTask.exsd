@@ -6,7 +6,7 @@
          <meta.schema plugin="org.talend.core" id="migrationTask" name="Migration tool atomic task"/>
       </appInfo>
       <documentation>
-         Define migration tasks to run to assure ascendant compatibility through Talend version for workspace and projects.
+         Define migration tasks to run to assure ascendant compatibility through Talaxie version for workspace and projects.
       </documentation>
    </annotation>
 
@@ -80,7 +80,7 @@
          <attribute name="version" type="string" use="required">
             <annotation>
                <documentation>
-                  This is the Talend version when this migration task was introduced.
+                  This is the Talaxie version when this migration task was introduced.
                </documentation>
                <appInfo>
                   <meta.attribute translatable="true"/>
@@ -149,7 +149,7 @@
          <attribute name="version" type="string" use="required">
             <annotation>
                <documentation>
-                  This is the Talend version when this migration task was introduced.
+                  This is the Talaxie version when this migration task was introduced.
                </documentation>
                <appInfo>
                   <meta.attribute translatable="true"/>
@@ -210,8 +210,8 @@
          <meta.section type="copyright"/>
       </appInfo>
       <documentation>
-         Talend Community Edition&lt;br&gt;
-Copyright (C) 2007 Talend - www.talend.com
+         Talaxie Community Edition&lt;br&gt;
+Copyright (C) 2007 Talaxie - www.talend.com
       </documentation>
    </annotation>
 

@@ -33,7 +33,7 @@ public class EXASOLDatabaseMetaData extends PackageFakeDatabaseMetadata {
     private static final String[] TABLE_META = { "TABLE_TYPE", "TABLE_NAME", "TABLE_SCHEM", "REMARKS" }; //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$ //$NON-NLS-4$
 
     /**
-     * DOC Talend EXASOLDatabaseMetaData constructor comment.
+     * DOC Talaxie EXASOLDatabaseMetaData constructor comment.
      *
      * @param connection
      * @throws SQLException

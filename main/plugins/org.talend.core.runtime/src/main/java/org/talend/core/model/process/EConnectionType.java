@@ -16,7 +16,7 @@ import org.eclipse.swt.graphics.RGB;
 import org.talend.core.runtime.i18n.Messages;
 
 /**
- * Different types of connections in Talend. <br/>
+ * Different types of connections in Talaxie. <br/>
  *
  * $Id: EConnectionType.java 38013 2010-03-05 14:21:59Z mhirt $
  *

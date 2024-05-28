@@ -59,7 +59,7 @@ public class ClasspathsJarGenerator {
         Manifest manifest = new Manifest();
         Attributes a = manifest.getMainAttributes();
         a.put(Attributes.Name.MANIFEST_VERSION, "1.0"); //$NON-NLS-1$
-        a.put(Attributes.Name.IMPLEMENTATION_VENDOR, "Talend Open Studio"); //$NON-NLS-1$
+        a.put(Attributes.Name.IMPLEMENTATION_VENDOR, "Talaxie Open Studio"); //$NON-NLS-1$
         a.put(Attributes.Name.CLASS_PATH, newClasspath);
 
         String jarLocation = getJarLocation(property, usingTempDir);

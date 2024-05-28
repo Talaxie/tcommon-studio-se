@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: ImportExport Test
 Bundle-SymbolicName: org.talend.repository.items.importexport.test
 Bundle-Version: 8.8.8.qualifier
-Bundle-Vendor: .Talend SA.
+Bundle-Vendor: .Talaxie SA.
 Fragment-Host: org.talend.repository.items.importexport
 Require-Bundle: org.talend.testutils,
  org.junit

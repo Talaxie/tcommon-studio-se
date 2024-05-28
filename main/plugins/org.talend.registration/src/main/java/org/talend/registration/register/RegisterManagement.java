@@ -47,6 +47,8 @@ import org.talend.registration.register.proxy.HttpProxyUtil;
 import org.talend.registration.register.proxy.RegisterUserPortTypeProxy;
 import org.talend.repository.ui.login.connections.ConnectionUserPerReader;
 
+import org.talend.commons.CommonsPlugin;
+
 /**
  * DOC mhirt class global comment. Detailled comment <br/>
  *
@@ -475,9 +477,9 @@ public class RegisterManagement {
             uniqueId = uniqueId.replace("=", "%3D");
             uniqueId = uniqueId.replace("?", "%3F");
             uniqueId = uniqueId.replace("\\", "%5C");
-            registURL = new URL(
-                    "https://www.talend.com/designer_post_install?uid=" + uniqueId + "&prd=" + brandingService.getAcronym()); //$NON-NLS-1$ //$NON-NLS-2$
+            registURL = new URL("https://www.deilink.fr/#/talaxie/install?uid=" + uniqueId + "&prd=" + brandingService.getAcronym()); //$NON-NLS-1$ //$NON-NLS-2$
             PlatformUI.getWorkbench().getBrowserSupport().getExternalBrowser().openURL(registURL);
+            CommonsPlugin.setMavenOfflineState(false);
         } catch (PartInitException e) {
             // if no default browser (like on linux), try to open directly with firefox.
             try {

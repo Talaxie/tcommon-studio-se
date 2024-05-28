@@ -171,10 +171,10 @@ public class ItemProductValuesHelperTest {
 
     @Test
     public void test_setValuesWhenMigrate_nullDate() {
-        String productFullname = "Talend Open Studio for Big Data";
+        String productFullname = "Talaxie Open Studio for Big Data";
         String productVersion = "6.5.1.20171110_1941";
         Project project = PropertiesFactory.eINSTANCE.createProject();
-        project.setProductVersion("Talend Open Studio for Big Data-6.5.1.20171110_1941");
+        project.setProductVersion("Talaxie Open Studio for Big Data-6.5.1.20171110_1941");
 
         boolean set = ItemProductValuesHelper.setValuesWhenMigrate(prop, project);
         assertTrue(set);
@@ -220,10 +220,10 @@ public class ItemProductValuesHelperTest {
 
     @Test
     public void test_setValuesWhenMigrate() {
-        String productFullname = "Talend Open Studio for Big Data";
+        String productFullname = "Talaxie Open Studio for Big Data";
         String productVersion = "6.5.1.20171110_1941";
         Project project = PropertiesFactory.eINSTANCE.createProject();
-        project.setProductVersion("Talend Open Studio for Big Data-6.5.1.20171110_1941");
+        project.setProductVersion("Talaxie Open Studio for Big Data-6.5.1.20171110_1941");
 
         Date createdDate = prop.getCreationDate();
         Date modifiedDate = prop.getModificationDate();
@@ -276,10 +276,10 @@ public class ItemProductValuesHelperTest {
 
     @Test
     public void test_setValuesWhenImport_withMigrating() {
-        String productFullname = "Talend Open Studio for Big Data";
+        String productFullname = "Talaxie Open Studio for Big Data";
         String productVersion = "6.5.1.20171110_1941";
         Project project = PropertiesFactory.eINSTANCE.createProject();
-        project.setProductVersion("Talend Open Studio for Big Data-6.5.1.20171110_1941");
+        project.setProductVersion("Talaxie Open Studio for Big Data-6.5.1.20171110_1941");
 
         boolean set = ItemProductValuesHelper.setValuesWhenImport(prop, project);
         assertTrue(set);
@@ -303,10 +303,10 @@ public class ItemProductValuesHelperTest {
 
     @Test
     public void test_setValuesWhenImport_withoutMigrating() {
-        String productFullname = "Talend Open Studio for Big Data";
+        String productFullname = "Talaxie Open Studio for Big Data";
         String productVersion = "6.5.1.20171110_1941";
         Project project = PropertiesFactory.eINSTANCE.createProject();
-        project.setProductVersion("Talend Open Studio for Big Data-6.5.1.20171110_1941");
+        project.setProductVersion("Talaxie Open Studio for Big Data-6.5.1.20171110_1941");
 
         EMap additionalProp = prop.getAdditionalProperties();
         additionalProp.put(ItemProductKeys.FULLNAME.getModifiedKey(), "XXXX"); // set flag to avoid migrating
@@ -342,10 +342,10 @@ public class ItemProductValuesHelperTest {
     public void test_parseProduct_invalid() {
         doTestParseProduct("ABCD", "ABCD", null);
 
-        doTestParseProduct("Talend Open Studio for Big Data+6.5.1.20171110_1941",
-                "Talend Open Studio for Big Data+6.5.1.20171110_1941", null);
-        doTestParseProduct("Talend Open Studio for Big Data_6.5.1.20171110_1941",
-                "Talend Open Studio for Big Data_6.5.1.20171110_1941", null);
+        doTestParseProduct("Talaxie Open Studio for Big Data+6.5.1.20171110_1941",
+                "Talaxie Open Studio for Big Data+6.5.1.20171110_1941", null);
+        doTestParseProduct("Talaxie Open Studio for Big Data_6.5.1.20171110_1941",
+                "Talaxie Open Studio for Big Data_6.5.1.20171110_1941", null);
     }
 
     @Test
@@ -354,13 +354,13 @@ public class ItemProductValuesHelperTest {
 
         doTestParseProduct("ABCD-XYZ-123", "ABCD", "XYZ-123");
 
-        doTestParseProduct("Talend Open Studio for Big Data-6.5.1.20171110_1941", "Talend Open Studio for Big Data",
+        doTestParseProduct("Talaxie Open Studio for Big Data-6.5.1.20171110_1941", "Talaxie Open Studio for Big Data",
                 "6.5.1.20171110_1941");
-        doTestParseProduct("Talend Open Studio for Big Data-6.5.1.20171110-1941", "Talend Open Studio for Big Data",
+        doTestParseProduct("Talaxie Open Studio for Big Data-6.5.1.20171110-1941", "Talaxie Open Studio for Big Data",
                 "6.5.1.20171110-1941");
 
-        doTestParseProduct("Talend Open Studio-3.2.3.r35442", "Talend Open Studio", "3.2.3.r35442");
-        doTestParseProduct("Talend Open Studio for Data Integration-5.3.2.r113626", "Talend Open Studio for Data Integration",
+        doTestParseProduct("Talaxie Open Studio-3.2.3.r35442", "Talaxie Open Studio", "3.2.3.r35442");
+        doTestParseProduct("Talaxie Open Studio for Data Integration-5.3.2.r113626", "Talaxie Open Studio for Data Integration",
                 "5.3.2.r113626");
     }
 
@@ -371,7 +371,7 @@ public class ItemProductValuesHelperTest {
 
     @Test
     public void test_parseProduct_snapshot() {
-        doTestParseProduct("Talend Open Studio for Big Data-6.5.1.20171110_1941-SNAPSHOT", "Talend Open Studio for Big Data",
+        doTestParseProduct("Talaxie Open Studio for Big Data-6.5.1.20171110_1941-SNAPSHOT", "Talaxie Open Studio for Big Data",
                 "6.5.1.20171110_1941-SNAPSHOT");
     }
 

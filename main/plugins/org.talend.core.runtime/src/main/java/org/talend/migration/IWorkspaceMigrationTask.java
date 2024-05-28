@@ -14,7 +14,7 @@ package org.talend.migration;
 
 
 /**
- * Define an atomic migration task to run on a workspace to assure comptibility trough Talend versions. See
+ * Define an atomic migration task to run on a workspace to assure comptibility trough Talaxie versions. See
  * org.talend.core.migrationTask extension point.<br/>
  *
  * $Id: talend.epf 1 2006-09-29 17:06:40 +0000 (ven., 29 sept. 2006) nrousseau $

@@ -7,7 +7,7 @@ Bundle-Version: 8.8.8.qualifier
 Bundle-ActivationPolicy: lazy
 Bundle-ClassPath: .,
  lib/commons-exec.jar
-Bundle-Vendor: .Talend SA.
+Bundle-Vendor: .Talaxie SA.
 Import-Package: com.fasterxml.jackson.annotation,
  org.osgi.framework;version="1.10.0",
  org.talend.utils.json

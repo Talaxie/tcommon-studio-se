@@ -52,7 +52,7 @@
          point="org.eclipse.ui.commands">
       <category
             id="talend"
-            name="Talend">
+            name="Talaxie">
       </category>
    </extension>
    

@@ -18,7 +18,7 @@ import org.apache.oro.text.regex.Perl5Compiler;
 import org.apache.oro.text.regex.Perl5Matcher;
 
 /**
- * PerlDataTypeHelper is used to determine the Perl Type or the Talend Type of a string. TODO : This class don't
+ * PerlDataTypeHelper is used to determine the Perl Type or the Talaxie Type of a string. TODO : This class don't
  * determine the type DATE.
  *
  * $Id: PerlDataTypeHelper.java 38013 2010-03-05 14:21:59Z mhirt $

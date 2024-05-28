@@ -7,7 +7,7 @@ Bundle-ClassPath: .,
  lib/apache-mime4j-core-0.8.9.jar,
  lib/castor-1.0.3.jar,
  lib/jakarta-oro-2.0.8.jar
-Bundle-Vendor: .Talend SA.
+Bundle-Vendor: .Talaxie SA.
 Require-Bundle: org.apache.log4j;resolution:=optional,
  org.talend.libraries.apache.common,
  jackson-core-asl;bundle-version="1.9.13",

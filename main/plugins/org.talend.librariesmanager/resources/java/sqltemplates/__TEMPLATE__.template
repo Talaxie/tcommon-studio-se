@@ -1,5 +1,5 @@
 -- This pattern is suitable to make aggregate caculates(group by operations) on a  table
---(c) 2008 Talend Inc.
+--(c) 2008 Talaxie Inc.
 <% 
       EXTRACT(__GROUPBY__);
       EXTRACT(__OPERATION__);

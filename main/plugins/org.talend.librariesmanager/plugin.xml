@@ -35,16 +35,16 @@
         point="org.talend.core.runtime.librariesNeeded">
       <libraryNeeded
               context="plugin:org.talend.librariesmanager"
-              id="slf4j-api-@@SLF4J_VERSION@@.jar"
-              mvn_uri="mvn:org.slf4j/slf4j-api/@@SLF4J_VERSION@@"
-              name="slf4j-api-@@SLF4J_VERSION@@.jar"
+              id="slf4j-api-1.7.34.jar"
+              mvn_uri="mvn:org.slf4j/slf4j-api/1.7.34"
+              name="slf4j-api-1.7.34.jar"
               required="true">
       </libraryNeeded>
       <libraryNeeded
               context="plugin:org.talend.librariesmanager"
-              id="crypto-utils-@@CRYPTOUTILS_VERSION@@.jar"
-              mvn_uri="mvn:org.talend.daikon/crypto-utils/@@CRYPTOUTILS_VERSION@@"
-              name="crypto-utils-@@CRYPTOUTILS_VERSION@@.jar"
+              id="crypto-utils-7.1.16.jar"
+              mvn_uri="mvn:org.talend.daikon/crypto-utils/7.1.16"
+              name="crypto-utils-7.1.16.jar"
               required="true">
       </libraryNeeded>
    </extension>
@@ -53,13 +53,13 @@
       <systemRoutine
             name="SharedDBConnectionLog4j">
          <library
-               name="slf4j-api-@@SLF4J_VERSION@@.jar">
+               name="slf4j-api-1.7.34.jar">
          </library>
       </systemRoutine>
       <systemRoutine
             name="PasswordEncryptUtil">
          <library
-               name="crypto-utils-@@CRYPTOUTILS_VERSION@@.jar">
+               name="crypto-utils-7.1.16.jar">
          </library>
       </systemRoutine>
       <systemRoutine

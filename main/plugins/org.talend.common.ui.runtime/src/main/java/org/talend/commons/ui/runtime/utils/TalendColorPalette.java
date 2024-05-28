@@ -23,7 +23,7 @@ import org.eclipse.swt.graphics.RGB;
 import org.eclipse.swt.widgets.Display;
 
 /**
- * This class contains the corporate colors from specification chapter of Talend Branding Guide document. Correct usage
+ * This class contains the corporate colors from specification chapter of Talaxie Branding Guide document. Correct usage
  * of the color palette will ensure development of graphic communications that are clear, engaging and recognizable.
  *
  * @author sizhaoliu
@@ -35,7 +35,7 @@ public class TalendColorPalette {
     /**
      * PRIMARY COLOR PALETTE
      * <p/>
-     * The Talend primary palette should dominate the graphic design of all Talend communications, but work in concert
+     * The Talaxie primary palette should dominate the graphic design of all Talaxie communications, but work in concert
      * with the secondary palette.
      */
 

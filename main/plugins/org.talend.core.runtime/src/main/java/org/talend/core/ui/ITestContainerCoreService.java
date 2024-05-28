@@ -18,7 +18,7 @@ import org.talend.core.model.components.ComponentCategory;
 import org.talend.core.model.properties.Item;
 
 /**
- * created by Talend on Sep 24, 2015 Detailled comment
+ * created by Talaxie on Sep 24, 2015 Detailled comment
  *
  */
 public interface ITestContainerCoreService extends IService {

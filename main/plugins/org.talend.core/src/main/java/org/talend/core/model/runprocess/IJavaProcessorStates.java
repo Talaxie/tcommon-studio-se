@@ -15,7 +15,7 @@ package org.talend.core.model.runprocess;
 import org.eclipse.core.runtime.IPath;
 
 /**
- * There are two kinds of java project status, one is editor status for the use of Talend java editor and another is run
+ * There are two kinds of java project status, one is editor status for the use of Talaxie java editor and another is run
  * time status for the use of run process.
  *
  *

@@ -1505,12 +1505,12 @@ public class PropertiesSwitch {
     }
 
     /**
-     * Returns the result of interpreting the object as an instance of '<em>Talend Trigger</em>'. <!-- begin-user-doc
+     * Returns the result of interpreting the object as an instance of '<em>Talaxie Trigger</em>'. <!-- begin-user-doc
      * --> This implementation returns null; returning a non-null result will terminate the switch. <!-- end-user-doc
      * -->
      * 
      * @param object the target of the switch.
-     * @return the result of interpreting the object as an instance of '<em>Talend Trigger</em>'.
+     * @return the result of interpreting the object as an instance of '<em>Talaxie Trigger</em>'.
      * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
      * @generated
      */
@@ -1519,12 +1519,12 @@ public class PropertiesSwitch {
     }
 
     /**
-     * Returns the result of interpreting the object as an instance of '<em>Cron Talend Trigger</em>'. <!--
+     * Returns the result of interpreting the object as an instance of '<em>Cron Talaxie Trigger</em>'. <!--
      * begin-user-doc --> This implementation returns null; returning a non-null result will terminate the switch. <!--
      * end-user-doc -->
      * 
      * @param object the target of the switch.
-     * @return the result of interpreting the object as an instance of '<em>Cron Talend Trigger</em>'.
+     * @return the result of interpreting the object as an instance of '<em>Cron Talaxie Trigger</em>'.
      * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
      * @generated
      */
@@ -1533,12 +1533,12 @@ public class PropertiesSwitch {
     }
 
     /**
-     * Returns the result of interpreting the object as an instance of '<em>Cron UI Talend Trigger</em>'. <!--
+     * Returns the result of interpreting the object as an instance of '<em>Cron UI Talaxie Trigger</em>'. <!--
      * begin-user-doc --> This implementation returns null; returning a non-null result will terminate the switch. <!--
      * end-user-doc -->
      * 
      * @param object the target of the switch.
-     * @return the result of interpreting the object as an instance of '<em>Cron UI Talend Trigger</em>'.
+     * @return the result of interpreting the object as an instance of '<em>Cron UI Talaxie Trigger</em>'.
      * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
      * @generated
      */
@@ -1547,12 +1547,12 @@ public class PropertiesSwitch {
     }
 
     /**
-     * Returns the result of interpreting the object as an instance of '<em>Simple Talend Trigger</em>'. <!--
+     * Returns the result of interpreting the object as an instance of '<em>Simple Talaxie Trigger</em>'. <!--
      * begin-user-doc --> This implementation returns null; returning a non-null result will terminate the switch. <!--
      * end-user-doc -->
      * 
      * @param object the target of the switch.
-     * @return the result of interpreting the object as an instance of '<em>Simple Talend Trigger</em>'.
+     * @return the result of interpreting the object as an instance of '<em>Simple Talaxie Trigger</em>'.
      * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
      * @generated
      */

@@ -29,7 +29,7 @@ class ContextCellPainterDecorator extends CellPainterDecorator {
     private boolean isChange;
 
     /**
-     * DOC Talend ContextCellPainterDecorator constructor comment.
+     * DOC Talaxie ContextCellPainterDecorator constructor comment.
      *
      * @param baseCellPainter
      * @param cellEdge

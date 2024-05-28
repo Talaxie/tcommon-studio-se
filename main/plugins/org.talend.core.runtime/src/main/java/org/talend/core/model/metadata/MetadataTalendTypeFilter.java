@@ -20,14 +20,14 @@ import org.talend.core.model.metadata.types.JavaType;
 public abstract class MetadataTalendTypeFilter {
 
     /**
-     * This method returns a List of String, representing the data types that must not be shown in the Talend schema.
+     * This method returns a List of String, representing the data types that must not be shown in the Talaxie schema.
      *
      * @return
      */
     protected abstract List<String> getUnsupportedTypes();
 
     /**
-     * This method has the responsibility to remove the unsupported type from the Talend schema. DOC rdubois Comment
+     * This method has the responsibility to remove the unsupported type from the Talaxie schema. DOC rdubois Comment
      * method "filter".
      *
      * @param arrayTalendTypes

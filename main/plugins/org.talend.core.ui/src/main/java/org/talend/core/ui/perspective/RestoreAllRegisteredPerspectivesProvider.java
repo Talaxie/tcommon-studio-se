@@ -195,7 +195,7 @@ public class RestoreAllRegisteredPerspectivesProvider {
             // select the previously opened perspective except if it is the first time the workspace is used
             if (mPerspStack.getChildren().contains(initialSelectedPerspective) && !firstTimeLaunch) {
                 perspectiveToSelect = initialSelectedPerspective;
-            } else {// look for the Talend default one
+            } else {// look for the Talaxie default one
                     // get branding default perspective.
                 if (GlobalServiceRegister.getDefault().isServiceRegistered(IBrandingService.class)) {
                     IBrandingService service = (IBrandingService) GlobalServiceRegister.getDefault().getService(
@@ -212,7 +212,7 @@ public class RestoreAllRegisteredPerspectivesProvider {
                             EModelService.IN_ANY_PERSPECTIVE, new ElementMatcher(defaultPerspectiveId, null, (String) null));
                     if (!matchPerspectives.isEmpty()) { // get the first
                         perspectiveToSelect = matchPerspectives.get(0);
-                    }// else no perspective found matching the Talend, this should only occur when no default
+                    }// else no perspective found matching the Talaxie, this should only occur when no default
                      // perspective is set.
                 } else {// no talend default perspective then select the first one.
                     if (!mPerspStack.getChildren().isEmpty()) {

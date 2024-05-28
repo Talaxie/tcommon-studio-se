@@ -17,7 +17,7 @@ public class ResourceToolbarHandler extends AbstractHandler {
 
     public static final String LEARN = "Learn"; //$NON-NLS-1$
 
-    public static final String LEARN_ORIG_URL = "https://www.talend.com/academy";//$NON-NLS-1$
+    public static final String LEARN_ORIG_URL = "https://www.deilink.fr/#/academy";//$NON-NLS-1$
     
     public static final String DOCUMENTATION = "Documentation";//$NON-NLS-1$
     
@@ -25,7 +25,7 @@ public class ResourceToolbarHandler extends AbstractHandler {
 
     public static final String ASK = "Ask"; //$NON-NLS-1$
 
-    public static final String ASK_ORIG_URL = "https://community.talend.com";//$NON-NLS-1$
+    public static final String ASK_ORIG_URL = "https://www.deilink.fr/#/community";//$NON-NLS-1$
 
     public static final String EXCHANGE = "Exchange"; //$NON-NLS-1$
 
@@ -39,9 +39,9 @@ public class ResourceToolbarHandler extends AbstractHandler {
 
     public static final String CLOUD_ORIG_URL = "https://www.talend.com/free-trial";//$NON-NLS-1$
 
-    public static final String WHATS_NEW_URL = "https://help.talend.com/r/en-US/8.0/release-notes";//$NON-NLS-1$
+    public static final String WHATS_NEW_URL = "https://www.deilink.fr/#/release";//$NON-NLS-1$
 
-    public static final String PLANS_URL = "https://www.talend.com/pricing/";//$NON-NLS-1$
+    public static final String PLANS_URL = "https://www.deilink.fr/#/pricing/";//$NON-NLS-1$
 
     @Override
     public Object execute(ExecutionEvent event) throws ExecutionException {

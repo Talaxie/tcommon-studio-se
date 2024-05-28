@@ -17,7 +17,7 @@ import org.eclipse.core.resources.IProjectNature;
 import org.eclipse.core.runtime.CoreException;
 
 /**
- * The nature for Talend projects. <br/>
+ * The nature for Talaxie projects. <br/>
  *
  * $Id: TalendNature.java 38013 2010-03-05 14:21:59Z mhirt $
  *

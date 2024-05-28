@@ -211,4 +211,38 @@ public interface ITalendCorePrefConstants {
 
     public static final String PERSPECTIVE_PERSIST_SCOPE_DEFAULT = PERSPECTIVE_PERSIST_SCOPE_PROJECT_AND_BRANCH;
 
+    /**
+     * Webhook
+     */
+
+    public static final String WEBHOOK_NEXUS_ENABLED = "WEBHOOK_NEXUS_ENABLED"; //$NON-NLS-1$
+
+    public static final String WEBHOOK_NEXUS_HOST = "WEBHOOK_NEXUS_HOST"; //$NON-NLS-1$
+
+    public static final String WEBHOOK_NEXUS_LOGIN = "WEBHOOK_NEXUS_LOGIN"; //$NON-NLS-1$
+
+    public static final String WEBHOOK_NEXUS_PASSWORD = "WEBHOOK_NEXUS_PASSWORD"; //$NON-NLS-1$
+
+    public static final String WEBHOOK_NEXUS_RELEASE_REPO = "WEBHOOK_NEXUS_RELEASE_REPO"; //$NON-NLS-1$
+
+    public static final String WEBHOOK_NEXUS_SNAPSHOT_REPO = "WEBHOOK_NEXUS_SNAPSHOT_REPO"; //$NON-NLS-1$
+
+    public static final String WEBHOOK_NEXUS_GROUP_ID = "WEBHOOK_NEXUS_GROUP_ID"; //$NON-NLS-1$
+
+    public static final String WEBHOOK_ETLTOOL_ENABLED = "WEBHOOK_ETLTOOL_ENABLED"; //$NON-NLS-1$
+
+    public static final String WEBHOOK_ETLTOOL_FRONT_HOST = "WEBHOOK_ETLTOOL_FRONT_HOST"; //$NON-NLS-1$
+
+    public static final String WEBHOOK_ETLTOOL_BACK_HOST = "WEBHOOK_ETLTOOL_BACK_HOST"; //$NON-NLS-1$
+
+    public static final String WEBHOOK_ETLTOOL_LOGIN = "WEBHOOK_ETLTOOL_LOGIN"; //$NON-NLS-1$
+
+    public static final String WEBHOOK_ETLTOOL_PASSWORD = "WEBHOOK_ETLTOOL_PASSWORD"; //$NON-NLS-1$
+
+    public static final String WEBHOOK_SCRIPT_ENABLED = "WEBHOOK_SCRIPT_ENABLED"; //$NON-NLS-1$
+
+    public static final String WEBHOOK_SCRIPT_IMPORT_LOCATION = "WEBHOOK_SCRIPT_IMPORT_LOCATION"; //$NON-NLS-1$
+
+    public static final String WEBHOOK_SCRIPT_BUILD_LOCATION = "WEBHOOK_SCRIPT_BUILD_LOCATION"; //$NON-NLS-1$
+
 }

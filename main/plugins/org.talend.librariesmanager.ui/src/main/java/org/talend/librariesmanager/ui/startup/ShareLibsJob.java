@@ -23,7 +23,7 @@ import org.eclipse.core.runtime.jobs.Job;
 public class ShareLibsJob extends Job {
 
     /**
-     * DOC Talend ShareLibsJob constructor comment.
+     * DOC Talaxie ShareLibsJob constructor comment.
      *
      * @param name
      */

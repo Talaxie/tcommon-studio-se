@@ -399,7 +399,7 @@ public class MetadataColumnItemProvider extends AbstractMetadataObjectItemProvid
     }
 
     /**
-     * This adds a property descriptor for the Talend Type feature.
+     * This adds a property descriptor for the Talaxie Type feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated

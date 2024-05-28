@@ -193,7 +193,7 @@ public class XmlTree2SchemaDragAndDropHandler {
                         .openWarning(
                                 treeViewer.getTree().getShell(),
                                 "Columns Overflow",
-                                "The amount of schema columns has reached the max value. Please increase the max value on Preference Page(/Talend/Metadata) if you want to add new columns.");
+                                "The amount of schema columns has reached the max value. Please increase the max value on Preference Page(/Talaxie/Metadata) if you want to add new columns.");
                 return;
             }
 

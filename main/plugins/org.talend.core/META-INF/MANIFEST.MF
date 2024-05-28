@@ -29,7 +29,7 @@ Require-Bundle: org.eclipse.debug.core,
  org.eclipse.emf.ecore,
  org.talend.cwm.mip,
  org.apache.commons.lang3
-Bundle-Vendor: .Talend SA.
+Bundle-Vendor: .Talaxie SA.
 Export-Package: org.talend.core,
  org.talend.core.branding,
  org.talend.core.editor,

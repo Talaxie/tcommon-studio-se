@@ -11,6 +11,6 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.e4.ui.css.swt.theme
 Bundle-ActivationPolicy: lazy
 Bundle-Localization: plugin
-Bundle-Vendor: .Talend SA.
+Bundle-Vendor: .Talaxie SA.
 Eclipse-BundleShape: dir
 Automatic-Module-Name: org.talend.themes.css.talend

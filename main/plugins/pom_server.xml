@@ -87,7 +87,7 @@
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
-            <url>${talend.nexus.url}/nexus/content/repositories/TalendOpenSourceRelease/</url>
+            <url>${talend.nexus.url}/repository/talaxie/</url>
         </repository>
         <repository>
             <id>talend_open_snapshots</id>
@@ -97,7 +97,7 @@
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
-            <url>${talend.nexus.url}/nexus/content/repositories/TalendOpenSourceSnapshot/</url>
+            <url>${talend.nexus.url}/repository/talaxie/</url>
         </repository>
         <repository>
             <id>releases</id>

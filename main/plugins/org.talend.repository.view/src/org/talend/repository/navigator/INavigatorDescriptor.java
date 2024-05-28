@@ -13,7 +13,7 @@
 package org.talend.repository.navigator;
 
 /**
- * This interface is used to provide the top line string description in the Talend repository view this shall be adapted
+ * This interface is used to provide the top line string description in the Talaxie repository view this shall be adapted
  * to the repository navigator input
  *
  * $Id: talend.epf 55206 2011-02-15 17:32:14Z mhirt $

@@ -18,7 +18,7 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link org.talend.core.model.expression.EMFVariable#getName <em>Name</em>}</li>
  *   <li>{@link org.talend.core.model.expression.EMFVariable#getValue <em>Value</em>}</li>
- *   <li>{@link org.talend.core.model.expression.EMFVariable#getTalendType <em>Talend Type</em>}</li>
+ *   <li>{@link org.talend.core.model.expression.EMFVariable#getTalendType <em>Talaxie Type</em>}</li>
  *   <li>{@link org.talend.core.model.expression.EMFVariable#isNullable <em>Nullable</em>}</li>
  * </ul>
  * </p>
@@ -81,14 +81,14 @@ public interface EMFVariable extends EObject {
     void setValue(String value);
 
     /**
-     * Returns the value of the '<em><b>Talend Type</b></em>' attribute.
+     * Returns the value of the '<em><b>Talaxie Type</b></em>' attribute.
      * <!-- begin-user-doc -->
      * <p>
-     * If the meaning of the '<em>Talend Type</em>' attribute isn't clear,
+     * If the meaning of the '<em>Talaxie Type</em>' attribute isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Talend Type</em>' attribute.
+     * @return the value of the '<em>Talaxie Type</em>' attribute.
      * @see #setTalendType(String)
      * @see org.talend.core.model.expression.ExpressionPackage#getEMFVariable_TalendType()
      * @model
@@ -97,10 +97,10 @@ public interface EMFVariable extends EObject {
     String getTalendType();
 
     /**
-     * Sets the value of the '{@link org.talend.core.model.expression.EMFVariable#getTalendType <em>Talend Type</em>}' attribute.
+     * Sets the value of the '{@link org.talend.core.model.expression.EMFVariable#getTalendType <em>Talaxie Type</em>}' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Talend Type</em>' attribute.
+     * @param value the new value of the '<em>Talaxie Type</em>' attribute.
      * @see #getTalendType()
      * @generated
      */

@@ -935,7 +935,7 @@ public class ExtractManager {
 
     protected void setLengthAndPrecision(TdColumn column, ResultSet columns, String typeName) {
         /**
-         * NOTE: The concepts of precision and scale in oracle are different with them in Talend Studio<br>
+         * NOTE: The concepts of precision and scale in oracle are different with them in Talaxie Studio<br>
          * Please see: http://docs.oracle.com/cd/B28359_01/server.111/b28318/datatype.htm#i16209
          */
         int column_size = 0;

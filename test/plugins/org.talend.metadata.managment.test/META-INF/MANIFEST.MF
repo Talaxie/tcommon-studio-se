@@ -9,7 +9,7 @@ Require-Bundle: org.talend.testutils,
  org.eclipse.osgi.services,
  org.junit
 Bundle-ClassPath: .
-Bundle-Vendor: .Talend SA.
+Bundle-Vendor: .Talaxie SA.
 Export-Package: org.talend.core.model.metadata,
  org.talend.core.model.metadata.builder.database,
  org.talend.core.model.metadata.builder.database.dburl,

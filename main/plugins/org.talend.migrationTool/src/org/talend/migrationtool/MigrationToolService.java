@@ -820,7 +820,7 @@ public class MigrationToolService implements IMigrationToolService {
         List<String> done = coreService.readWorkspaceTasksDone();
 
         // --------------------------------------------------------------------------------------------------
-        // This code part aim is to know if we have a new workspace or one from an old Talend version:
+        // This code part aim is to know if we have a new workspace or one from an old Talaxie version:
         // --------------------------------------------------------------------------------------------------
         // String lastUser = prefManipulator.getLastUser();
         String lastUser = coreService.getLastUser();

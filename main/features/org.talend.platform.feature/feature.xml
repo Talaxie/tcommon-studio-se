@@ -3,14 +3,14 @@
       id="org.talend.platform.feature"
       label="Platform featrue"
       version="8.8.8.qualifier"
-      provider-name=".Talend SA.">
+      provider-name=".Talaxie SA.">
 
    <description url="http://www.talend.com/online/featuresdescription.html#platform-feature">
       Complete description about this feature at http://www.talend.com/online/featuresdescription.html#platform-feature
    </description>
 
    <copyright url="http://www.talend.com/online/copyright.txt">
-      Copyright Talend 2006, 2007
+      Copyright Talaxie 2006, 2007
    </copyright>
 
    <license>

@@ -114,10 +114,10 @@ public class PendoItemSignatureUtil {
 
     public enum TOSProdNameEnum {
 
-        TOS_DI("Talend Open Studio for Data Integration"),
-        TOS_BD("Talend Open Studio for Big Data"),
-        TOS_ESB("Talend Open Studio for ESB"),
-        TOS_TOP("Talend Open Studio for Data Quality");
+        TOS_DI("Talaxie Open Studio for Data Integration"),
+        TOS_BD("Talaxie Open Studio for Big Data"),
+        TOS_ESB("Talaxie Open Studio for ESB"),
+        TOS_TOP("Talaxie Open Studio for Data Quality");
 
         private String prodName;
 

@@ -22,6 +22,6 @@ Require-Bundle: org.eclipse.core.runtime,
  org.apache.commons.lang,
  org.talend.cwm.mip
 Eclipse-LazyStart: true
-Bundle-Vendor: .Talend SA.
+Bundle-Vendor: .Talaxie SA.
 Export-Package: org.talend.repository.localprovider.model
 Automatic-Module-Name: org.talend.repository.localprovider

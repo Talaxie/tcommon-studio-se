@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link org.talend.core.model.properties.ExecutionServer#getPassword <em>Password</em>}</li>
  *   <li>{@link org.talend.core.model.properties.ExecutionServer#getJmxUrl <em>Jmx Url</em>}</li>
  *   <li>{@link org.talend.core.model.properties.ExecutionServer#getWebConsoleUrl <em>Web Console Url</em>}</li>
- *   <li>{@link org.talend.core.model.properties.ExecutionServer#isTalendRuntime <em>Talend Runtime</em>}</li>
+ *   <li>{@link org.talend.core.model.properties.ExecutionServer#isTalendRuntime <em>Talaxie Runtime</em>}</li>
  *   <li>{@link org.talend.core.model.properties.ExecutionServer#getMgmtServerPort <em>Mgmt Server Port</em>}</li>
  *   <li>{@link org.talend.core.model.properties.ExecutionServer#getMgmtRegPort <em>Mgmt Reg Port</em>}</li>
  *   <li>{@link org.talend.core.model.properties.ExecutionServer#getAdminConsolePort <em>Admin Console Port</em>}</li>
@@ -388,14 +388,14 @@ public interface ExecutionServer extends EObject {
     void setWebConsoleUrl(String value);
 
     /**
-     * Returns the value of the '<em><b>Talend Runtime</b></em>' attribute.
+     * Returns the value of the '<em><b>Talaxie Runtime</b></em>' attribute.
      * <!-- begin-user-doc -->
      * <p>
-     * If the meaning of the '<em>Talend Runtime</em>' attribute isn't clear,
+     * If the meaning of the '<em>Talaxie Runtime</em>' attribute isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Talend Runtime</em>' attribute.
+     * @return the value of the '<em>Talaxie Runtime</em>' attribute.
      * @see #setTalendRuntime(boolean)
      * @see org.talend.core.model.properties.PropertiesPackage#getExecutionServer_TalendRuntime()
      * @model
@@ -404,10 +404,10 @@ public interface ExecutionServer extends EObject {
     boolean isTalendRuntime();
 
     /**
-     * Sets the value of the '{@link org.talend.core.model.properties.ExecutionServer#isTalendRuntime <em>Talend Runtime</em>}' attribute.
+     * Sets the value of the '{@link org.talend.core.model.properties.ExecutionServer#isTalendRuntime <em>Talaxie Runtime</em>}' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Talend Runtime</em>' attribute.
+     * @param value the new value of the '<em>Talaxie Runtime</em>' attribute.
      * @see #isTalendRuntime()
      * @generated
      */

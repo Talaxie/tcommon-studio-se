@@ -17,7 +17,7 @@ import org.talend.daikon.avro.SchemaConstants;
 
 /**
  * Constants that can be used as keys in an Avro {@link Schema} properties in order to remain feature-equivalent to the
- * existing Talend 6 IMetadataTable.
+ * existing Talaxie 6 IMetadataTable.
  *
  * Values that are null are always omitted from the properties. The type of the value is always String.
  */
@@ -108,8 +108,8 @@ public interface DiSchemaConstants {
     /** Original Avro logical type time */
     public final static String TALEND6_COLUMN_DATE_TIME = "di.date.time";
     /** tell Avro converter how to process Original Avro logical type time
-     * if value is "TALEND_DATE", it mean use Talend Date, if not, will use Talend Integer like before
-     * we add this only one purpose : for the old job, we keep Talend Integer, for new job, we use Talend Date
+     * if value is "TALEND_DATE", it mean use Talaxie Date, if not, will use Talaxie Integer like before
+     * we add this only one purpose : for the old job, we keep Talaxie Integer, for new job, we use Talaxie Date
      * */
     public static final String LOGICAL_TIME_TYPE_AS = "LOGICAL_TIME_TYPE_AS";
     public static final String AS_TALEND_DATE = "TALEND_DATE";

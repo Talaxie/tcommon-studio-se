@@ -8,3 +8,4 @@ dist/
 *.iml
 .idea
 lib
+main/plugins/org.talend.designer.maven.tos/resources/repository/

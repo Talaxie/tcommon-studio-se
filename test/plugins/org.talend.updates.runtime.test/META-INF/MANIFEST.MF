@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Test
 Bundle-SymbolicName: org.talend.updates.runtime.test
 Bundle-Version: 8.8.8.qualifier
-Bundle-Vendor: Talend
+Bundle-Vendor: Talaxie
 Fragment-Host: org.talend.updates.runtime
 Require-Bundle: org.talend.testutils,
  org.junit

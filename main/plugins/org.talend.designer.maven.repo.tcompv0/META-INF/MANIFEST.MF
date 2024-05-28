@@ -8,7 +8,7 @@ Bundle-Localization: plugin
 Eclipse-LazyStart: true
 Require-Bundle: org.talend.core,
  org.talend.updates.runtime
-Bundle-Vendor: .Talend SA.
+Bundle-Vendor: .Talaxie SA.
 Import-Package: org.eclipse.core.runtime,
  org.slf4j
 Bundle-ClassPath: .

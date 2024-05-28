@@ -37,7 +37,7 @@ public enum ECoreImage implements IImage {
 
     FAVORITE_ICON("/icons1/palette_fav.png"), //$NON-NLS-1$
 
-    TALEND_PICTO("/icons1/talend-picto-small.gif"), //$NON-NLS-1$
+    TALEND_PICTO("/icons1/talend-picto-small.png"), //$NON-NLS-1$
 
     DEFAULT_WIZ("/icons1/defaultWizard.png"), //$NON-NLS-1$
 

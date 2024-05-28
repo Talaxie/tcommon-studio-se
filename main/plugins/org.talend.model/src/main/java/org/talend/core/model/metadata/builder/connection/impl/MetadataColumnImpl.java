@@ -94,7 +94,7 @@ import orgomg.cwmx.resource.dmsii.Remap;
  * </em>}</li>
  * <li>{@link org.talend.core.model.metadata.builder.connection.impl.MetadataColumnImpl#getDefaultValue <em>Default
  * Value</em>}</li>
- * <li>{@link org.talend.core.model.metadata.builder.connection.impl.MetadataColumnImpl#getTalendType <em>Talend Type
+ * <li>{@link org.talend.core.model.metadata.builder.connection.impl.MetadataColumnImpl#getTalendType <em>Talaxie Type
  * </em>}</li>
  * <li>{@link org.talend.core.model.metadata.builder.connection.impl.MetadataColumnImpl#isKey <em>Key</em>}</li>
  * <li>{@link org.talend.core.model.metadata.builder.connection.impl.MetadataColumnImpl#isNullable <em>Nullable</em>}</li>
@@ -415,7 +415,7 @@ public class MetadataColumnImpl extends AbstractMetadataObjectImpl implements Me
     protected static final String DEFAULT_VALUE_EDEFAULT = ""; //$NON-NLS-1$
 
     /**
-     * The default value of the '{@link #getTalendType() <em>Talend Type</em>}' attribute.
+     * The default value of the '{@link #getTalendType() <em>Talaxie Type</em>}' attribute.
      * <!-- begin-user-doc --> <!--
      * end-user-doc -->
      * @see #getTalendType()
@@ -425,7 +425,7 @@ public class MetadataColumnImpl extends AbstractMetadataObjectImpl implements Me
     protected static final String TALEND_TYPE_EDEFAULT = null;
 
     /**
-     * The cached value of the '{@link #getTalendType() <em>Talend Type</em>}' attribute.
+     * The cached value of the '{@link #getTalendType() <em>Talaxie Type</em>}' attribute.
      * <!-- begin-user-doc --> <!--
      * end-user-doc -->
      * @see #getTalendType()

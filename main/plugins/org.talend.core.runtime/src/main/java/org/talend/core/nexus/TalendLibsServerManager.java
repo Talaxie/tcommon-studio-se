@@ -378,7 +378,7 @@ public class TalendLibsServerManager {
 
     /**
      *
-     * DOC Talend Comment method "getSoftwareUpdateNexusServer". get nexus server configured in TAC for patch
+     * DOC Talaxie Comment method "getSoftwareUpdateNexusServer". get nexus server configured in TAC for patch
      *
      * @param adminUrl
      * @param userName

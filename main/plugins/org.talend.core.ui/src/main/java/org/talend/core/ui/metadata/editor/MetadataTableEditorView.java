@@ -252,7 +252,7 @@ public class MetadataTableEditorView extends AbstractMetadataTableEditorView<IMe
             }
 
             /**
-             * Adds double quotes if Talend type is Date or String.
+             * Adds double quotes if Talaxie type is Date or String.
              *
              * @param bean
              * @param value

@@ -13,7 +13,7 @@
 package org.talend.repository.viewer.action;
 
 /**
- * all the constants for the Talend Repository View
+ * all the constants for the Talaxie Repository View
  *
  * $Id: talend.epf 55206 2011-02-15 17:32:14Z mhirt $
  *
@@ -21,7 +21,7 @@ package org.talend.repository.viewer.action;
 public class ActionConstants {
 
     /**
-     * ID of the Talend group in the repository view toolbar
+     * ID of the Talaxie group in the repository view toolbar
      * */
     public static final String TALEND_GROUP_ID = "talend.group"; //$NON-NLS-1$
 }

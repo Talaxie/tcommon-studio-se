@@ -543,14 +543,14 @@ public class DatabaseTableForm extends AbstractForm {
     }
 
     /**
-     * Adds double quotes if Talend type is Date or String.
+     * Adds double quotes if Talaxie type is Date or String.
      *
      * @param bean
      * @param value
      * @return
      */
     private void handleDefaultValue(MetadataColumn bean) {
-        // Checks if Talend type is String or Date.
+        // Checks if Talaxie type is String or Date.
         switch (LanguageManager.getCurrentLanguage()) {
         case JAVA:
             String returnValue = bean.getDefaultValue();

@@ -1586,7 +1586,7 @@ public interface RelationalPackage extends EPackage {
     int TD_COLUMN__DEFAULT_VALUE = ConnectionPackage.METADATA_COLUMN__DEFAULT_VALUE;
 
     /**
-     * The feature id for the '<em><b>Talend Type</b></em>' attribute.
+     * The feature id for the '<em><b>Talaxie Type</b></em>' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated

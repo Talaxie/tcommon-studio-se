@@ -38,7 +38,7 @@ import org.talend.librariesmanager.model.service.LocalLibraryManager;
 import org.talend.librariesmanager.nexus.utils.ShareLibrariesUtil;
 
 /**
- * created by Talend on 2015年7月31日 Detailled comment
+ * created by Talaxie on 2015年7月31日 Detailled comment
  *
  */
 public abstract class ShareLibrareisHelper {

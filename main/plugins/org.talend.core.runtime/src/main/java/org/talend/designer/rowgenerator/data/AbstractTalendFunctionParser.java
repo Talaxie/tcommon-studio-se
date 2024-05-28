@@ -45,7 +45,7 @@ public abstract class AbstractTalendFunctionParser extends AbstractFunctionParse
 
     private static Logger logger = Logger.getLogger(AbstractTalendFunctionParser.class);
 
-    // k: (Talend type Name).(method Name) v:(class Name).(method Name)
+    // k: (Talaxie type Name).(method Name) v:(class Name).(method Name)
     protected static Map<String, String> typeMethods = new HashMap<String, String>();
 
     protected static Map<String, String> typePackgeMethods = new HashMap<String, String>();

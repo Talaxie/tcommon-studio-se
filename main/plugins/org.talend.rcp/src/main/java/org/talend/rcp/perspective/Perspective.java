@@ -38,7 +38,7 @@ public class Perspective implements IPerspectiveFactory {
         IBrandingService service = (IBrandingService) GlobalServiceRegister.getDefault().getService(IBrandingService.class);
         service.getBrandingConfiguration().initPerspective(layout);
 
-        // TDI-17770 Need to fix problem of refresh of repository view when use Talend product as plugin.
+        // TDI-17770 Need to fix problem of refresh of repository view when use Talaxie product as plugin.
         PlatformUI.getWorkbench().getActiveWorkbenchWindow().addPerspectiveListener(new PerspectiveAdapter() {
 
             /*

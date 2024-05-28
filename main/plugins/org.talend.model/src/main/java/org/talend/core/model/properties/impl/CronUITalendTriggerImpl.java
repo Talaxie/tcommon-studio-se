@@ -17,7 +17,7 @@ import org.talend.core.model.properties.PropertiesPackage;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Cron UI Talend Trigger</b></em>'.
+ * An implementation of the model object '<em><b>Cron UI Talaxie Trigger</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:

@@ -71,7 +71,7 @@ public interface ILibraryManagerService extends IService {
 
     /**
      *
-     * DOC Talend Comment method "deployMavenIndex".Deploy moduleName:mavenUri index to MavenUriIndex.xml
+     * DOC Talaxie Comment method "deployMavenIndex".Deploy moduleName:mavenUri index to MavenUriIndex.xml
      *
      * @param libsToMavenUri
      * @param monitorWrap
