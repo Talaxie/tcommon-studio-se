@@ -34,7 +34,7 @@
 	<modules>
 		<module>main/features/org.talend.commons.feature</module>
 		<module>main/features/org.talend.core.feature</module>
-        <module>main/features/org.talend.fragment.jars.common.feature</module>
+		<module>main/features/org.talend.fragment.jars.common.feature</module>
 		<module>main/features/org.talend.help.feature</module>
 		<module>main/features/org.talend.libraries.jdbc.feature</module>
 		<module>main/features/org.talend.platform.feature</module>
@@ -113,11 +113,9 @@
 		<module>main/plugins/org.talend.designer.maven.tos/resources</module>
 		<module>main/plugins/org.talend.designer.maven.tos</module>
 		<module>main/plugins/org.talend.signon.util</module>
-
 		<module>main/plugins/org.talend.designer.maven.repo.tck</module>
-        <module>main/plugins/org.talend.designer.maven.repo.tcksdk</module>
+		<module>main/plugins/org.talend.designer.maven.repo.tcksdk</module>
 		<module>main/plugins/org.talend.designer.maven.repo.tcompv0</module>
-
 		<module>main/plugins/org.talend.libraries.persist.lookup</module>
 		<module>main/plugins/org.talend.designer.maven.aether</module>
 		<!--<module>test/features/org.talend.test.tos.feature</module>-->

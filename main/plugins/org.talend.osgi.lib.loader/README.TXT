@@ -6,7 +6,7 @@ You also need to add the followin system property in your launch configurator :
      -Dosgi.framework.extensions=org.talend.osgi.lib.loader
 
 WARNING  : this is a critical piece of code, make sure you pass all the test and create new ones whenever you make some changes.
-The tests are located here : https://github.com/JeanCazaux/tcommon-studio-se/tree/master/test/plugins/org.talend.librariesmanager.ui.test
+The tests are located here : https://github.com/Talaxie/tcommon-studio-se/tree/master/test/plugins/org.talend.librariesmanager.ui.test
 
 
 for more information see : 
