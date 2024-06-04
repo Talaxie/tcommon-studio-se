@@ -35,7 +35,7 @@ public enum EImage implements IImage {
     ADD_ALL_ICON("/icons/addall.gif"), //$NON-NLS-1$
     MINUS_ICON("/icons/delete.gif"), //$NON-NLS-1$
     REFRESH_WITH_BGCOLOR_ICON("/icons/refresh_with_bgcolor.gif"), //$NON-NLS-1$
-    REFRESH_ICON("/icons/refresh.gif"), //$NON-NLS-1$
+    REFRESH_ICON("/icons/refresh.png"), //$NON-NLS-1$
     EDIT_ICON("/icons/write_obj.gif"), //$NON-NLS-1$
     READ_ICON("/icons/read_obj.gif"), //$NON-NLS-1$
 
