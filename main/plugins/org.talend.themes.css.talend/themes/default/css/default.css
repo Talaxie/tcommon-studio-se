@@ -255,6 +255,7 @@ Shell.MTrimmedWindow > .MTrimBar > .TrimStack {
 .MPartStack>CTabItem:selected {
     /* selected tab text */
     color: #62a8ea;
+    font-weight: bold;
 }
 
 
@@ -303,6 +304,7 @@ Shell.MTrimmedWindow > .MTrimBar > .TrimStack {
 .MPartStack.active>CTabItem:selected {
     /* selected tab text */
     color: #62a8ea;
+    font-weight: bold;
 }
 
 /**************************************************
@@ -440,7 +442,7 @@ CTabFolder#org-eclipse-ui-editorss.MArea Composite.MPartSashContainer {
     background : #ffffff;
 
     /* selected tabs */
-    jtab-selected-tab-background: #19a1f4 #ffffff #ffffff #ffffff #ffffff 10% 88% 88% 100%;
+    jtab-selected-tab-background: #19a1f4 #ffffff #ffffff 10% 100%;
     jtab-selected-border-color: none;
     jtab-selected-text-shadow-color: none;
 
@@ -482,6 +484,7 @@ CTabFolder#org-eclipse-ui-editorss.MArea Composite.MPartSashContainer {
 #org-eclipse-ui-editorss>CTabFolder>CTabItem:selected {
     /* selected tab text */
     color: #62a8ea;
+    font-weight: bold;
 }
 
 
@@ -529,6 +532,7 @@ CTabFolder#org-eclipse-ui-editorss.MArea Composite.MPartSashContainer {
 #org-eclipse-ui-editorss>CTabFolder.active>CTabItem:selected {
     /* selected tab text */
     color: #62a8ea;
+    font-weight: bold;
 }
 
 /**************************************************
@@ -549,6 +553,7 @@ CTabFolder.org-talend-rcp-abstractMultiPageEditor-footer CTabItem {
 CTabFolder.org-talend-rcp-abstractMultiPageEditor-footer CTabItem:selected {
     background-color: #ffffff;
     color: #62a8ea;
+    font-weight: bold;
 }
 
 /**************************************************
