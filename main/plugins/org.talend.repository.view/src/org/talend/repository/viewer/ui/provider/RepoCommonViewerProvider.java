@@ -91,8 +91,7 @@ public class RepoCommonViewerProvider extends AbstractViewerProvider {
 
     protected void doFilterForCommonViewer(TreeViewer treeViewer, String specifiedPerspectiveId) {
         if (treeViewer instanceof INavigatorContentServiceProvider) {
-            INavigatorContentService navigatorContentService = ((INavigatorContentServiceProvider) treeViewer)
-                    .getNavigatorContentService();
+            INavigatorContentService navigatorContentService = ((INavigatorContentServiceProvider) treeViewer).getNavigatorContentService();
 
             // perspecitive filter
             doPerspecitiveFilterForCommonViewer(treeViewer, specifiedPerspectiveId);
@@ -108,8 +107,7 @@ public class RepoCommonViewerProvider extends AbstractViewerProvider {
 
     protected void doPerspecitiveFilterForCommonViewer(TreeViewer treeViewer, String specifiedPerspectiveId) {
         if (treeViewer instanceof INavigatorContentServiceProvider) {
-            INavigatorContentService navigatorContentService = ((INavigatorContentServiceProvider) treeViewer)
-                    .getNavigatorContentService();
+            INavigatorContentService navigatorContentService = ((INavigatorContentServiceProvider) treeViewer).getNavigatorContentService();
             // perspecitive filter
             IWorkbenchWindow activeWorkbenchWindow = PlatformUI.getWorkbench().getActiveWorkbenchWindow();
             if (activeWorkbenchWindow != null) {
@@ -120,10 +118,8 @@ public class RepoCommonViewerProvider extends AbstractViewerProvider {
                     helper.setNavigatorContentService(navigatorContentService);
                     helper.setActionProviderId(PerspectiveFilterActionProvider.ID);
 
-                    String perspectiveId = specifiedPerspectiveId == null ? activePage.getPerspective().getId()
-                            : specifiedPerspectiveId;
+                    String perspectiveId = specifiedPerspectiveId == null ? activePage.getPerspective().getId() : specifiedPerspectiveId;
                     helper.doFiltering(perspectiveId);
-
                 }
             }
         }

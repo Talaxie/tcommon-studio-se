@@ -277,8 +277,7 @@ public class RepoViewCommonViewer extends CommonViewer implements INavigatorCont
                             }
                         }
                     },
-                    new Hashtable<String, String>(Collections.singletonMap(EventConstants.EVENT_TOPIC,
-                            Constant.REPOSITORY_ITEM_EVENT_PREFIX + "*"))); //$NON-NLS-1$
+                    new Hashtable<String, String>(Collections.singletonMap(EventConstants.EVENT_TOPIC, Constant.REPOSITORY_ITEM_EVENT_PREFIX + "*"))); //$NON-NLS-1$
         }// else already unlock service listener already registered
     }
 

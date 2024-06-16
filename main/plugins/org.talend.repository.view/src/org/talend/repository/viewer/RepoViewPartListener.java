@@ -68,16 +68,14 @@ public class RepoViewPartListener implements IPartListener2 {
             }
             activeWin.getPartService().removePartListener(this);
             if (activeWin.getActivePage() != null) {
-                IViewPart viewPart = activeWin.getActivePage()
-                        .findView(IJobSettingsView.ID);
+                IViewPart viewPart = activeWin.getActivePage().findView(IJobSettingsView.ID);
                 if (viewPart != null && viewPart instanceof ISelectionChangedListener) {
                     ISelectionChangedListener listener = (ISelectionChangedListener) viewPart;
                     IWorkbenchPart part = partRef.getPart(false);
                     if (part instanceof CommonNavigator) {
                         CommonViewer repViewer = ((CommonNavigator) part).getCommonViewer();
                         if (((RepoViewCommonNavigator) repViewer.getCommonNavigator()).getViewer() != null) {
-                            ((RepoViewCommonNavigator) repViewer.getCommonNavigator()).getViewer()
-                                    .removeSelectionChangedListener(listener);
+                            ((RepoViewCommonNavigator) repViewer.getCommonNavigator()).getViewer().removeSelectionChangedListener(listener);
                         }
                     }
                 }
@@ -124,16 +122,14 @@ public class RepoViewPartListener implements IPartListener2 {
     public void partVisible(IWorkbenchPartReference partRef) {
         refreshRepViewDescription(partRef);
         if (partRef != null && IRepositoryView.VIEW_ID.equals(partRef.getId())) {
-            IViewPart viewPart = PlatformUI.getWorkbench().getActiveWorkbenchWindow().getActivePage()
-                    .findView(IJobSettingsView.ID);
+            IViewPart viewPart = PlatformUI.getWorkbench().getActiveWorkbenchWindow().getActivePage().findView(IJobSettingsView.ID);
             if (viewPart != null && viewPart instanceof ISelectionChangedListener) {
                 ISelectionChangedListener listener = (ISelectionChangedListener) viewPart;
                 IWorkbenchPart part = partRef.getPart(false);
                 if (part instanceof CommonNavigator) {
                     CommonViewer repViewer = ((CommonNavigator) part).getCommonViewer();
                     if (((RepoViewCommonNavigator) repViewer.getCommonNavigator()).getViewer() != null) {
-                        ((RepoViewCommonNavigator) repViewer.getCommonNavigator()).getViewer().addSelectionChangedListener(
-                                listener);
+                        ((RepoViewCommonNavigator) repViewer.getCommonNavigator()).getViewer().addSelectionChangedListener(listener);
                     }
                 }
             }

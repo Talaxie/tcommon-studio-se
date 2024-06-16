@@ -515,7 +515,6 @@ public class Webhook {
                 for (int j = 0; j < assetJsons.length(); j++) {
                     JSONObject assetJson = assetJsons.getJSONObject(j);
                     String downloadUrl = assetJson.getString("downloadUrl");
-                    System.out.println(downloadUrl);
                     if (downloadUrl.toLowerCase().endsWith(".zip")) {
                         assetZipJson = assetJson;
                     }
@@ -670,6 +669,67 @@ public class Webhook {
 
         return true;
     }
+
+    // Deilink
+	public static List<HashMap<String, String>> marketplaceComponents(String search) {
+        List<HashMap<String, String>> components = new ArrayList<>();
+
+		try {
+            String serviceUrl = CoreUIPlugin.getDefault().getPreferenceStore().getString(ITalendCorePrefConstants.WEBHOOK_ETLTOOL_BACK_HOST) + "/api/Marketplace/components";
+            serviceUrl = "https://admin.back.deilink.fr:19066/api/Marketplace/components";
+            String finalToken = Login(CoreUIPlugin.getDefault().getPreferenceStore().getString(ITalendCorePrefConstants.WEBHOOK_ETLTOOL_LOGIN), CoreUIPlugin.getDefault().getPreferenceStore().getString(ITalendCorePrefConstants.WEBHOOK_ETLTOOL_PASSWORD), "");
+            finalToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjIwLCJJZGVudGlmaWFudCI6InRlbXAiLCJQc2V1ZG8iOiJUZW1wIiwiUm9sZUlkIjoxLCJBY2Nlc3NHcm91cElEIjowLCJpYXQiOjE2NzY0MDE1MjZ9.bxUTggJN_7eMIX6hMCEaSg4OqaSzM2mt-BRW2qiPY84";
+
+            JSONObject filterJson = new JSONObject();
+            if (search != null && !search.equals("")) {
+                filterJson.put("name_LIKE", search);
+            }
+            JSONObject paramJson = new JSONObject();
+            paramJson.put("filter", filterJson);
+
+            HttpClient client = getHttpClient();
+            HttpRequest request = HttpRequest.newBuilder()
+                .uri(URI.create(serviceUrl))
+                .setHeader("Content-Type","application/json")
+                .setHeader("Authorization", "Bearer " + finalToken)
+                .POST(HttpRequest.BodyPublishers.ofString(paramJson.toString()))
+                .build();
+            HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+            JSONObject responseBodyJson = new JSONObject(response.body());
+            if (
+                responseBodyJson.has("success") &&
+                responseBodyJson.getBoolean("success")
+            ) {
+				JSONArray componentJsons = responseBodyJson.getJSONArray("data");
+				for (int i = 0; i < componentJsons.length(); i++) {
+					JSONObject componentJson = componentJsons.getJSONObject(i);
+					HashMap<String, String> component = new HashMap<String, String>();
+					component.put("id", String.valueOf(componentJson.getString("id")));
+					component.put("name", componentJson.getString("name"));
+					component.put("description", componentJson.getString("description"));
+					component.put("version", componentJson.getString("version"));
+					component.put("release_Date", componentJson.getString("release_Date"));
+					component.put("author", componentJson.getString("author"));
+					component.put("image", componentJson.getString("image"));
+					component.put("origine", componentJson.getString("origine"));
+					component.put("url", componentJson.getString("url"));
+                    components.add(component);
+				}
+            }
+		} catch (Exception e) {
+			e.printStackTrace();
+            if (LOGGER.isInfoEnabled()) {
+                LOGGER.info("Error marketplaceComponents");
+                LOGGER.info(e);
+            }
+		}
+        if (LOGGER.isInfoEnabled()) {
+            LOGGER.info("-- components");
+            LOGGER.info(components);
+        }
+
+		return components;
+	}
 
     // Autre
 

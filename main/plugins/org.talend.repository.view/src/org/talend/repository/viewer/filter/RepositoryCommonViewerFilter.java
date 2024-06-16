@@ -75,7 +75,6 @@ public class RepositoryCommonViewerFilter extends ViewerFilter {
             RepositoryNode node = (RepositoryNode) element;
             if (ENodeType.REPOSITORY_ELEMENT.equals(node.getType()) || ENodeType.SIMPLE_FOLDER.equals(node.getType())) {
                 visible = filterByUserStatusName(node);
-
             }
         }
 
@@ -130,9 +129,15 @@ public class RepositoryCommonViewerFilter extends ViewerFilter {
                 visible = false;
                 if (property != null) {
                     Item item = property.getItem();
-                    if (item instanceof RoutineItem && ((RoutineItem) item).isBuiltIn() || item instanceof SQLPatternItem
-                            && ((SQLPatternItem) item).isSystem() || item instanceof BusinessProcessItem
-                            || item instanceof JobDocumentationItem || item instanceof JobletDocumentationItemImpl) {
+                    if (
+                        item instanceof RoutineItem &&
+                        ((RoutineItem) item).isBuiltIn() || 
+                        item instanceof SQLPatternItem && 
+                        ((SQLPatternItem) item).isSystem() ||
+                        item instanceof BusinessProcessItem ||
+                        item instanceof JobDocumentationItem ||
+                        item instanceof JobletDocumentationItemImpl
+                    ) {
                         visible = true;
                     }
                 }

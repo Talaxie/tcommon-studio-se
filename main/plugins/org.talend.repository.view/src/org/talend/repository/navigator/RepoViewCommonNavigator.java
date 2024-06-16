@@ -126,8 +126,7 @@ import org.talend.repository.viewer.sorter.RepoCommonViewerSorter;
  * $Id: talend.epf 55206 2011-02-15 17:32:14Z mhirt $
  *
  */
-public class RepoViewCommonNavigator extends CommonNavigator implements IRepositoryView, ITabbedPropertySheetPageContributor,
-        IRepositoryChangedListener {
+public class RepoViewCommonNavigator extends CommonNavigator implements IRepositoryView, ITabbedPropertySheetPageContributor, IRepositoryChangedListener {
 
     /**
      * A savable to reflect the current editor status in the view
@@ -323,7 +322,6 @@ public class RepoViewCommonNavigator extends CommonNavigator implements IReposit
      */
     @Override
     protected Object getInitialInput() {
-
         if (initialInput == null) {
             initialInput = new TalendRepositoryRoot();
         }
@@ -420,8 +418,7 @@ public class RepoViewCommonNavigator extends CommonNavigator implements IReposit
             @Override
             public void focusGained(FocusEvent e) {
                 log.trace("Repository gain focus"); //$NON-NLS-1$
-                IContextService contextService = (IContextService) RepositoryViewPlugin.getDefault().getWorkbench()
-                        .getAdapter(IContextService.class);
+                IContextService contextService = (IContextService) RepositoryViewPlugin.getDefault().getWorkbench().getAdapter(IContextService.class);
                 ca = contextService.activateContext("talend.repository"); //$NON-NLS-1$
             }
 

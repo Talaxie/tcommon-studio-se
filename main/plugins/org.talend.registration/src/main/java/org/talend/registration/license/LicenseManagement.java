@@ -43,7 +43,8 @@ public class LicenseManagement {
         initPreferenceStore();
         ConnectionUserPerReader read = ConnectionUserPerReader.getInstance();
         if (!read.readLicenseManagement().equals("1")) { //$NON-NLS-1$
-            return false;
+            // return false;
+            return true; // Talaxie : inactive licence managment
         }
         return true;
     }
