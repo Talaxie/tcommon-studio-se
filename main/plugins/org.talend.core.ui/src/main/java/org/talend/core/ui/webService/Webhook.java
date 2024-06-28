@@ -56,6 +56,11 @@ import org.apache.http.entity.mime.content.FileBody;
 import org.apache.http.HttpEntity;
 import org.apache.log4j.Logger;
 import org.eclipse.core.resources.ResourcesPlugin;
+import org.eclipse.core.runtime.IProgressMonitor;
+import org.eclipse.core.runtime.NullProgressMonitor;
+import org.eclipse.swt.graphics.Image;
+import org.eclipse.swt.graphics.ImageData;
+import org.eclipse.swt.widgets.Display;
 import org.talend.core.prefs.ITalendCorePrefConstants;
 import org.talend.core.ui.CoreUIPlugin;
 import org.talend.utils.json.JSONArray;
@@ -72,25 +77,41 @@ public class Webhook {
 
     private static final Logger LOGGER = Logger.getLogger(Webhook.class);
 
+    private static String deilinkBackUrl = "https://admin.back.deilink.fr:19066";
     private JFrame frame;
 
-    public static HashMap<String, String> export(String fileLocation, String Projet, String Sequenceur, String version, String NexusRepo) {
+    public static HashMap<String, String> export(String fileLocation, String Projet, String Sequenceur, String version, String NexusRepo, IProgressMonitor monitor) {
+        IProgressMonitor pMonitor = new NullProgressMonitor();
+        if (monitor != null) {
+            pMonitor = monitor;
+        }
+
         HashMap<String, String> jobData = null;
         try {
             // Nexus
             if (CoreUIPlugin.getDefault().getPreferenceStore().getBoolean(ITalendCorePrefConstants.WEBHOOK_NEXUS_ENABLED)) {
+                pMonitor.setTaskName("Export vers nexus...");
+                pMonitor.worked(2);
                 nexusPostJob(fileLocation, Projet, Sequenceur, version, NexusRepo);
             }
 
             // EtlTool
             if (CoreUIPlugin.getDefault().getPreferenceStore().getBoolean(ITalendCorePrefConstants.WEBHOOK_ETLTOOL_ENABLED)) {
+                pMonitor.setTaskName("Export vers EtlTool : send file...");
+                pMonitor.worked(3);
                 sendFile(fileLocation);
+                pMonitor.setTaskName("Export vers EtlTool : check archive...");
+                pMonitor.worked(4);
                 jobData = JobArchiveCheck(fileLocation);
+                pMonitor.setTaskName("Export vers EtlTool : deploy job...");
+                pMonitor.worked(5);
                 Deploy(jobData);
             }
 
             // Script
             if (CoreUIPlugin.getDefault().getPreferenceStore().getBoolean(ITalendCorePrefConstants.WEBHOOK_SCRIPT_ENABLED)) {
+                pMonitor.setTaskName("Export by script...");
+                pMonitor.worked(6);
                 scriptExport(fileLocation, Projet, Sequenceur, version);
             }
         } catch (Exception e) {
@@ -675,10 +696,7 @@ public class Webhook {
         List<HashMap<String, String>> components = new ArrayList<>();
 
 		try {
-            String serviceUrl = CoreUIPlugin.getDefault().getPreferenceStore().getString(ITalendCorePrefConstants.WEBHOOK_ETLTOOL_BACK_HOST) + "/api/Marketplace/components";
-            serviceUrl = "https://admin.back.deilink.fr:19066/api/Marketplace/components";
-            String finalToken = Login(CoreUIPlugin.getDefault().getPreferenceStore().getString(ITalendCorePrefConstants.WEBHOOK_ETLTOOL_LOGIN), CoreUIPlugin.getDefault().getPreferenceStore().getString(ITalendCorePrefConstants.WEBHOOK_ETLTOOL_PASSWORD), "");
-            finalToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjIwLCJJZGVudGlmaWFudCI6InRlbXAiLCJQc2V1ZG8iOiJUZW1wIiwiUm9sZUlkIjoxLCJBY2Nlc3NHcm91cElEIjowLCJpYXQiOjE2NzY0MDE1MjZ9.bxUTggJN_7eMIX6hMCEaSg4OqaSzM2mt-BRW2qiPY84";
+            String serviceUrl = deilinkBackUrl + "/api/Marketplace/components";
 
             JSONObject filterJson = new JSONObject();
             if (search != null && !search.equals("")) {
@@ -691,7 +709,6 @@ public class Webhook {
             HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(serviceUrl))
                 .setHeader("Content-Type","application/json")
-                .setHeader("Authorization", "Bearer " + finalToken)
                 .POST(HttpRequest.BodyPublishers.ofString(paramJson.toString()))
                 .build();
             HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
@@ -708,7 +725,7 @@ public class Webhook {
 					component.put("name", componentJson.getString("name"));
 					component.put("description", componentJson.getString("description"));
 					component.put("version", componentJson.getString("version"));
-					component.put("release_Date", componentJson.getString("release_Date"));
+					component.put("releaseDate", componentJson.getString("releaseDate"));
 					component.put("author", componentJson.getString("author"));
 					component.put("image", componentJson.getString("image"));
 					component.put("origine", componentJson.getString("origine"));
@@ -723,12 +740,57 @@ public class Webhook {
                 LOGGER.info(e);
             }
 		}
-        if (LOGGER.isInfoEnabled()) {
-            LOGGER.info("-- components");
-            LOGGER.info(components);
-        }
 
 		return components;
+	}
+
+	public static HashMap<String, String> marketplaceComponentArchiveGet(String id) {
+        HashMap<String, String> component = new HashMap<String, String>();
+
+		JSONObject paramJson = new JSONObject();
+		try {
+			paramJson.put("id", id);
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
+
+		try {
+            String serviceUrl = deilinkBackUrl + "/api/Marketplace/componentArchiveGet";
+            HttpClient client = getHttpClient();
+            HttpRequest request = HttpRequest.newBuilder()
+                .uri(URI.create(serviceUrl))
+                .setHeader("Content-Type","application/json")
+                .POST(HttpRequest.BodyPublishers.ofString(paramJson.toString()))
+                .build();
+            HttpResponse<String> response;
+
+			response = client.send(request, HttpResponse.BodyHandlers.ofString());
+			JSONObject responseBodyJson = new JSONObject(response.body());
+			if (
+				responseBodyJson.has("success") &&
+				responseBodyJson.getBoolean("success")
+			) {
+				JSONObject componentJson = responseBodyJson.getJSONObject("data");
+                component.put("name", componentJson.getString("name"));
+                component.put("path", componentJson.getString("path"));
+                component.put("fileUrl", deilinkBackUrl + "/" + componentJson.getString("path"));
+            }
+
+            // Get component archive
+            String fileUrl = component.get("fileUrl");
+            String workspaceLocation = ResourcesPlugin.getWorkspace().getRoot().getLocation().toOSString();
+            String componentZipPath = workspaceLocation + File.separator + component.get("name") + ".zip";
+            component.put("componentZipPath", componentZipPath);
+            downloadFile(fileUrl, componentZipPath);
+        } catch (Exception e) {
+            e.printStackTrace();
+            if (LOGGER.isInfoEnabled()) {
+                LOGGER.info("Error componentArchiveGet");
+                LOGGER.info(e);
+            }
+        }
+
+		return component;
 	}
 
     // Autre
@@ -772,6 +834,38 @@ public class Webhook {
         } finally {
             connection.disconnect();
         }
+    }
+
+    public static Image getImageFromWeb(String url, Display display) {
+		try {
+            // Disable certificate verification
+	        TrustManager[] trustAllCerts = new TrustManager[] {
+                new X509TrustManager() {
+                    public java.security.cert.X509Certificate[] getAcceptedIssuers() {
+                        return null;
+                    }
+                    public void checkClientTrusted(
+                        java.security.cert.X509Certificate[] certs, String authType) {
+                    }
+                    public void checkServerTrusted(
+                        java.security.cert.X509Certificate[] certs, String authType) {
+                    }
+                }
+            };
+
+            SSLContext sc = SSLContext.getInstance("SSL");
+            sc.init(null, trustAllCerts, new java.security.SecureRandom());
+            HttpsURLConnection.setDefaultSSLSocketFactory(sc.getSocketFactory());
+
+            // Now you can make the HTTPS connection
+            URL imageUrl = new URL(url);
+            HttpsURLConnection conn = (HttpsURLConnection) imageUrl.openConnection();
+            ImageData imageData = new ImageData(imageUrl.openStream());
+            return new Image(display, imageData);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+        return null;
     }
 
     public void loadingDialogOpen() {
