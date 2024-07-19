@@ -2,6 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Automatic-Module-Name: org.talend.librariesmanager
 Bundle-Name: Libraries Manager Plug-in
+Bundle-RequiredExecutionEnvironment: JavaSE-17
 Bundle-SymbolicName: org.talend.librariesmanager;singleton:=true
 Bundle-Version: 8.8.8.qualifier
 Bundle-Vendor: .Talaxie SA.

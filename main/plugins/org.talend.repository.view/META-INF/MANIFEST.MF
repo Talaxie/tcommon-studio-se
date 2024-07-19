@@ -1,16 +1,17 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Repository View Plug-in
+Bundle-RequiredExecutionEnvironment: JavaSE-17
 Bundle-SymbolicName: org.talend.repository.view;singleton:=true
 Automatic-Module-Name: org.talend.repository.view
 Bundle-Version: 8.8.8.qualifier
 Bundle-Vendor: .Talaxie SA.
 Bundle-Localization: plugin
 Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.core.expressions,
  org.eclipse.ui,
  org.eclipse.ui.navigator,
  org.eclipse.ui.views.properties.tabbed,
- org.eclipse.core.expressions,
  org.eclipse.e4.core.contexts,
  org.eclipse.e4.ui.model.workbench,
  org.eclipse.e4.ui.workbench,

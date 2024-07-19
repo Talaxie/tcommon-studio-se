@@ -1,6 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Registration Plug-in
+Bundle-RequiredExecutionEnvironment: JavaSE-17
 Bundle-SymbolicName: org.talend.registration;singleton:=true
 Bundle-Version: 8.8.8.qualifier
 Bundle-Vendor: .Talaxie SA.
@@ -14,16 +15,15 @@ Require-Bundle: org.eclipse.ui,
  org.talend.common.ui.runtime,
  org.eclipse.ui.intro,
  org.talend.commons.ui,
- org.talend.libraries.apache.axis2,
  org.apache.log4j,
  org.talend.commons.runtime,
- javax.xml.rpc-api
+ javax.xml.rpc-api,
+ org.talend.libraries.apache.axis2;bundle-version="8.8.8"
 Export-Package: org.talend.registration,
  org.talend.registration.license,
  org.talend.registration.register,
  org.talend.registration.register.proxy,
  org.talend.registration.wizards.license
-Bundle-ClassPath: .
 Bundle-Activator: org.talend.registration.RegistrationPlugin
 Bundle-ActivationPolicy: lazy
 Automatic-Module-Name: org.talend.registration
