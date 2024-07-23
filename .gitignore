@@ -9,3 +9,4 @@ dist/
 .idea
 lib
 main/plugins/org.talend.designer.maven.tos/resources/repository/
+main/plugins/**/repository/*.zip

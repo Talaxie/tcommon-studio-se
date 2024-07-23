@@ -2,6 +2,7 @@ Manifest-Version: 1.0
 Automatic-Module-Name: org.talend.signon.util
 Bundle-ManifestVersion: 2
 Bundle-Name: Cloud sign on util
+Bundle-RequiredExecutionEnvironment: JavaSE-17
 Bundle-SymbolicName: org.talend.signon.util;singleton:=true
 Bundle-Version: 8.8.8.qualifier
 Bundle-ActivationPolicy: lazy

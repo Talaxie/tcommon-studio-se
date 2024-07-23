@@ -1,6 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Datatools XML Plug-in
+Bundle-RequiredExecutionEnvironment: JavaSE-17
 Bundle-SymbolicName: org.talend.datatools.xml
 Bundle-Version: 8.8.8.qualifier
 Require-Bundle: org.eclipse.xsd,

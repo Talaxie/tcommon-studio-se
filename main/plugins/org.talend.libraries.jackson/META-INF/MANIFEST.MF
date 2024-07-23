@@ -1,6 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Jackson
+Bundle-RequiredExecutionEnvironment: JavaSE-17
 Bundle-SymbolicName: org.talend.libraries.jackson;singleton:=true
 Bundle-Version: 8.8.8.qualifier
 Bundle-Vendor: .Talaxie SA.

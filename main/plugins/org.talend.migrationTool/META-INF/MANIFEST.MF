@@ -1,6 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Migration Tool Plug-in
+Bundle-RequiredExecutionEnvironment: JavaSE-17
 Bundle-SymbolicName: org.talend.migrationTool;singleton:=true
 Bundle-Version: 8.8.8.qualifier
 Bundle-Activator: org.talend.migrationtool.MigrationToolPlugin

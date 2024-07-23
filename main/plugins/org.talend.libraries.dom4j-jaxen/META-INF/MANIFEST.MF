@@ -2,6 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Automatic-Module-Name: org.talend.libraries.dom4j.jaxen
 Bundle-Name: talend Dom4j library
+Bundle-RequiredExecutionEnvironment: JavaSE-17
 Bundle-SymbolicName: org.talend.libraries.dom4j-jaxen;singleton:=true
 Bundle-Version: 8.8.8.qualifier
 Bundle-Vendor: .Talaxie SA.
