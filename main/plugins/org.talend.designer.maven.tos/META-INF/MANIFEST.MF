@@ -1,6 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: TOS Maven dependencies
+Bundle-RequiredExecutionEnvironment: JavaSE-17
 Bundle-SymbolicName: org.talend.designer.maven.tos
 Bundle-Version: 8.8.8.qualifier
 Fragment-Host: org.talend.designer.maven;bundle-version="6.2.1"

@@ -82,6 +82,7 @@ public class VersionUtils {
 
     public static String getDisplayVersion() {
         String version = System.getProperty(STUDIO_VERSION_PROP);
+        version = "1.0.0";
         if (version == null || "".equals(version.trim())) { //$NON-NLS-1$
             version = getInternalVersion();
         }

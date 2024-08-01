@@ -105,7 +105,7 @@ Bundle-Vendor: .Talaxie SA.
 Bundle-ActivationPolicy: lazy
 Bundle-Activator: org.talend.core.ui.CoreUIPlugin
 Bundle-Localization: plugin
-Bundle-ClassPath: lib/jna-platform.jar,
+Bundle-ClassPath: .,
+ lib/jna-platform.jar,
  lib/jna.jar,
- lib/oshi-core.jar,
- .
+ lib/oshi-core.jar
