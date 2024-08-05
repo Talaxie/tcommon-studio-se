@@ -10,13 +10,13 @@
   <artifactId>org.talend.libraries.apache.common</artifactId>
   <packaging>eclipse-plugin</packaging>
   
-  <repositories>
+<!--  <repositories>
 		<repository>
 			<id>talend-update</id>
 			<url>https://talend-update.talend.com/nexus/content/repositories/libraries/</url>
 		</repository>
 	</repositories>
-	
+	-->
   <build>
 		<plugins>
 			<plugin>

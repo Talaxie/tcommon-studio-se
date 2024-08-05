@@ -9,7 +9,7 @@
   </parent>
   <artifactId>org.talend.libraries.csv</artifactId>
   <packaging>eclipse-plugin</packaging>
-  
+ <!-- 
   <build>
     <plugins>
       <plugin>
@@ -38,4 +38,5 @@
       </plugin>
     </plugins>
   </build>
+  -->
 </project>

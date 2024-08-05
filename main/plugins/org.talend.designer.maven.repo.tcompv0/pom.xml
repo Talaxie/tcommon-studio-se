@@ -18,7 +18,7 @@
 		<talend_snapshots_ee>https://artifacts-zl.talend.com/nexus/content/repositories/snapshots/</talend_snapshots_ee>
 		<talend_releases_ee>https://artifacts-zl.talend.com/nexus/content/repositories/releases/</talend_releases_ee>
 	</properties>
-	<repositories>
+<!--	<repositories>
 		<repository>
 			<id>talend_open</id>
 			<releases>
@@ -60,7 +60,7 @@
 			<url>${talend_snapshots_ee}</url>
 		</repository>
 	</repositories>
-
+-->
 	<dependencyManagement>
 		<dependencies>
 			<dependency>

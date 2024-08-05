@@ -10,12 +10,13 @@
   <artifactId>org.talend.libraries.mdm</artifactId>
   <packaging>eclipse-plugin</packaging>
 
-  <repositories>
+ <!-- <repositories>
 		<repository>
 			<id>talend-update</id>
 			<url>https://talend-update.talend.com/nexus/content/repositories/libraries/</url>
 		</repository>
 	</repositories>
+-->
 
   <dependencies>
     <dependency>
