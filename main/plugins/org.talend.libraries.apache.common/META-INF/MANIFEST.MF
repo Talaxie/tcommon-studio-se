@@ -61,7 +61,7 @@ Export-Package: org.apache.commons.cli2,
  org.apache.commons.io.monitor;version="2.10.0",
  org.apache.commons.io.output;version="2.10.0",
  org.apache.commons.io.serialization;version="2.10.0"
-Require-Bundle: org.apache.commons.commons-beanutils,
+Require-Bundle: org.apache.commons.commons-beanutils;bundle-version="1.9.4",
  org.apache.commons.logging,
  org.apache.commons.lang3
 Bundle-ActivationPolicy: lazy

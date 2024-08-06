@@ -28,8 +28,6 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.equinox.registry,
  org.eclipse.core.jobs,
  org.eclipse.core.runtime,
- jakarta.xml.ws-api,
- javax.xml.rpc-api,
  org.talend.libraries.apache.cxf
 Bundle-ActivationPolicy: lazy
 Eclipse-RegisterBuddy: org.talend.testutils
@@ -50,5 +48,20 @@ Export-Package: metadata.managment.i18n,
  org.talend.metadata.managment.repository,
  org.talend.metadata.managment.ui.convert,
  org.talend.metadata.managment.utils
+Import-Package: javax.xml.rpc;version="[1.1.0,2.0.0]",
+ javax.xml.rpc.encoding;version="[1.1.0,2.0.0]",
+ javax.xml.rpc.handler;version="[1.1.0,2.0.0]",
+ javax.xml.rpc.handler.soap;version="[1.1.0,2.0.0]",
+ javax.xml.rpc.holders;version="[1.1.0,2.0.0]",
+ javax.xml.rpc.server;version="[1.1.0,2.0.0]",
+ javax.xml.rpc.soap;version="[1.1.0,2.0.0]",
+ javax.xml.ws;version="2.3.3",
+ javax.xml.ws.handler;version="2.3.3",
+ javax.xml.ws.handler.soap;version="2.3.3",
+ javax.xml.ws.http;version="2.3.3",
+ javax.xml.ws.soap;version="2.3.3",
+ javax.xml.ws.spi;version="2.3.3",
+ javax.xml.ws.spi.http;version="2.3.3",
+ javax.xml.ws.wsaddressing;version="2.3.3"
 Bundle-ClassPath: .
 Bundle-Vendor: .Talaxie SA.

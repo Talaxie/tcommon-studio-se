@@ -192,10 +192,15 @@ Export-Package: com.sun.istack,
  org.apache.neethi,
  org.apache.neethi.builders,
  org.talend.libraries.apache.cxf
+Import-Package: javax.xml.bind,
+ javax.xml.bind.annotation,
+ javax.xml.bind.annotation.adapters,
+ javax.xml.bind.attachment,
+ javax.xml.bind.helpers,
+ javax.xml.bind.util
 Require-Bundle: javax.wsdl;bundle-version="1.6.2",
  org.apache.log4j,
- org.eclipse.core.runtime,
- jakarta.xml.bind;bundle-version="2.3.3"
+ org.eclipse.core.runtime
 Eclipse-BundleShape: dir
 Bundle-Activator: org.talend.libraries.apache.cxf.ApacheCxfLibPlugin
 
