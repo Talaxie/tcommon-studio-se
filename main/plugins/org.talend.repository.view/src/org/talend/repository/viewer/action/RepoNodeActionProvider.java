@@ -20,13 +20,13 @@ import org.eclipse.core.commands.IHandler;
 import org.eclipse.jface.action.IMenuManager;
 import org.eclipse.jface.action.MenuManager;
 import org.eclipse.jface.action.Separator;
+import org.eclipse.jface.commands.ActionHandler;
 import org.eclipse.jface.viewers.ISelection;
 import org.eclipse.jface.viewers.IStructuredSelection;
 import org.eclipse.jface.viewers.StructuredViewer;
 import org.eclipse.jface.viewers.TreeViewer;
 import org.eclipse.ui.IActionBars;
 import org.eclipse.ui.IWorkbenchActionConstants;
-import org.eclipse.ui.commands.ActionHandler;
 import org.eclipse.ui.handlers.IHandlerService;
 import org.eclipse.ui.navigator.CommonActionProvider;
 import org.eclipse.ui.navigator.ICommonActionConstants;
@@ -188,7 +188,10 @@ public class RepoNodeActionProvider extends CommonActionProvider {
                         action.setWorkbenchPart(navWorkSite.getSite().getPart());
                         if (action.getActionDefinitionId() != null) {
                             // TODO ActionHandler is deprecated, should be changed.
-                            handler = new ActionHandler(action);
+                        	// OPCoach changed : changed the import org.eclipse.ui.commands.ActionHandler;
+                        	//    to import org.eclipse.jface.commands.ActionHandler;
+                        	// Seems to be good for the needs... but should check that... 
+                             handler = new ActionHandler(action);  
                             handlerService.activateHandler(action.getActionDefinitionId(), handler);
                         }
                     }
