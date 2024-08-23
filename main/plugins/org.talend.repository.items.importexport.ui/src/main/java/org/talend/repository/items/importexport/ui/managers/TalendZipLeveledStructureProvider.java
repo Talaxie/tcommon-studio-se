@@ -258,4 +258,12 @@ public class TalendZipLeveledStructureProvider implements ILeveledImportStructur
     public int getStrip() {
         return stripLevel;
     }
+
+	@Override
+	public void close() throws Exception {
+		// TODO Auto-generated method stub
+		// OPCoach : added this method for compilation... Must implement it... 
+		throw new UnsupportedOperationException("Should implement the close method in TalendZipLeveledStructureProvider ");
+		
+	}
 }
