@@ -142,7 +142,6 @@
               <includeScope>runtime</includeScope>
               <outputDirectory>${project.basedir}/lib</outputDirectory>
               <stripVersion>true</stripVersion>
-              <excludeGroupIds>org.talend.studio</excludeGroupIds>
             </configuration>
           </execution>
         </executions>

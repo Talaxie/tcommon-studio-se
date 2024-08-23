@@ -46,13 +46,8 @@ Export-Package: org.jboss.marshalling,
  routines,
  routines.system
 Import-Package: javax.xml.bind,
- javax.xml.bind.annotation,
- javax.xml.bind.annotation.adapters,
- javax.xml.bind.attachment,
- javax.xml.bind.helpers,
- javax.xml.bind.util,
  org.eclipse.emf.ecore.xmi.impl,
  org.talend.osgi.hook.notification
 Eclipse-BundleShape: dir
-Bundle-ClassPath: lib/jboss-marshalling-2.0.12.Final.jar,
- .
+Bundle-ClassPath: .,
+ lib/jboss-marshalling-2.0.12.Final.jar
