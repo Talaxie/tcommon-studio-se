@@ -1,5 +1,6 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
+Automatic-Module-Name: org.talend.libraries.javacsv.test
 Bundle-Name: Test for javacsv
 Bundle-SymbolicName: org.talend.libraries.javacsv.test
 Bundle-Version: 8.8.8.qualifier
