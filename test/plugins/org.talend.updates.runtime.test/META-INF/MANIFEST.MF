@@ -1,6 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Test
+Bundle-RequiredExecutionEnvironment: JavaSE-17
 Bundle-SymbolicName: org.talend.updates.runtime.test
 Bundle-Version: 8.8.8.qualifier
 Bundle-Vendor: Talaxie
