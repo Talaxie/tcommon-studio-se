@@ -1,6 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Updates Runtime
+Bundle-RequiredExecutionEnvironment: JavaSE-17
 Bundle-SymbolicName: org.talend.updates.runtime;singleton:=true
 Automatic-Module-Name: org.talend.updates.runtime
 Bundle-Version: 8.8.8.qualifier
