@@ -12,7 +12,7 @@
 // ============================================================================
 package org.talend.core.ui.properties.tab;
 
-import org.apache.commons.collections.BidiMap;
+import org.apache.commons.collections4.BidiMap;
 import org.eclipse.swt.widgets.Composite;
 import org.talend.core.model.metadata.IDynamicBaseProperty;
 import org.talend.core.model.process.Element;

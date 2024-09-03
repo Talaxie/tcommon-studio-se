@@ -7,7 +7,6 @@ Automatic-Module-Name: org.talend.commons.runtime
 Bundle-Version: 8.8.8.qualifier
 Require-Bundle: org.apache.log4j,
  org.apache.commons.commons-beanutils,
- org.apache.commons.collections,
  org.apache.commons.lang,
  org.eclipse.core.runtime,
  org.eclipse.emf.ecore.xmi,
@@ -68,4 +67,5 @@ Bundle-ClassPath: .,
  fakejdbc_driver.jar
 Bundle-Vendor: .Talaxie SA.
 Bundle-ActivationPolicy: lazy
-Import-Package: org.apache.xerces.jaxp
+Import-Package: org.apache.commons.collections4,
+ org.apache.xerces.jaxp

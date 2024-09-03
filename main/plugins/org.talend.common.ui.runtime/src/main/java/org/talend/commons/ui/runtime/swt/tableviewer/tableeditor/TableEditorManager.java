@@ -21,7 +21,7 @@ import java.util.IdentityHashMap;
 import java.util.List;
 import java.util.Set;
 
-import org.apache.commons.collections.set.MapBackedSet;
+import org.apache.commons.collections4.set.MapBackedSet;
 import org.eclipse.swt.custom.TableEditor;
 import org.eclipse.swt.events.PaintEvent;
 import org.eclipse.swt.graphics.GC;

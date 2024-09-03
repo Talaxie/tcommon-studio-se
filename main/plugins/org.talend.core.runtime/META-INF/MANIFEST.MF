@@ -117,7 +117,6 @@ Require-Bundle: org.eclipse.jdt.core,
  org.eclipse.ui.views.properties.tabbed,
  org.eclipse.ui.ide,
  org.eclipse.osgi.services,
- org.apache.commons.collections,
  org.apache.commons.lang,
  org.apache.log4j,
  org.talend.model,
@@ -156,5 +155,6 @@ Bundle-ClassPath: .,
  lib/delight-rhino-sandbox-0.0.15.jar,
  lib/rhino-1.7.13.jar
 Eclipse-RegisterBuddy: org.talend.testutils
-Import-Package: org.eclipse.equinox.p2.repository,
+Import-Package: org.apache.commons.collections4,
+ org.eclipse.equinox.p2.repository,
  org.eclipse.equinox.security.storage

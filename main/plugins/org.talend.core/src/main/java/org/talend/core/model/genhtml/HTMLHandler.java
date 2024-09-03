@@ -28,7 +28,7 @@ import java.util.Map;
 
 import javax.xml.transform.Transformer;
 
-import org.apache.commons.collections.map.LRUMap;
+import org.apache.commons.collections4.map.LRUMap;
 import org.apache.commons.io.FileUtils;
 import org.eclipse.core.runtime.Path;
 import org.talend.commons.exception.ExceptionHandler;

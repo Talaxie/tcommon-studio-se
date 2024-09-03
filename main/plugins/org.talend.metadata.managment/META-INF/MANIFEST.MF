@@ -7,7 +7,6 @@ Bundle-SymbolicName: org.talend.metadata.managment;singleton:=true
 Bundle-Version: 8.8.8.qualifier
 Require-Bundle: org.eclipse.ui,
  org.apache.commons.logging,
- org.apache.commons.collections,
  org.apache.commons.lang,
  org.talend.libraries.apache.cxf,
  org.talend.libraries.mdm;resolution:=optional,
@@ -55,6 +54,7 @@ Import-Package: javax.xml.rpc,
  javax.xml.rpc.holders,
  javax.xml.rpc.server,
  javax.xml.rpc.soap,
- javax.xml.ws
+ javax.xml.ws,
+ org.apache.commons.collections4
 Bundle-ClassPath: .
 Bundle-Vendor: .Talaxie SA.

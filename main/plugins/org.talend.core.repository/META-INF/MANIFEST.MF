@@ -7,7 +7,6 @@ Bundle-SymbolicName: org.talend.core.repository;singleton:=true
 Bundle-Version: 8.8.8.qualifier
 Require-Bundle: org.eclipse.ui,
  org.eclipse.ui.ide,
- org.apache.commons.collections,
  org.apache.commons.lang,
  org.talend.core.runtime,
  org.talend.model,
@@ -61,6 +60,7 @@ Export-Package: org.talend.core.repository,
  org.talend.core.repository.ui.view,
  org.talend.core.repository.ui.wizard.folder,
  org.talend.core.repository.utils
+Import-Package: org.apache.commons.collections4.map
 Bundle-Activator: org.talend.core.repository.CoreRepositoryPlugin
 Bundle-ActivationPolicy: lazy
 Bundle-ClassPath: .

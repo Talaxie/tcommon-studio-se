@@ -25,7 +25,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
-import org.apache.commons.collections.map.MultiKeyMap;
+import org.apache.commons.collections4.map.MultiKeyMap;
 import org.apache.commons.lang.StringUtils;
 import org.talend.commons.utils.encoding.CharsetToolkit;
 import org.talend.core.database.EDatabaseTypeName;

@@ -15,7 +15,7 @@ package org.talend.core.repository.ui.actions;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.commons.collections.map.MultiKeyMap;
+import org.apache.commons.collections4.map.MultiKeyMap;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.ui.IEditorInput;
 import org.eclipse.ui.IEditorPart;

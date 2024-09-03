@@ -5,7 +5,6 @@ Bundle-RequiredExecutionEnvironment: JavaSE-17
 Bundle-SymbolicName: org.talend.common.ui.runtime;singleton:=true
 Bundle-Version: 8.8.8.qualifier
 Require-Bundle: org.eclipse.core.runtime,
- org.apache.commons.collections,
  org.talend.libraries.dom4j-jaxen,
  org.apache.commons.lang,
  org.apache.log4j,
@@ -38,7 +37,8 @@ Export-Package:
  org.talend.commons.ui.runtime.update,
  org.talend.commons.ui.runtime.utils,
  org.talend.commons.ui.runtime.ws
-Import-Package: org.eclipse.gef.commands,
+Import-Package: org.apache.commons.collections4,
+ org.eclipse.gef.commands,
  org.eclipse.jface.bindings.keys,
  org.eclipse.jface.dialogs,
  org.eclipse.jface.fieldassist,

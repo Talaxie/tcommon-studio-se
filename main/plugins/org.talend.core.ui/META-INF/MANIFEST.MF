@@ -6,7 +6,6 @@ Bundle-SymbolicName: org.talend.core.ui;singleton:=true
 Automatic-Module-Name: org.talend.core.ui
 Bundle-Version: 8.8.8.qualifier
 Require-Bundle: org.apache.commons.lang,
- org.apache.commons.collections,
  org.eclipse.gef,
  org.eclipse.jface.text,
  org.eclipse.ui.views.properties.tabbed,
@@ -56,7 +55,8 @@ Require-Bundle: org.apache.commons.lang,
  org.eclipse.jface.notifications,
  org.eclipse.swt,
  javax.inject
-Import-Package: org.eclipse.jdt.internal.ui.workingsets,
+Import-Package: org.apache.commons.collections4,
+ org.eclipse.jdt.internal.ui.workingsets,
  org.slf4j
 Export-Package: org.talend.core.ui,
  org.talend.core.ui.actions,

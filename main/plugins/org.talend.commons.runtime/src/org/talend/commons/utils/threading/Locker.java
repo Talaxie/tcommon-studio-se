@@ -23,7 +23,7 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadFactory;
 
-import org.apache.commons.collections.list.SynchronizedList;
+import org.apache.commons.collections4.list.SynchronizedList;
 import org.apache.log4j.Logger;
 import org.talend.commons.utils.StringUtils;
 import org.talend.commons.utils.data.bean.IGetterPropertyAccessor;

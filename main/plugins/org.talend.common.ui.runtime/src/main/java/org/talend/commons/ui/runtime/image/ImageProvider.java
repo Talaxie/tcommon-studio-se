@@ -15,7 +15,7 @@ package org.talend.commons.ui.runtime.image;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.apache.commons.collections.map.MultiKeyMap;
+import org.apache.commons.collections4.map.MultiKeyMap;
 import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.swt.graphics.Image;
 
