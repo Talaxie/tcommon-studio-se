@@ -730,6 +730,7 @@ public class Webhook {
 					component.put("image", componentJson.getString("image"));
 					component.put("origine", componentJson.getString("origine"));
 					component.put("url", componentJson.getString("url"));
+					component.put("urlZip", componentJson.getString("urlZip"));
                     components.add(component);
 				}
             }
