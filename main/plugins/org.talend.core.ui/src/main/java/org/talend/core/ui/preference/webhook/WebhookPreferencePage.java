@@ -158,7 +158,13 @@ public class WebhookPreferencePage extends FieldEditorPreferencePage implements 
         addField(checkboxEtlToolEnable);
         frontHostField = new StringFieldEditor(ITalendCorePrefConstants.WEBHOOK_ETLTOOL_FRONT_HOST, "Front host", compositeEtlTool);
         addField(frontHostField);
-        backHostField = new StringFieldEditor(ITalendCorePrefConstants.WEBHOOK_ETLTOOL_BACK_HOST, "Back host", compositeEtlTool);
+        backHostField = new StringFieldEditor(ITalendCorePrefConstants.WEBHOOK_ETLTOOL_BACK_HOST, "Back host", compositeEtlTool) {
+        	@Override
+        	public String getStringValue() {
+        		String val = super.getStringValue();
+        		return val != null ? val.replaceAll("/$", "") : null;
+        	}
+        };
         addField(backHostField);
         loginField = new StringFieldEditor(ITalendCorePrefConstants.WEBHOOK_ETLTOOL_LOGIN, "Login", compositeEtlTool);
         addField(loginField);
